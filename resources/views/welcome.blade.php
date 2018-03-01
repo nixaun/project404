@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    LENNERT WE MISS YOU!
                 </div>
 
                 <div class="links">
