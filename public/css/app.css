@@ -53,10 +53,18 @@ header {
   font-size: 200px;
 }
 
+#navbar-line{
+  height: 20px;
+  width: 100%;
+  margin: 0;
+  margin-top: -5px;
+  background-color: #cf0039;
+  border-bottom: 5px solid #a70636;
+}
+
 nav {
   background-color: #cf0039;
-  margin-top: -5px;
-  height: 70px;
+  height: 80px;
 }
 
 nav ul {
@@ -73,12 +81,20 @@ nav li {
   font-size: 30px;
 }
 
+nav ul:first-child{
+  margin-left: 25%;
+}
+
 nav li a {
   text-decoration: none;
-  display: block;
+  display: inline-block;
   height: 70px;
+  margin: 12% 0;
   color: white;
+}
 
+nav li:nth-child(2) a{
+  margin-top: 3%;
 }
 
 nav li a:hover {

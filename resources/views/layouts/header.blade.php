@@ -30,6 +30,8 @@
         </div>
       </header>
 
+      <div id='navbar-line'>
+      </div>
       <nav>
         <ul class = 'cfx wrapper'>
           <li><a href = '#'>Home</a></li>
