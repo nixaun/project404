@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Antwerpen-Regular';
+  src: url('Antwerpen webfonts/Antwerpen Regular webfonts/Antwerpen-Regular.ttf');
+  font-weight: normal;
+}
+
+*{
+  font-family:'Antwerpen-Regular';
+}
 body {
   margin: 0;
 }
@@ -60,8 +69,7 @@ nav li {
   float: left;
   display: block;
   height: 70px;
-  width: 100px;
-  margin-left: 10%;
+  width: 13%;
   font-size: 30px;
 }
 
@@ -70,7 +78,7 @@ nav li a {
   display: block;
   height: 70px;
   color: white;
-  padding-right: 20px;
+
 }
 
 nav li a:hover {

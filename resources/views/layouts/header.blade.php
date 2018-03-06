@@ -11,6 +11,7 @@
     <title>SSIA</title>
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
   </head>
 
   <body>
@@ -33,7 +34,7 @@
         <ul class = 'cfx wrapper'>
           <li><a href = '#'>Home</a></li>
           <li><a href = '#'>Seksuele intimidatie</a></li>
-          <li><a href = '#'>Getuigenissen</a></li>
+          <li><a href = '#'>Verhalen</a></li>
           <li><a href = '#'>Media</a></li>
           <li><a href = '#'>Profiel</a></li>
         </ul>
