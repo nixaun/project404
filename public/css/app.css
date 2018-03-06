@@ -128,7 +128,7 @@ nav li:nth-child(2) a{
 
 footer {
   margin-top: 20%;
-  height: 350px;
+  min-height: 350px;
   background-color: #282020;
   color: white;
 }
@@ -137,7 +137,7 @@ footer ul{
   list-style: none;
 }
 
-footer div{
+footer div div{
   float: left;
   width: 33%;
   margin: 2% 0;

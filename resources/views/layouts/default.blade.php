@@ -23,10 +23,8 @@
         @yield('content')
 
       </div>
-
-      <footer class="row">
+      
         @include('layouts.footer')
-      </footer>
     </div>
   </body>
 </html>
