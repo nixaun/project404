@@ -10,17 +10,23 @@
 body {
   margin: 0;
 }
-header {
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-}
 
 .wrapper {
   width: 70%;
   margin: auto;
 }
+
+/******************************
+ *          header            *
+ ******************************/
+
+
+ header {
+   width: 100%;
+   position: relative;
+   top: 0;
+   left: 0;
+ }
 
 .logo {
   position: absolute;
@@ -97,14 +103,20 @@ nav li:nth-child(2) a{
   margin-top: 3%;
 }
 
-nav li a:hover {
-  background-color: #f7a400;
-  color: black;
-}
 
-nav li a:hover{
-  color: black;
-}
+/******************************
+ *           footer           *
+ ******************************/
+
+
+
+
+
+
+
+ /******************************
+  *          clearfix          *
+  ******************************/
 
 .cfx::before, .cfx::after {
     display: block;
