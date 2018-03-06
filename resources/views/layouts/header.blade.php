@@ -31,6 +31,11 @@
       </header>
 
       <div id='navbar-line'>
+
+      <div class="current_tab">
+        <img src="{{ asset('images/CURRENT.png')}}">
+      </div>
+      
       </div>
       <nav>
         <ul class = 'cfx wrapper'>
