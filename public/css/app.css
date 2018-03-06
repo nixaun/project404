@@ -103,16 +103,24 @@ nav li:nth-child(2) a{
   margin-top: 3%;
 }
 
-.current_tab img{
+.current_tab img, li img{
   width: 258px;
   margin-top: -57px;
 }
 
-.current_tab img:hover {
-  width: 200px;
-  margin-left: 400px;
+.cfx li a:hover{
+  /*color: #f7a400;*/
+  font-size: 31px;
+  display: block;
 }
 
+.cfx li img{
+  display: none;
+}
+
+.cfx li img:hover{
+  display: inline;
+}
 
 /******************************
  *           footer           *
