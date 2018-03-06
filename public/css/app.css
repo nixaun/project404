@@ -103,20 +103,19 @@ nav li:nth-child(2) a{
   margin-top: 3%;
 }
 
+/******************************
+ *           Active Tab           *
+ ******************************/
 .current_tab img, li img{
   width: 258px;
   margin-top: -57px;
 }
 
 .cfx li a:hover{
-  /*color: #f7a400;*/
+  color: #f7a400;
   font-size: 31px;
-  display: block;
 }
 
-.cfx li img{
-  display: none;
-}
 
 .cfx li img:hover{
   display: inline;
