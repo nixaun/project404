@@ -83,7 +83,7 @@ nav li {
   float: left;
   display: block;
   height: 70px;
-  width: 13%;
+  width: 16%;
   font-size: 30px;
 }
 
@@ -101,6 +101,11 @@ nav li a {
 
 nav li:nth-child(2) a{
   margin-top: 3%;
+}
+
+.current_tab img{
+  width: 258px;
+  margin-top: -57px;
 }
 
 
