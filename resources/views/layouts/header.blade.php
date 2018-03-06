@@ -31,11 +31,11 @@
 
       <nav>
         <ul class = 'cfx'>
-          <li><a href = '#'>Home</a></li>
-          <li><a href = '#'>Seksuele intimidatie</a></li>
-          <li><a href = '#'>Getuigenissen</a></li>
-          <li><a href = '#'>Media</a></li>
-          <li><a href = '#'>Profiel</a></li>
+          <a href = '#'><li>Home</li></a>
+          <a href = '#'><li>Seksuele intimidatie</li></a>
+          <a href = '#'><li>Getuigenissen</li></a>
+          <a href = '#'><li>Media</li></a>
+          <a href = '#'><li>Profiel</li></a>
         </ul>
       </nav>
     </div>
