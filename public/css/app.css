@@ -108,9 +108,10 @@ nav li:nth-child(2) a{
  *           footer           *
  ******************************/
 
-
-
-
+footer {
+  height: 100px;
+  background-color: blue; 
+}
 
 
  /******************************
