@@ -108,6 +108,11 @@ nav li:nth-child(2) a{
   margin-top: -57px;
 }
 
+.current_tab img:hover {
+  width: 200px;
+  margin-left: 400px;
+}
+
 
 /******************************
  *           footer           *
