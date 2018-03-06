@@ -30,8 +30,8 @@
       </header>
 
       <nav>
-        <ul class = 'cfx'>
-          <a href = '#'><li>Home</li></a>
+        <ul class = 'cfx wrapper'>
+          <li><a href = '#'>Home</a></li>
           <a href = '#'><li>Seksuele intimidatie</li></a>
           <a href = '#'><li>Getuigenissen</li></a>
           <a href = '#'><li>Media</li></a>
