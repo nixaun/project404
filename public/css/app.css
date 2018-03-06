@@ -40,7 +40,7 @@ header {
 }
 
 nav {
-  background-color: red;
+  background-color: #cf0039;
   margin-top: -5px;
   height: 70px;
 }
@@ -52,12 +52,21 @@ nav ul {
 
 nav li {
   float: left;
+  height: 70px;
+  width: 100px;
+  color: white;
+  font-size: 30px;
 }
 
 nav li a {
   text-decoration: none;
-  color: white;
-  font-size: 30px; 
+  padding-right: 20px;
+
+}
+
+nav li:hover {
+  background-color: #f7a400;
+  color: black;
 }
 
 .cfx::before, .cfx::after {
