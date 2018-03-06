@@ -32,10 +32,10 @@
       <nav>
         <ul class = 'cfx wrapper'>
           <li><a href = '#'>Home</a></li>
-          <a href = '#'><li>Seksuele intimidatie</li></a>
-          <a href = '#'><li>Getuigenissen</li></a>
-          <a href = '#'><li>Media</li></a>
-          <a href = '#'><li>Profiel</li></a>
+          <li><a href = '#'>Seksuele intimidatie</a></li>
+          <li><a href = '#'>Getuigenissen</a></li>
+          <li><a href = '#'>Media</a></li>
+          <li><a href = '#'>Profiel</a></li>
         </ul>
       </nav>
     </div>
