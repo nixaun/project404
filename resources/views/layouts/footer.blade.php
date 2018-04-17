@@ -3,19 +3,19 @@
     <div>
       <ul>
         <h2>Snel zelf regelen</h2>
-        <li><a href="https://www.antwerpen.be/nl/eloket/overzicht/" target="_blank">Documenten aanvragen</a></li>
-        <li><a href="https://www.antwerpen.be/nl/eloket/sluikstort" target="_blank">Sluikstort melden</a></li>
-        <li><a href="https://www.antwerpen.be/nl/eloket/aangifte-adreswijziging-nieuw" target="_blank" >Adreswijziging doorgeven</a></li>
-        <li><a href="https://www.antwerpen.be/nl/e-loket/parkeerverbod" target="_blank" >Parkeerverbod aanvragen</a></li>
+        <li class="footer-nav-a"><a href="https://www.antwerpen.be/nl/eloket/overzicht/" target="_blank">Documenten aanvragen</a></li>
+        <li class="footer-nav-a"><a href="https://www.antwerpen.be/nl/eloket/sluikstort" target="_blank">Sluikstort melden</a></li>
+        <li class="footer-nav-a"><a href="https://www.antwerpen.be/nl/eloket/aangifte-adreswijziging-nieuw" target="_blank" >Adreswijziging doorgeven</a></li>
+        <li class="footer-nav-a"><a href="https://www.antwerpen.be/nl/e-loket/parkeerverbod" target="_blank" >Parkeerverbod aanvragen</a></li>
       </ul>
     </div>
     <div>
       <ul>
         <h2>Dienstverlening</h2>
-        <li><a href="https://www.antwerpen.be/nl/eloket/overzicht/" target="_blank" >E-loket</a></li>
-        <li><a href="https://www.antwerpen.be/nl/e-loket/afspraak-maken" target="_blank" >Afspraak</a></li>
-        <li><a href="https://www.antwerpen.be/nl/eloket/melden" target="_blank" >Melding maken</a></li>
-        <li><a href="https://www.antwerpen.be/nl/overzicht/adressen-en-openingsuren/stadsloketten" target="_blank" >Openingsuren</a></li>
+        <li class="footer-nav-a"><a href="https://www.antwerpen.be/nl/eloket/overzicht/" target="_blank" >E-loket</a></li>
+        <li class="footer-nav-a"><a href="https://www.antwerpen.be/nl/e-loket/afspraak-maken" target="_blank" >Afspraak</a></li>
+        <li class="footer-nav-a"><a href="https://www.antwerpen.be/nl/eloket/melden" target="_blank" >Melding maken</a></li>
+        <li class="footer-nav-a"><a href="https://www.antwerpen.be/nl/overzicht/adressen-en-openingsuren/stadsloketten" target="_blank" >Openingsuren</a></li>
       </ul>
     </div>
     <div>
