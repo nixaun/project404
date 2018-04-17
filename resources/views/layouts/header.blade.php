@@ -41,7 +41,7 @@
       <nav>
         <ul class = 'cfx wrapper'>
           <li><a href = '#'>Home</a><img src="{{ asset('images/CURRENT.png')}}" class="tbl"></li>
-          <li><a href = '#'>Seksuele intimidatie</a></li>
+          <li><a href = "{{route('WatIsSeksueleIntimidatie')}}">Seksuele intimidatie</a></li>
           <li><a href = '#'>Verhalen</a></li>
           <li><a href = '#'>Media</a></li>
           <li><a href = '#'>Profiel</a></li>

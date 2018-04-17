@@ -122,6 +122,53 @@ nav li:nth-child(2) a{
 }
 
 /******************************
+ *        subnavigatie        *
+ ******************************/
+
+ .sidenav {
+     width: 200px;
+     float: left;
+     background-color: black;
+     padding-top: 20px;
+     margin-top: 10%;
+ }
+
+ .sidenav a {
+     padding: 6px 6px 6px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #ffffff;
+     display: block;
+ }
+
+ .sidenav a:hover {
+     color: #f7a400;
+ }
+
+/******************************
+*           aside            *
+******************************/
+
+ .aside {
+   margin-top: 100px;
+ }
+
+.redArea {
+  background-color: #cf0039;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.asideText {
+    width:800px;
+    margin-left: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffff;
+}
+
+
+/******************************
  *           footer           *
  ******************************/
 
