@@ -135,7 +135,7 @@ nav ul:first-child{
 }
 
 .CRNT_TAB img{
-  transition: transform 0.2s ease-in-out; 
+  transition: transform 0.2s ease-in-out;
 }
 
 .CRNT_TAB img:hover{
@@ -168,7 +168,7 @@ nav ul:first-child{
    border-bottom: solid #292929 2px;
  }
 
- .sidenav a:hover, .sidenav .active {
+ .sidenav a:hover, .sidenav .current {
      color: #a70636;
  }
 
@@ -205,6 +205,10 @@ nav ul:first-child{
    width: 720px;
    height: 405px;
 
+ }
+
+ .content-split a {
+   padding-bottom: 3%;
  }
 
 
