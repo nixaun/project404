@@ -121,15 +121,6 @@ nav ul:first-child{
 #header .cfx li a:hover{
 =======
 */
-<<<<<<< HEAD
-=======
-.cfx li a:hover{
->>>>>>> aa1acb6e89a6eb1fb72eb57d2a5942ee1496b70c
-  color: #f7a400;
-  background-color: gold;
-  font-size: 31px;
-}
->>>>>>> 509a213171442aae5f831de9d418bfce9ae42c62
 
 .CRNT_TAB{
   width: 798px;
@@ -139,13 +130,9 @@ nav ul:first-child{
 }
 
 .CRNT_TAB img{
-<<<<<<< HEAD
   width: 100px;
   height: auto;
   transition: transform 0.2s ease-in-out; 
-=======
-  transition: transform 0.2s ease-in-out;
->>>>>>> 509a213171442aae5f831de9d418bfce9ae42c62
 }
 
 .CRNT_TAB img:hover{
