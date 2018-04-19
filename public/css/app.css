@@ -103,6 +103,10 @@ nav li:nth-child(2) a{
   margin-top: 3%;
 }
 
+nav li:nth-child(4) a{
+  margin-top: 3%;
+}
+
 /******************************
  *           Active Tab           *
  ******************************/
@@ -163,6 +167,9 @@ nav li:nth-child(2) a{
      color: #a70636;
  }
 
+.current{
+  color: blue;
+}
 /******************************
 *           aside            *
 ******************************/

@@ -43,6 +43,7 @@
           <li><a href = "{{route('WatIsSeksueleIntimidatie')}}">Seksuele intimidatie</a></li>
           <!--<img src="{{ asset('images/CURRENT.png')}}" class="tbl">-->
           <li><a href = '#'>Verhalen</a></li>
+          <li><a href = '#'>Wat kan u zelf doen?</a></li>
           <li><a href = '#'>Media</a></li>
           <li><a href = '#'>Profiel</a></li>
         </ul>
