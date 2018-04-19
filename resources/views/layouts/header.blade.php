@@ -33,8 +33,9 @@
       <div id='navbar-line'>
 
       <div class="CRNT_TAB">
-        <img src="{{ asset('images/CRNT12.png')}}" alt="CT12">
+        <img src="{{ asset('images/HOME2.png')}}" alt="HOME">
       </div>
+
       </div>
 
       <nav>

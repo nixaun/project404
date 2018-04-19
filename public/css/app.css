@@ -117,24 +117,22 @@ nav li:nth-child(4) a{
   margin-left: 40px;
 }
 */
-.cfx li a:hover{
-  color: #f7a400;
-  background-color: gold;
-  font-size: 31px;
-}
 
 .CRNT_TAB{
-  width: 100px;
-  height: 100px;
+  width: 798px;
+  height: 110px;
   overflow: hidden;
+  margin-left: 430px;
 }
 
 .CRNT_TAB img{
+  width: 100px;
+  height: auto;
   transition: transform 0.2s ease-in-out; 
 }
 
 .CRNT_TAB img:hover{
-  transform: translate3d(0px, 150px, 0px);
+  transform: translate3d(0px, -100px, 0px);
 }
 
 .cfx li img:hover{
