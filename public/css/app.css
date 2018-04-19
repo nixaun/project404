@@ -91,7 +91,7 @@ nav ul:first-child{
   margin-left: 25%;
 }
 
-nav li a {
+#header nav li a {
   text-decoration: none;
   display: inline-block;
   height: 70px;
@@ -99,11 +99,11 @@ nav li a {
   color: white;
 }
 
-nav li:nth-child(2) a{
+#header nav li:nth-child(2) a{
   margin-top: 3%;
 }
 
-nav li:nth-child(4) a{
+#header nav li:nth-child(4) a{
   margin-top: 3%;
 }
 
@@ -116,7 +116,20 @@ nav li:nth-child(4) a{
   margin-top: -57px;
   margin-left: 40px;
 }
+<<<<<<< HEAD
+
+#header .cfx li a:hover{
+=======
 */
+<<<<<<< HEAD
+=======
+.cfx li a:hover{
+>>>>>>> aa1acb6e89a6eb1fb72eb57d2a5942ee1496b70c
+  color: #f7a400;
+  background-color: gold;
+  font-size: 31px;
+}
+>>>>>>> 509a213171442aae5f831de9d418bfce9ae42c62
 
 .CRNT_TAB{
   width: 798px;
@@ -126,9 +139,13 @@ nav li:nth-child(4) a{
 }
 
 .CRNT_TAB img{
+<<<<<<< HEAD
   width: 100px;
   height: auto;
   transition: transform 0.2s ease-in-out; 
+=======
+  transition: transform 0.2s ease-in-out;
+>>>>>>> 509a213171442aae5f831de9d418bfce9ae42c62
 }
 
 .CRNT_TAB img:hover{
@@ -161,7 +178,7 @@ nav li:nth-child(4) a{
    border-bottom: solid #292929 2px;
  }
 
- .sidenav a:hover {
+ .sidenav a:hover, .sidenav .current {
      color: #a70636;
  }
 
@@ -198,6 +215,14 @@ nav li:nth-child(4) a{
    width: 720px;
    height: 405px;
 
+ }
+
+ .content-split a {
+   padding-bottom: 3%;
+ }
+
+ .aside .content-split ul li {
+   margin-bottom: 2%; 
  }
 
 
