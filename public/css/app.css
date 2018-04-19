@@ -211,6 +211,10 @@ nav ul:first-child{
    padding-bottom: 3%;
  }
 
+ .aside .content-split ul li {
+   margin-bottom: 2%; 
+ }
+
 
 /******************************
  *           footer           *

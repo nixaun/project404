@@ -3,14 +3,15 @@
 @section('content')
 <div class='wrapper'>
   <div class="sidenav cfx">
-    <a href="#" class = 'active'>Als slachtoffer</a>
-    <a href="#">Als getuige</a>
-    <a href="#">Als pleger</a>
-    <a href="#">Als begeleider of leerkracht</a>
-    <a href="#">Bij welke hulporganisaties kan u terecht?</a>
+    <a href="#page1">Als slachtoffer</a>
+    <a href="#page2">Als getuige</a>
+    <a href="#page3">Als pleger</a>
+    <a href="#page4">Als begeleider of leerkracht</a>
+    <a href="#page5">Bij welke hulporganisaties kan u terecht?</a>
   </div>
 
   <div class = 'aside cfx'>
+    <div id = "page1">
       <div class="content-split">
         <h1>Als slachtoffer</h1>
         <h3>Hoe reageer je op seksuele intimidatie? Deze Antwerpenaren vertellen wat zij meemaakten. Julia van Sensoa en Evelien en van Jong & Van Zin geven tips bij hun getuigenissen.</h3>
@@ -88,6 +89,116 @@
           <li>Bij <a href = 'https://www.tele-onthaal.be/' target="_blank">Tele-Onthaal</a> kan u anoniem uw verhaal kwijt als u het moeilijk hebt, op het nummer 106 of via chat. Jongeren kunnen ook terecht bij <a href = 'http://www.jac.be/' target="_blank">het Jongerenadviescentra (JAC)</a> voor een gesprek, afspraak of chat.</li>
         </ul>
       </div>
+    </div>
+
+    <div id = 'page2'>
+      <div class = 'content-split'>
+        <h1>Als getuige</h1>
+        <h3>Tussenkomen is niet evident. Elke situatie is verschillend en u zal zelf (snel) moeten inschatten wat te doen. De belangrijkste stelregel is: probeer de ander te helpen zonder uzelf in gevaar te brengen. Bied hulp als iemand u in vertrouwen neemt of als u getuige bent van seksueel grensoverschrijdend gedrag.</h3>
+        <p>Enkele nuttige tips:</p>
+        <ul>
+          <li>Probeer de lastigvaller verbaal te stoppen: roep er andere omstanders bij.</li>
+          <li>Bel de politie op het noodnummer 101 als de situatie erg onveilig is.</li>
+          <li>Onthoud de kenmerken van de lastigvaller.</li>
+          <li>Kom alleen fysiek tussenbeide als u voldoende sterk (of met meer personen) bent.</li>
+          <li>Vang het slachtoffer op en bied eerste hulp.</li>
+          <li>Stel u beschikbaar als getuige.</li>
+        </ul>
+        <p>Meer tips en voorbeelden vindt u op <a href = 'https://www.seksualiteit.be/misbruik/misbruik-en-hulp/getuige-van-seksueel-grensoverschrijdend-gedrag' target="_blank">www.seksualiteit.be</a>.</p>
+      </div>
+    </div>
+
+    <div id = 'page3'>
+      <div class = 'content-split'>
+        <h1>Als pleger</h1>
+        <h3>Bent u zélf over de grens gegaan, dan kan u begeleiding zoeken.</h3>
+        <p>De meeste vrouwen worden minstens één keer in hun leven seksueel lastiggevallen. Onthoud vooral dat seksuele intimidatie altijd ongewenst, onaanvaardbaar en in bepaalde gevallen zelfs strafbaar is.</p>
+        <p>Bent u toch te ver gegaan? Denk dan eens na over hoe u uw ongewenst gedrag kan bijsturen.Of hebt u vragen over wat wel en niet kan?</p>
+        <ul>
+          <li>Bij <a href = "https://www.tele-onthaal.be/" target="_blank">Tele-Onthaal</a> kan u anoniem uw verhaal kwijt als u het moeilijk hebt, op het nummer 106 of via chat. Jongeren kunnen ook terecht bij <a href = "http://www.jac.be/" target="_blank">het Jongerenadviescentra (JAC)</a> voor een gesprek, afspraak of chat.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id = "page4">
+      <div class = 'content-split'>
+        <h1>Als begeleider of leerkracht</h1>
+        <h3>Waarschijnlijk bent u als leerkracht of begeleider al geconfronteerd met situaties van grensoverschrijdend of seksueel intimiderend gedrag. Dan weet u ook dat het niet gemakkelijk is om een situatie correct in te schatten en gepast te reageren. Toch bent u vaak een rolmodel voor jongeren en heeft uw reactie een grote impact.</h3>
+        <p>Er bestaan verschillende organisaties met een goed aanbod om u te ondersteunen.</p>
+        <p>In de ideale wereld heeft uw organisatie een beleid uitgewerkt dat houvast biedt wanneer iets fout loopt. Zo werk een organisatie aan preventie en weten medewerkers hoe ze correct moeten handelen. Op die manier wordt ook een veilige omgeving gecreëerd waarin jongeren een positieve seksuele ontwikkeling kunnen doormaken waarin er respect is voor iedereen.</p>
+        <p>Een kort overzicht van het aanbod voor verenigingen, scholen en sportclubs.</p>
+      </div>
+
+      <div class = 'content-split'>
+        <h2>Sensoa</h2>
+        <ul>
+          <li><a href = 'https://www.seksuelevorming.be/sensoa-vlaggensysteem' target="_blank">Het Vlaggensysteem</a> een methode die intermediairs helpt in te schatten of en in welke mate gedrag seksueel grensoverschrijdend is en hiervoor een gepaste reactie voorstelt.</li>
+          <li>Het gratis werkboek ‘seksualiteit en beleid’ voor <a href = 'https://www.seksuelevorming.be/materiaal/raamwerk-lichamelijke-en-seksuele-integriteit-en-beleid-de-sport' target="_blank">sportclubs</a>, <a href ='https://www.seksuelevorming.be/materiaal/raamwerk-seksualiteit-en-beleid-onderwijs' target="_blank">scholen</a>, <a href="https://www.seksuelevorming.be/materiaal/raamwerk-seksualiteit-en-beleid-jeugdwerk" target="_blank">verenigingen</a>, <a href="https://www.seksuelevorming.be/materiaal/raamwerk-seksualiteit-en-beleid-integrale-jeugdhulp" target="_blank">integrale jeugdhulp</a> en <a href="https://www.seksuelevorming.be/materiaal/raamwerk-seksualiteit-en-beleid-kinderopvang" target="_blank">kinderopvang</a>.</li>
+          <li>Seksualiteit bespreekbaar maken met aandacht voor culturele verschillen op <a href="https://www.zanzu.be/nl" target="_blank">www.zanzu.be/nl</a>.</li>
+          <li>Heel wat interessante opleidingen en studiemateriaal op <a href="https://www.seksuelevorming.be/" target="_blank">www.seksuelevorming.be</a>.</li>
+        </ul>
+      </div>
+
+      <div class = 'content-split'>
+        <h2>Jong &amp; van zin</h2>
+        <p>Jong &amp; van zin helpt scholen, instellingen en andere organisaties bij <a href="https://www.pimento.be/" target="_blank">het uitwerken van een beleid op maat</a>.</p>
+      </div>
+
+      <div class = 'content-split'>
+        <h2>ICES</h2>
+        <p>Het Internationaal Centrum Ethiek in de Sport vzw (ICES) is een organisatie voor beleidsondersteuning en praktijkontwikkeling op het gebied van ethisch sporten.</p>
+        <ul>
+          <li><a href="http://www.ethicsandsport.com/themas_en_aanpak" target="_blank">www.ethicsandsport.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id = 'page5'>
+      <div class = 'content-split'>
+        <h1>Bij welke hulporganisaties kan u terecht?</h1>
+        <h3>Aarzel niet om hulp te zoeken als u het slachtoffer bent van seksueel grensoverschrijdend gedrag. Heel wat personen en diensten kunnen u bijstaan.</h3>
+      </div>
+
+      <div class = 'content-split'>
+        <h2>Jong &amp; Van Zin </h2>
+        <p>Organisatie die zorgt voor informatie, participatie en vorming voor kinderen, jongeren en hun begeleiders. Ze hebben een ervaringsgericht vormingsaanbod.</p>
+        <p><a href="https://www.pimento.be/" target="_blank">www.sensoa.be</a></p>
+      </div>
+
+      <div class = 'content-split'>
+        <h2>Sensoa</h2>
+        <p>Sensoa helpt om te praten over relaties, seksualiteit, grensoverschrijdend gedrag, seksuele diversiteit enzovoort. Ze bieden vormingsmateriaal aan en organiseren interessante opleidingen.</p>
+        <p><a href="https://www.sensoa.be/" target="_blank">www.jongenvanzin.be</a></p>
+        <p><a href="https://www.seksuelevorming.be/" target="_blank">www.seksuelevorming.be</a></p>
+      </div>
+
+      <div class = 'content-split'>
+        <h2>Ella</h2>
+        <p>Expertise- en kenniscentrum voor gender en etniciteit. Het zet zich in voor bevordering van het emancipatie- en participatieproces van meisjes en vrouwen uit etnisch-culturele minderheidsgroepen in Vlaanderen. Ella biedt info en organiseert vormingen voor jongeren en intermediairs.</p>
+        <p><a href="http://www.ellavzw.be/" target="_blank">www.ellavzw.be</a></p>
+      </div>
+
+      <div class = 'content-split'>
+        <h2>RoSa</h2>
+        <p>RoSa vzw is een expertisecentrum voor gelijke kansen m/v, feminisme en gender. RoSa biedt ook workshops op maat aan voor iedereen die meer wil weten over deze thema’s.</p>
+        <p><a href="https://rosavzw.be/site/" target="_blank">www.rosavzw.be</a></p>
+      </div>
+
+      <div class = 'content-split'>
+        <h2>Jongerenadviescentrum (JAC)</h2>
+        <p>Jongeren kunnen met al hun vragen terecht bij de Jongerenadviescentra (JAC) voor <a href="http://www.jac.be/onthaal" target="_blank">een gesprek, afspraak of chat</a>.</p>
+        <p><a href="http://www.jac.be/" target="_blank">www.jac.be</a></p>
+      </div>
+
+      <div class = 'content-split'>
+        <h2>Cavaria</h2>
+        <p>Koepelorganisatie van Vlaamse en Brusselse holebigroepen. Zij geeft vormingen in het onderwijs om het holebi- en transgenderthema bespreekbaar te maken in de klas en binnen de school.</p>
+        <p><a href="https://www.cavaria.be/" target="_blank">www.cavaria.be</a></p>
+      </div>
+    </div>
   </div>
 </div>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type='text/javascript' src="{{ asset('js/dynamicpage.js') }}"></script>
 @endsection
