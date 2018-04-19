@@ -91,7 +91,7 @@ nav ul:first-child{
   margin-left: 25%;
 }
 
-nav li a {
+#header nav li a {
   text-decoration: none;
   display: inline-block;
   height: 70px;
@@ -99,11 +99,11 @@ nav li a {
   color: white;
 }
 
-nav li:nth-child(2) a{
+#header nav li:nth-child(2) a{
   margin-top: 3%;
 }
 
-nav li:nth-child(4) a{
+#header nav li:nth-child(4) a{
   margin-top: 3%;
 }
 
@@ -115,7 +115,7 @@ nav li:nth-child(4) a{
   margin-top: -57px;
 }
 
-.cfx li a:hover{
+#header .cfx li a:hover{
   color: #f7a400;
   font-size: 31px;
 }
@@ -147,7 +147,7 @@ nav li:nth-child(4) a{
    border-bottom: solid #292929 2px;
  }
 
- .sidenav a:hover {
+ .sidenav a:hover, .sidenav .active {
      color: #a70636;
  }
 

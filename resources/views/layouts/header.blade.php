@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <div id = 'wrapper'>
+    <div id = 'header'>
       <header>
         <div class = 'headerImage'>
           <img src= "{{ asset('images/header.jpg')}}">
@@ -43,7 +43,7 @@
           <li><a href = '#'>Home</a><img src="{{ asset('images/CURRENT.png')}}" class="tbl"></li>
           <li><a href = "{{route('WatIsSeksueleIntimidatie')}}">Seksuele intimidatie</a></li>
           <li><a href = '#'>Verhalen</a></li>
-          <li><a href = '#'>Wat kan u zelf doen?</a></li>
+          <li><a href = "{{route('WatKanUZelfDoen')}}">Wat kan u zelf doen?</a></li>
           <li><a href = '#'>Media</a></li>
           <li><a href = '#'>Profiel</a></li>
         </ul>
