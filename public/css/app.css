@@ -110,16 +110,37 @@ nav ul:first-child{
 /******************************
  *           Active Tab           *
  ******************************/
-.current_tab img, li img{
+/*
+ .current_tab img, li img, CT1 img, CT2 img{
   width: 258px;
   margin-top: -57px;
+  margin-left: 40px;
 }
+<<<<<<< HEAD
 
 #header .cfx li a:hover{
+=======
+*/
+.cfx li a:hover{
+>>>>>>> aa1acb6e89a6eb1fb72eb57d2a5942ee1496b70c
   color: #f7a400;
+  background-color: gold;
   font-size: 31px;
 }
 
+.CRNT_TAB{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.CRNT_TAB img{
+  transition: transform 0.2s ease-in-out; 
+}
+
+.CRNT_TAB img:hover{
+  transform: translate3d(0px, 150px, 0px);
+}
 
 .cfx li img:hover{
   display: inline;
@@ -151,6 +172,9 @@ nav ul:first-child{
      color: #a70636;
  }
 
+.current{
+  color: blue;
+}
 /******************************
 *           aside            *
 ******************************/

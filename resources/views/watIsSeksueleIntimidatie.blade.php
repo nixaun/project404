@@ -3,12 +3,13 @@
 @section('content')
 <div class='wrapper'>
   <div class="sidenav cfx">
-    <a href="#">Wat is seksuele intimidatie?</a>
-    <a href="#">Welk gedrag is strafbaar?</a>
-    <a href="#">Hoe kan ik aangifte doen?</a>
+    <a href="#page1">Wat is seksuele intimidatie?</a>
+    <a href="#page2">Welk gedrag is strafbaar?</a>
+    <a href="#page3">Hoe kan ik aangifte doen?</a>
   </div>
 
   <div class = 'aside cfx'>
+    <div id="page1">
       <div class="content-split">
         <h1>Wat is seksuele intimidatie?</h1>
         <h3>Niet iedereen ervaart seksuele intimidatie op dezelfde manier. Toch zijn er enkele kernwoorden die telkens terugkomen. We stelden Antwerpenaren op straat en experten dezelfde vraag: "Wat is voor jou seksuele intimidatie?"</h3>
@@ -35,6 +36,19 @@
         <h2>"Het is nooit jouw schuld"</h2>
         <p>Ongewenste intimiteiten of seksuele intimidatie lijken misschien onschuldig, maar kunnen zeer vervelend zijn, zeker als het herhaaldelijk gebeurt. Mensen gaan er zich ongemakkelijk, onzeker en onveilig door voelen. “Onthoud: het is nooit jouw schuld! En blijf er niet alleen mee zitten: praat erover, met de persoon die je lastigvalt of met mensen die je vertrouwt.” </p>
       </div>
+    </div>
+
+    <div id="page2">
+      <p> random text page 2 </p>
+    </div>
+
+    <div id="page3">
+      <p> random text page 3 </p>
+    </div>
+
   </div>
 </div>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type='text/javascript' src="{{ asset('js/dynamicpage.js') }}"></script>
 @endsection
