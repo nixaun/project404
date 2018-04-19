@@ -45,7 +45,7 @@
 
       <nav>
         <ul class = 'cfx wrapper'>
-          <li><a href = '#'>Home</a></li>
+          <li><a href = "{{route('home')}}">Home</a></li>
           <li><a href = "{{route('WatIsSeksueleIntimidatie')}}">Seksuele intimidatie</a></li>
           <li><a href = '#'>Verhalen</a></li>
           <li><a href = "{{route('WatKanUZelfDoen')}}">Wat kan u zelf doen?</a></li>
