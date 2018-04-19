@@ -34,6 +34,11 @@
 
       <div class="CRNT_TAB">
         <img src="{{ asset('images/HOME2.png')}}" alt="HOME">
+        <img src="{{ asset('images/SI.png')}}" alt="SI">
+        <img src="{{ asset('images/VERHALEN.png')}}" alt="VERHALEN">
+        <img src="{{ asset('images/WAT.png')}}" alt="WAT KAN U ZELF DOEN?">
+        <img src="{{ asset('images/MEDIA.png')}}" alt="MEDIA">
+        <img src="{{ asset('images/PROFIEL.png')}}" alt="PROFIEL">
       </div>
 
       </div>
@@ -42,7 +47,6 @@
         <ul class = 'cfx wrapper'>
           <li><a href = '#'>Home</a></li>
           <li><a href = "{{route('WatIsSeksueleIntimidatie')}}">Seksuele intimidatie</a></li>
-          <!--<img src="{{ asset('images/CURRENT.png')}}" class="tbl">-->
           <li><a href = '#'>Verhalen</a></li>
           <li><a href = "{{route('WatKanUZelfDoen')}}">Wat kan u zelf doen?</a></li>
           <li><a href = '#'>Media</a></li>
