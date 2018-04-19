@@ -18,7 +18,7 @@
     <div id = 'header'>
       <header>
         <div class = 'headerImage'>
-          <img src= "{{ asset('images/header.jpg')}}">
+          <img src= "{{ asset('images/hero-banner-1.jpg')}}">
         </div>
 
         <div class = 'logo cfx'>
