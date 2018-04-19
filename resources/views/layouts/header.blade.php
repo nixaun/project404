@@ -32,16 +32,16 @@
 
       <div id='navbar-line'>
 
-      <div class="current_tab">
-      <img src="{{ asset('images/CURRENT.png')}}">
+      <div class="CRNT_TAB">
+        <img src="{{ asset('images/CRNT12.png')}}" alt="CT12">
       </div>
-
       </div>
 
       <nav>
         <ul class = 'cfx wrapper'>
-          <li><a href = '#'>Home</a><img src="{{ asset('images/CURRENT.png')}}" class="tbl"></li>
+          <li><a href = '#'>Home</a></li>
           <li><a href = "{{route('WatIsSeksueleIntimidatie')}}">Seksuele intimidatie</a></li>
+          <!--<img src="{{ asset('images/CURRENT.png')}}" class="tbl">-->
           <li><a href = '#'>Verhalen</a></li>
           <li><a href = '#'>Media</a></li>
           <li><a href = '#'>Profiel</a></li>

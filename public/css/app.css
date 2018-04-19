@@ -106,16 +106,32 @@ nav li:nth-child(2) a{
 /******************************
  *           Active Tab           *
  ******************************/
-.current_tab img, li img{
+/*
+ .current_tab img, li img, CT1 img, CT2 img{
   width: 258px;
   margin-top: -57px;
+  margin-left: 40px;
 }
-
+*/
 .cfx li a:hover{
   color: #f7a400;
+  background-color: gold;
   font-size: 31px;
 }
 
+.CRNT_TAB{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.CRNT_TAB img{
+  transition: transform 0.2s ease-in-out; 
+}
+
+.CRNT_TAB img:hover{
+  transform: translate3d(0px, 150px, 0px);
+}
 
 .cfx li img:hover{
   display: inline;
