@@ -122,12 +122,8 @@ nav ul:first-child{
 .CRNT_TAB img{
   width: 100px;
   height: auto;
-<<<<<<< HEAD
   margin-left: 20px;
-  transition: transform 0.2s ease-in-out; 
-=======
   transition: transform 0.2s ease-in-out;
->>>>>>> 663c3c57373fe9b25be83921e471d80bb6ef0372
 }
 
 .CRNT_TAB img:hover{
