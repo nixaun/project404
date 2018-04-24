@@ -122,8 +122,12 @@ nav ul:first-child{
 .CRNT_TAB img{
   width: 100px;
   height: auto;
+<<<<<<< HEAD
   margin-left: 20px;
   transition: transform 0.2s ease-in-out; 
+=======
+  transition: transform 0.2s ease-in-out;
+>>>>>>> 663c3c57373fe9b25be83921e471d80bb6ef0372
 }
 
 .CRNT_TAB img:hover{
@@ -132,6 +136,19 @@ nav ul:first-child{
 
 .cfx li img:hover{
   display: inline;
+}
+
+
+/******************************
+ *             HOME           *
+ ******************************/
+.content-home{
+  width: 70%;
+  margin: 5% auto;
+}
+
+.content-home iframe, .content-home img, .content-home p, .content-home h3{
+  margin-left: 10%;
 }
 
 
@@ -201,7 +218,7 @@ nav ul:first-child{
  }
 
  .aside .content-split ul li {
-   margin-bottom: 2%; 
+   margin-bottom: 2%;
  }
 
 
@@ -210,7 +227,7 @@ nav ul:first-child{
  ******************************/
 
 footer {
-  margin-top: 20%;
+  margin-top: 5%;
   min-height: 400px;
   font-size: 1em;
   background-color: #282020;
