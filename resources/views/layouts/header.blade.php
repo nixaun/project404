@@ -26,7 +26,7 @@
         </div>
 
         <div class = 'headerTitle'>
-          <h1>SSIA</h1>
+          <h1>Filler</h1>
         </div>
       </header>
 
