@@ -85,6 +85,7 @@
 
         @if ((!Auth::user()))
           <a href = "{{route ('login')}}">Login</a>
+          <a href = "{{route ('register')}}">Registreer</a>
         @endif
       </nav>
 
