@@ -16,6 +16,7 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/wat-is-seksuele-intimidatie', 'WatIsSeksueleIntimidatieController@index')->name('WatIsSeksueleIntimidatie');
+Route::get('/verhalen', 'VerhalenController@index')->name('Verhalen');
 Route::get('/wat-kan-u-zelf-doen', 'WatKanUZelfDoenController@index')->name('WatKanUZelfDoen');
 
 Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');

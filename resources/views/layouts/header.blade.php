@@ -35,7 +35,7 @@
       <div class="CRNT_TAB">
         <a href="{{route('home')}}"><img src="{{ asset('images/HOME2.png')}}" alt="HOME"></a>
         <a href="{{route('WatIsSeksueleIntimidatie')}}"><img src="{{ asset('images/SI.png')}}" alt="SI"></a>
-        <a href="#"><img src="{{ asset('images/VERHALEN.png')}}" alt="VERHALEN"></a>
+        <a href="{{route('Verhalen')}}"><img src="{{ asset('images/VERHALEN.png')}}" alt="VERHALEN"></a>
         <a href="{{route('WatKanUZelfDoen')}}"><img src="{{ asset('images/WAT.png')}}" alt="WAT KAN U ZELF DOEN?"></a>
         <a href="#"><img src="{{ asset('images/MEDIA.png')}}" alt="MEDIA"></a>
         <a href="#"><img src="{{ asset('images/PROFIEL.png')}}" alt="PROFIEL"></a>
@@ -66,7 +66,7 @@
         <ul class = 'cfx wrapper'>
           <li><a href = "{{route('home')}}"></a></li>
           <li><a href = "{{route('WatIsSeksueleIntimidatie')}}"></a></li>
-          <li><a href = '#'></a></li>
+          <li><a href = "{{route('Verhalen')}}"></a></li>
           <li><a href = "{{route('WatKanUZelfDoen')}}"></a></li>
           <li><a href = '#'></a></li>
           <li><a href = '#'></a></li>
