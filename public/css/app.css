@@ -224,7 +224,7 @@ nav ul:first-child{
 
 footer {
   margin-top: 5%;
-  min-height: 400px;
+  min-height: 320px;
   font-size: 1em;
   background-color: #282020;
   color: white;
@@ -254,9 +254,15 @@ footer a:hover{
   color: grey;
 }
 
+.img-footer{
+    width: 70%;
+}
+
 .button-footer{
   background-color: #0064b4;
-  padding: 3.5%;
+  padding: 10px;
+  width: 300px;
+  height: 100px;
 }
 
 .button-footer:hover{
@@ -269,6 +275,7 @@ footer a:hover{
   width: 20px;
   height: 20px;
   margin-right: 2%;
+  margin-top: 2%;
   text-align: center;
   text-decoration: none;
 }
