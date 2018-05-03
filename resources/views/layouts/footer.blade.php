@@ -9,9 +9,9 @@
     <div>
       <ul>
         <h2>Nog vragen?</h2>
-        <li class="footer-nav-a"><a href="https://www.antwerpen.be/nl/info/5360f244b1a8a76a088b45c4/contacteer-stad-antwerpen-voor-meer-info" target="_blank" class="button-footer">Contacteer ons</a></li>
+        <li><a href="https://www.antwerpen.be/nl/info/5360f244b1a8a76a088b45c4/contacteer-stad-antwerpen-voor-meer-info" target="_blank" class="button-footer">Contacteer ons</a></li>
         <h2>ontvang onze nieuwsbrief</h2>
-        <li class="footer-nav-a"><a href="https://www.antwerpen.be/nl/info/56cda8a3aba8a7f8158b4778" target="_blank"  class="button-footer">nieuwsbrief</a></li>
+        <li><a href="https://www.antwerpen.be/nl/info/56cda8a3aba8a7f8158b4778" target="_blank"  class="button-footer">nieuwsbrief</a></li>
       </ul>
     </div>
     <div>

@@ -13,7 +13,7 @@ body {
 
 .wrapper {
   width: 70%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /******************************
@@ -217,6 +217,50 @@ nav ul:first-child{
    margin-bottom: 2%;
  }
 
+ /******************************
+  *         register           *
+  ******************************/
+
+.form-container{
+    margin-top: 4%;
+}
+
+.register{
+  margin: 2% 40% 0 0;
+  font-size: 1.4em;
+  float: right;
+}
+
+.register label{
+  padding-right: 10px;
+}
+
+.register input{
+  width: 300px;
+  font-size: 1em;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.register input:focus{
+  outline: none;
+}
+
+
+.button-form{
+  float: right;
+  background-color: white;
+  padding: 10px;
+  font-size: 1em;
+  width: 200px;
+  margin: 3% 45%;
+  border: 1px solid black;
+}
+
+.button-form:hover{
+  opacity: 0.7;
+}
 
 /******************************
  *           footer           *
@@ -261,8 +305,7 @@ footer a:hover{
 .button-footer{
   background-color: #0064b4;
   padding: 10px;
-  width: 300px;
-  height: 100px;
+  width: 30%;
 }
 
 .button-footer:hover{
