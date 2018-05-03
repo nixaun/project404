@@ -10,7 +10,7 @@
           <label class = 'col-sm-3 control-label' for = 'verhaalBody'>Title (max. 255 character)</label>
 
           <div class = 'col-sm-6'>
-            <input class = 'form-control' type = 'text' name = 'verhaalBody' id = 'verhaalBody'>
+            <input class = 'form-control' type = 'textarea' name = 'verhaalBody' id = 'verhaalBody'>
           </div>
         </div>
 

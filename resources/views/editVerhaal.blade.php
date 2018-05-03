@@ -10,7 +10,7 @@
           <label class = 'col-sm-3 control-label' for = 'verhaalBody'>Vertel hier je verhaal:</label>
 
           <div class = 'col-sm-6'>
-            <input class = 'form-control' type = 'text' name = 'verhaalBody' id = 'verhaalBody' value = "{{$verhaal->body}}">
+            <input class = 'form-control' type = 'textarea' name = 'verhaalBody' id = 'verhaalBody' value = "{{$verhaal->body}}">
           </div>
         </div>
 
