@@ -16,17 +16,23 @@ class VerhaalsController extends Controller
         return view('Verhalen', compact('verhalen'));
     }
 
-    public function create(Request $request, $id)
+    public function addVerhaal()
+    {
+      return view('addVerhaal');
+    }
+
+    public function insertVerhaal(Request $request)
     {
       $this->validate($request, [
         'verhaalBody' => 'required'
       ]);
 
-      $user = User::all();
       $verhaal = new Verhaal;
+
       $verhaal->user_id = auth()->user()->id;
       $verhaal->body = $request->verhaalBody;
       $verhaal->save();
-      return redirect()->back()->with('succes', 'Je verhaal is met succes toegevoegd!');
+
+      return redirect('/verhalen')->with('success', 'Jouw verhaal is met succes gepost'); 
     }
 }

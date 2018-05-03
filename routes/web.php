@@ -19,6 +19,9 @@ Route::get('/wat-is-seksuele-intimidatie', 'WatIsSeksueleIntimidatieController@i
 Route::get('/verhalen', 'VerhaalsController@index')->name('Verhalen');
 Route::get('/wat-kan-u-zelf-doen', 'WatKanUZelfDoenController@index')->name('WatKanUZelfDoen');
 
+Route::get('/verhalen/toevoegen', 'VerhaalsController@addVerhaal')->name('addVerhaal');
+Route::post('/verhalen/invoegen', 'VerhaalsController@insertVerhaal')->name('insertVerhaal');
+
 Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
