@@ -33,6 +33,31 @@ class VerhaalsController extends Controller
       $verhaal->body = $request->verhaalBody;
       $verhaal->save();
 
-      return redirect('/verhalen')->with('success', 'Jouw verhaal is met succes gepost'); 
+      return redirect('/verhalen')->with('success', 'Jouw verhaal is met succes gepost');
+    }
+
+    public function editVerhaal($id)
+    {
+      $verhaal = Verhaal::find($id);
+
+      if (!(Auth::user()->id == $verhaal->user_id)) {
+        return redirect('/')->withErrors("Je kan geen artikel veranderen dat niet van jouw is!");
+      }
+
+      $verhaal = Verhaal::find($id);
+      return view('editVerhaal', compact('verhaal'));
+    }
+
+    public function updateVerhaal(Request $request, $id)
+    {
+      $verhaal = Verhaal::find($id);
+
+      $this->validate($request, [
+        'verhaalBody' => 'required'
+      ]);
+
+      $verhaal->body = $request->verhaalBody;
+      $verhaal->update($request->all());
+      return redirect('/verhalen');
     }
 }

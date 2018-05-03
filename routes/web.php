@@ -21,6 +21,8 @@ Route::get('/wat-kan-u-zelf-doen', 'WatKanUZelfDoenController@index')->name('Wat
 
 Route::get('/verhalen/toevoegen', 'VerhaalsController@addVerhaal')->name('addVerhaal');
 Route::post('/verhalen/invoegen', 'VerhaalsController@insertVerhaal')->name('insertVerhaal');
+Route::get('verhalen/wijzigen/{id}', 'VerhaalsController@editVerhaal')->middleware('auth');
+Route::post('verhalen/wijzigen/{id}', 'VerhaalsController@updateVerhaal')->middleware('auth');
 
 Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
