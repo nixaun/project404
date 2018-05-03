@@ -27,6 +27,17 @@
   </div>
 
   <div class = "register">
+    <label for="birthdate" class="col-md-4 col-form-label text-md-right">Geboortedatum</label>
+    <input type="date" name="birthdate">
+
+    @if ($errors->has('birthdate'))
+        <span class="invalid-feedback">
+            <strong>{{ $errors->first('birthdate') }}</strong>
+        </span>
+    @endif
+  </div>
+
+  <div class = "register">
     <label for="username" class="col-md-4 col-form-label text-md-right">Gebruikersnaam</label>
 
     <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required>
