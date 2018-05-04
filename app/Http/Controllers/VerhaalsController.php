@@ -31,7 +31,7 @@ class VerhaalsController extends Controller
       $verhaal = new Verhaal;
 
       $verhaal->user_id = auth()->user()->id;
-      $verhaal->title = $request->verhaalTitle; 
+      $verhaal->title = $request->verhaalTitle;
       $verhaal->body = $request->verhaalBody;
       $verhaal->save();
 
@@ -43,7 +43,7 @@ class VerhaalsController extends Controller
       $verhaal = Verhaal::find($id);
 
       if (!(Auth::user()->id == $verhaal->user_id)) {
-        return redirect('/')->withErrors("Je kan geen artikel veranderen dat niet van jouw is!");
+        return redirect('/verhaal')->withErrors("Je kan geen artikel veranderen dat niet van jouw is!");
       }
 
       $verhaal = Verhaal::find($id);
@@ -61,5 +61,13 @@ class VerhaalsController extends Controller
       $verhaal->body = $request->verhaalBody;
       $verhaal->update($request->all());
       return redirect('/verhalen');
+    }
+
+    public function delete($id)
+    {
+      $verhaal = Verhaal::find($id);
+
+      $verhaal->delete();
+      return redirect('/verhalen')->with('success', 'Jouw verhaal is met succes verwijdert'); 
     }
 }

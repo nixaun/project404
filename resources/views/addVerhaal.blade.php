@@ -3,6 +3,7 @@
 @section('content')
   <div class="wrapper">
     <div class="content-split content-home">
+      <a href = "/verhalen"> ← Terug naar verhalen</a>
       <form class = 'form-horizontal' action = "{{route('insertVerhaal')}}" method = 'POST'>
         {{ csrf_field() }}
 

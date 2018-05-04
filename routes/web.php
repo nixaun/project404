@@ -23,6 +23,7 @@ Route::get('/verhalen/toevoegen', 'VerhaalsController@addVerhaal')->name('addVer
 Route::post('/verhalen/invoegen', 'VerhaalsController@insertVerhaal')->name('insertVerhaal');
 Route::get('verhalen/wijzigen/{id}', 'VerhaalsController@editVerhaal')->middleware('auth');
 Route::post('verhalen/wijzigen/{id}', 'VerhaalsController@updateVerhaal')->middleware('auth');
+Route::post('verhalen/verwijderen/{id}', 'VerhaalsController@delete');
 
 Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
