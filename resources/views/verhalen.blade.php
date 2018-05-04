@@ -17,6 +17,7 @@
             @if (!($verhaal->isChecked))
               <div class="content-split">
                 <h2>{{ $verhaal->user->firstname}}</h2>
+                <h3>{{ $verhaal->title}}</h3>
                 <p> {{$verhaal->body}} </p>
 
                 @if(Auth::user()->id == $verhaal->user_id)

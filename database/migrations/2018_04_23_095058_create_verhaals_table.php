@@ -17,6 +17,7 @@ class CreateVerhaalsTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users');
+            $table->string('title');
             $table->text('body');
             $table->tinyInteger('isChecked')->default(0);
             $table->timestamps();

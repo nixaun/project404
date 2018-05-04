@@ -12,6 +12,7 @@ class Verhaal extends Model
 
     protected $fillable = [
       'body',
+      'title',
       'isChecked',
     ];
 

@@ -24,12 +24,14 @@ class VerhaalsController extends Controller
     public function insertVerhaal(Request $request)
     {
       $this->validate($request, [
+        'verhaalTitle' => 'required|max:255',
         'verhaalBody' => 'required'
       ]);
 
       $verhaal = new Verhaal;
 
       $verhaal->user_id = auth()->user()->id;
+      $verhaal->title = $request->verhaalTitle; 
       $verhaal->body = $request->verhaalBody;
       $verhaal->save();
 

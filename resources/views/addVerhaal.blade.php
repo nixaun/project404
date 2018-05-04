@@ -7,7 +7,15 @@
         {{ csrf_field() }}
 
         <div class = 'form-group'>
-          <label class = 'col-sm-3 control-label' for = 'verhaalBody'>Title (max. 255 character)</label>
+          <label class = 'col-sm-3 control-label' for = 'verhaalTitle'>Titel (max. 255 tekens)</label>
+
+          <div class = 'col-sm-6'>
+            <input class = 'form-control' type = 'textarea' name = 'verhaalTitle' id = 'verhaalTitleT'>
+          </div>
+        </div>
+
+        <div class = 'form-group'>
+          <label class = 'col-sm-3 control-label' for = 'verhaalBody'>Vertel hier je verhaal: </label>
 
           <div class = 'col-sm-6'>
             <input class = 'form-control' type = 'textarea' name = 'verhaalBody' id = 'verhaalBody'>
