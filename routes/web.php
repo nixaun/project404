@@ -28,4 +28,3 @@ Route::post('verhalen/goedkeuren/{id}', 'VerhaalsController@goedkeuren');
 
 Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
-Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
