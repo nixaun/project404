@@ -6,7 +6,11 @@
         @if (Auth::guard('admin')->check())
           @foreach ($verhalen as $verhaal)
             <div class="content-split">
-              <h2>{{ $verhaal->user->firstname}}</h2>
+              @if($verhaal->isAnonymous == 'off')
+                <h2>{{ $verhaal->user->firstname}}</h2>
+              @else
+                <h2>Anoniem</h2>
+              @endif
               <h3>{{ $verhaal->title}}</h3>
               <p> {{$verhaal->body}} </p>
 
@@ -46,7 +50,11 @@
           @foreach ($verhalen as $verhaal)
             @if (($verhaal->isChecked))
               <div class="content-split">
-                <h2>{{ $verhaal->user->firstname}}</h2>
+                @if($verhaal->isAnonymous == 'off')
+                  <h2>{{ $verhaal->user->firstname}}</h2>
+                @else
+                  <h2>Anoniem</h2>
+                @endif
                 <h3>{{ $verhaal->title}}</h3>
                 <p> {{$verhaal->body}} </p>
 
@@ -67,9 +75,13 @@
 
         @if(!(Auth::guard('web')->check()) && !(Auth::guard('admin')->check()))
           @foreach ($verhalen as $verhaal)
-            @if (!($verhaal->isChecked))
+            @if (($verhaal->isChecked))
               <div class="content-split">
-                <h2>{{ $verhaal->user->firstname}}</h2>
+                @if($verhaal->isAnonymous == 'off')
+                  <h2>{{ $verhaal->user->firstname}}</h2>
+                @else
+                  <h2>Anoniem</h2>
+                @endif
                 <h3>{{ $verhaal->title}}</h3>
                 <p> {{$verhaal->body}} </p>
               </div>

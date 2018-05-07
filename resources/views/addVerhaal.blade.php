@@ -24,6 +24,14 @@
         </div>
 
         <div class = 'form-group'>
+          <div class="checkbox">
+              <label>
+                  <input type="checkbox" name="verhaalIsAnonymous" id = 'verhaalIsAnonymous'> Plaats anoniem
+              </label>
+          </div>
+        </div>
+
+        <div class = 'form-group'>
           <button class = 'btn btn-default' type = 'submit'>
             Add article
           </button>

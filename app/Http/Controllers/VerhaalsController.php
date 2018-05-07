@@ -25,7 +25,8 @@ class VerhaalsController extends Controller
     {
       $this->validate($request, [
         'verhaalTitle' => 'required|max:255',
-        'verhaalBody' => 'required'
+        'verhaalBody' => 'required',
+        'verhaalIsAnonymous' => 'required'
       ]);
 
       $verhaal = new Verhaal;
@@ -33,6 +34,7 @@ class VerhaalsController extends Controller
       $verhaal->user_id = auth()->user()->id;
       $verhaal->title = $request->verhaalTitle;
       $verhaal->body = $request->verhaalBody;
+      $verhaal->isAnonymous = $request->verhaalIsAnonymous;
       $verhaal->save();
 
       return redirect('/verhalen')->with('success', 'Jouw verhaal is met succes gepost');

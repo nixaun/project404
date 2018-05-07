@@ -14,6 +14,7 @@ class Verhaal extends Model
       'body',
       'title',
       'isChecked',
+      'isAnonymous',
     ];
 
     public function user() {
