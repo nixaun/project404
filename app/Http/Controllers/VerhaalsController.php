@@ -26,7 +26,7 @@ class VerhaalsController extends Controller
       $this->validate($request, [
         'verhaalTitle' => 'required|max:255',
         'verhaalBody' => 'required',
-        'verhaalIsAnonymous' => 'required'
+        'verhaalIsAnonymous'
       ]);
 
       $verhaal = new Verhaal;

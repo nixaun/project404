@@ -6,10 +6,10 @@
         @if (Auth::guard('admin')->check())
           @foreach ($verhalen as $verhaal)
             <div class="content-split">
-              @if($verhaal->isAnonymous == 'off')
-                <h2>{{ $verhaal->user->firstname}}</h2>
-              @else
+              @if($verhaal->isAnonymous == 'on')
                 <h2>Anoniem</h2>
+              @else
+                <h2>{{ $verhaal->user->firstname}}</h2>
               @endif
               <h3>{{ $verhaal->title}}</h3>
               <p> {{$verhaal->body}} </p>

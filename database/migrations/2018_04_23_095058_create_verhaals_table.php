@@ -20,7 +20,7 @@ class CreateVerhaalsTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->tinyInteger('isChecked')->default(0);
-            $table->string('isAnonymous')->default('off'); 
+            $table->string('isAnonymous')->default('off')->nullable();
             $table->timestamps();
             $table->SoftDeletes();
         });

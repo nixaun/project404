@@ -37,7 +37,7 @@
         <a href="{{route('WatIsSeksueleIntimidatie')}}"><img src="{{ asset('images/SI.png')}}" alt="SI"></a>
         <a href="{{route('Verhalen')}}"><img src="{{ asset('images/VERHALEN.png')}}" alt="VERHALEN"></a>
         <a href="{{route('WatKanUZelfDoen')}}"><img src="{{ asset('images/WAT.png')}}" alt="WAT KAN U ZELF DOEN?"></a>
-        <a href="#"><img src="{{ asset('images/MEDIA.png')}}" alt="MEDIA"></a>
+        <a href="{{route('Media')}}"><img src="{{ asset('images/MEDIA.png')}}" alt="MEDIA"></a>
         <a href="#"><img src="{{ asset('images/PROFIEL.png')}}" alt="PROFIEL"></a>
       </div>
 
