@@ -68,6 +68,14 @@ class VerhaalsController extends Controller
       $verhaal = Verhaal::find($id);
 
       $verhaal->delete();
-      return redirect('/verhalen')->with('success', 'Jouw verhaal is met succes verwijdert'); 
+      return redirect('/verhalen')->with('success', 'Jouw verhaal is met succes verwijdert');
+    }
+
+    public function goedkeuren(Request $request, $id)
+    {
+      $verhaal = Verhaal::find($id);
+      $verhaal->isChecked = 1;
+      $verhaal->update($request->all());
+      return redirect('/verhalen');
     }
 }

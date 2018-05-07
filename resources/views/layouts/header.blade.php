@@ -72,7 +72,7 @@
           <li><a href = '#'></a></li>
         </ul>
 
-        @if(Auth::user())
+        @if(Auth::guard('web')->check() || Auth::guard('admin')->check())
           <a href="{{ route('logout') }}"
              onclick="event.preventDefault();
                            document.getElementById('logout-form').submit();">
@@ -81,9 +81,8 @@
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf
           </form>
-        @endif
 
-        @if ((!Auth::user()))
+        @else
           <a href = "{{route ('login')}}">Login</a>
           <a href = "{{route ('register')}}">Registreer</a>
         @endif
