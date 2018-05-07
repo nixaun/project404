@@ -19,8 +19,8 @@ Route::get('/wat-is-seksuele-intimidatie', 'WatIsSeksueleIntimidatieController@i
 Route::get('/verhalen', 'VerhaalsController@index')->name('Verhalen');
 Route::get('/wat-kan-u-zelf-doen', 'WatKanUZelfDoenController@index')->name('WatKanUZelfDoen');
 
-Route::get('/verhalen/toevoegen', 'VerhaalsController@addVerhaal')->name('addVerhaal');
-Route::post('/verhalen/invoegen', 'VerhaalsController@insertVerhaal')->name('insertVerhaal');
+Route::get('/verhalen/toevoegen', 'VerhaalsController@addVerhaal')->middleware('auth')->name('addVerhaal');
+Route::post('/verhalen/invoegen', 'VerhaalsController@insertVerhaal')->middleware('auth')->name('insertVerhaal');
 Route::get('verhalen/wijzigen/{id}', 'VerhaalsController@editVerhaal')->middleware('auth');
 Route::post('verhalen/wijzigen/{id}', 'VerhaalsController@updateVerhaal')->middleware('auth');
 Route::post('verhalen/verwijderen/{id}', 'VerhaalsController@delete');
