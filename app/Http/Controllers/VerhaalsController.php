@@ -45,7 +45,7 @@ class VerhaalsController extends Controller
       $verhaal = Verhaal::find($id);
 
       if (!(Auth::user()->id == $verhaal->user_id)) {
-        return redirect('/verhaal')->withErrors("Je kan geen artikel veranderen dat niet van jouw is!");
+        return redirect('/verhaal')->withErrors("Je kan geen verhaal veranderen dat niet van jouw is!");
       }
 
       $verhaal = Verhaal::find($id);
@@ -57,10 +57,13 @@ class VerhaalsController extends Controller
       $verhaal = Verhaal::find($id);
 
       $this->validate($request, [
+        'verhaalTitle' => 'required|max:255',
         'verhaalBody' => 'required'
       ]);
 
       $verhaal->body = $request->verhaalBody;
+      $verhaal->title = $request->verhaalTitle;
+      $verhaal->isChecked = 0; 
       $verhaal->update($request->all());
       return redirect('/verhalen');
     }

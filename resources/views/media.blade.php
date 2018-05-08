@@ -48,7 +48,7 @@
 
         @if (Auth::user())
           @foreach ($media as $video)
-            @if (($video->isChecked))
+            @if (!($video->isChecked))
               <div class="content-split">
                 @if($video->isAnonymous == 'off')
                   <h2>{{ $video->user->firstname}}</h2>
@@ -70,7 +70,7 @@
               </div>
             @endif
           @endforeach
-          <a href = "media/toevoegen">Vertel hier je eigen video</a>
+          <a href = "media/toevoegen">Upload hier je eigen video</a>
         @endif
 
         @if(!(Auth::guard('web')->check()) && !(Auth::guard('admin')->check()))
@@ -87,6 +87,7 @@
               </div>
             @endif
           @endforeach
+          <a href = "login">Log in om je eigen video toe te voegen</a>
         @endguest
     </div>
   </div>

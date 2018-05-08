@@ -10,7 +10,7 @@
           <label class = 'col-sm-3 control-label' for = 'verhaalTitle'>Titel (max. 255 tekens)</label>
 
           <div class = 'col-sm-6'>
-            <input class = 'form-control' type = 'textarea' name = 'verhaalTitle' id = 'verhaalTitleT'   value = "{{$verhaal->title}}">
+            <input class = 'form-control' type = 'textarea' name = 'verhaalTitle' id = 'verhaalTitle'   value = "{{$verhaal->title}}">
           </div>
         </div>
 

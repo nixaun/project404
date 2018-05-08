@@ -39,4 +39,32 @@ class MediaController extends Controller
 
       return redirect('/media')->with('success', 'Jouw media is met succes gepost');
     }
+
+    public function editMedia($id)
+    {
+      $media = Media::find($id);
+
+      if(!(Auth::user()->id == $media->user_id)) {
+        return redirect('/media')->withErrors('Je kan geen media veranderen dat niet van jouw is!');
+      }
+
+      $media = Media::find($id);
+      return view('editMedia', compact('media'));
+    }
+
+    public function updateMedia(Request $request, $id)
+    {
+      $media = Media::find($id);
+
+      $this->validate($request, [
+        'mediaTitle' => 'required|max:255',
+        'mediaUrl' => 'required|url'
+      ]);
+
+      $media->title = $request->mediaTitle;
+      $media->url = $request->mediaUrl;
+      $media->isChecked = 0;
+      $media->update($request->all());
+      return redirect('/media');
+    }
 }
