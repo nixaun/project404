@@ -48,7 +48,7 @@
 
         @if (Auth::user())
           @foreach ($media as $video)
-            @if (!($video->isChecked))
+            @if (($video->isChecked))
               <div class="content-split">
                 @if($video->isAnonymous == 'off')
                   <h2>{{ $video->user->firstname}}</h2>

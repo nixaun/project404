@@ -31,6 +31,9 @@ Route::get('/media/toevoegen', 'MediaController@addMedia')->middleware('auth')->
 Route::post('/media/invoegen', 'MediaController@insertMedia')->middleware('auth')->name('insertMedia');
 Route::get('media/wijzigen/{id}', 'MediaController@editMedia')->middleware('auth');
 Route::post('media/wijzigen/{id}', 'MediaController@updateMedia')->middleware('auth');
+Route::post('media/verwijderen/{id}', 'MediaController@delete');
+Route::post('media/goedkeuren/{id}', 'MediaController@goedkeuren');
+
 
 Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');

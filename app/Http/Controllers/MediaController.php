@@ -67,4 +67,20 @@ class MediaController extends Controller
       $media->update($request->all());
       return redirect('/media');
     }
+
+    public function delete($id)
+    {
+      $media = Media::find($id);
+      $media->delete();
+
+      return redirect('/media')->with('success', 'Jouw media is met succes verwijder');
+    }
+
+    public function goedkeuren(Request $request, $id)
+    {
+      $media = Media::find($id);
+      $media->isChecked = 1;
+      $media->update($request->all());
+      return redirect('/media');
+    }
 }
