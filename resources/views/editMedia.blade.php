@@ -23,6 +23,14 @@
         </div>
 
         <div class = 'form-group'>
+          <div class="checkbox">
+              <label>
+                  <input type="checkbox" name="mediaIsAnonymous" id = 'mediaIsAnonymous' @if($media->isAnonymous == 'on') checked @endif > Plaats anoniem
+              </label>
+          </div>
+        </div>
+
+        <div class = 'form-group'>
           <button class = 'btn btn-default' type = 'submit'>
             Pas media aan
           </button>

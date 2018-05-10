@@ -58,11 +58,13 @@ class MediaController extends Controller
 
       $this->validate($request, [
         'mediaTitle' => 'required|max:255',
-        'mediaUrl' => 'required|url'
+        'mediaUrl' => 'required|url',
+        'mediaIsAnonymous'
       ]);
 
       $media->title = $request->mediaTitle;
       $media->url = $request->mediaUrl;
+      $media->isAnonymous = $request->mediaIsAnonymous;
       $media->isChecked = 0;
       $media->update($request->all());
       return redirect('/media');

@@ -23,6 +23,14 @@
         </div>
 
         <div class = 'form-group'>
+          <div class="checkbox">
+              <label>
+                  <input type="checkbox" name="verhalenIsAnonymous" id = 'verhalenIsAnonymous' @if($verhaal->isAnonymous == 'on') checked @endif > Plaats anoniem
+              </label>
+          </div>
+        </div>
+
+        <div class = 'form-group'>
           <button class = 'btn btn-default' type = 'submit'>
             Pas verhaal aan
           </button>

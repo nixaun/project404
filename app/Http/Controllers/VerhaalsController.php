@@ -58,12 +58,14 @@ class VerhaalsController extends Controller
 
       $this->validate($request, [
         'verhaalTitle' => 'required|max:255',
-        'verhaalBody' => 'required'
+        'verhaalBody' => 'required',
+        'verhaalIsAnonymous'
       ]);
 
       $verhaal->body = $request->verhaalBody;
       $verhaal->title = $request->verhaalTitle;
-      $verhaal->isChecked = 0; 
+      $verhaal->isAnonymous = $request->verhaalIsAnonymous;
+      $verhaal->isChecked = 0;
       $verhaal->update($request->all());
       return redirect('/verhalen');
     }

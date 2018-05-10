@@ -6,10 +6,10 @@
         @if (Auth::guard('admin')->check())
           @foreach ($media as $video)
             <div class="content-split">
-              @if($video->isAnonymous == 'off')
-                <h2>{{ $video->user->firstname}}</h2>
+              @if($video->isAnonymous == 'on')
+                <h2>Anoniem</h2>    
               @else
-                <h2>Anoniem</h2>
+                <h2>{{ $video->user->firstname}}</h2>
               @endif
               <h3>{{ $video->title}}</h3>
               <iframe width="720px" height="405px" src='{{$video->url}}' frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
