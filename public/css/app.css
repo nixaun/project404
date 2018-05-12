@@ -147,6 +147,10 @@ nav ul:first-child{
   margin-left: 10%;
 }
 
+.content-home iframe, .content-home img{
+  width: 70%;
+}
+
 
 /******************************
  *        subnavigatie        *
