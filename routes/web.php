@@ -19,6 +19,7 @@ Route::get('/wat-is-seksuele-intimidatie', 'WatIsSeksueleIntimidatieController@i
 Route::get('/verhalen', 'VerhaalsController@index')->name('Verhalen');
 Route::get('/media', 'MediaController@index')->name('Media');
 Route::get('/wat-kan-u-zelf-doen', 'WatKanUZelfDoenController@index')->name('WatKanUZelfDoen');
+Route::get('/profiel', 'ProfielController@index')->middleware('auth')->name('Profiel');
 
 Route::get('/verhalen/toevoegen', 'VerhaalsController@addVerhaal')->middleware('auth')->name('addVerhaal');
 Route::post('/verhalen/invoegen', 'VerhaalsController@insertVerhaal')->middleware('auth')->name('insertVerhaal');
@@ -34,6 +35,8 @@ Route::post('media/wijzigen/{id}', 'MediaController@updateMedia')->middleware('a
 Route::post('media/verwijderen/{id}', 'MediaController@delete');
 Route::post('media/goedkeuren/{id}', 'MediaController@goedkeuren');
 
+Route::get('/profiel/wijzigen/{id}', 'ProfielController@editProfiel')->middleware('auth');
+Route::post('/profiel/wijzigen/{id}', 'ProfielController@updateProfiel')->middleware('auth');
 
 Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
