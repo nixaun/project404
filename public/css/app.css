@@ -20,7 +20,6 @@ body {
  *          header            *
  ******************************/
 
-
  header {
    width: 100%;
    position: relative;
@@ -28,85 +27,57 @@ body {
    left: 0;
  }
 
-.logo {
-  position: absolute;
-  top: 0;
-  left: 0;
+ #header > nav {
+  background-color: #f7a400;
+  height: 100px;
+  margin-top: 40px;
+ }
+
+#header > nav li a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 60px;
 }
 
-.logo img {
-  height: 150px;
+#header > nav > .P1 li {
+  float: left;
+  display: block;
+  width: 16%;
+  font-size: 25px;
 }
 
-.headerImage img {
-  height: 300px;
-  width: 100%;
-  position: relative;
+#header > nav > .P2 li {
+  float: right;
+  display: block;
+  width: 10%;
+  font-size: 25px;
 }
 
-.headerTitle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.headerTitle h1 {
-  margin: 50px 0 0 0;
-  text-align: center;
+#header > nav ul{
   color: white;
-  letter-spacing: 20px;
-  font-size: 200px;
-}
-
-#navbar-line{
-  height: 20px;
-  width: 100%;
-  margin: 0;
-  margin-top: -5px;
-  background-color: #cf0039;
-  border-bottom: 5px solid #a70636;
-}
-
-nav {
-  background-color: #cf0039;
-  height: 80px;
-}
-
-nav ul {
   list-style-type: none;
   text-align: center;
   margin: 0;
 }
 
-nav li {
-  float: left;
-  display: block;
-  height: 70px;
-  width: 16%;
-  font-size: 30px;
+#header nav > .P1 li:nth-child(1) a{
+  margin-top: 20%;
 }
 
-nav ul:first-child{
-  margin-left: 25%;
+#header nav > .P2 li:nth-child(1) a{
+  margin-top: 100px;
 }
 
-#header nav li a {
-  text-decoration: none;
-  display: inline-block;
-  height: 70px;
-  margin: 12% 0;
-  color: white;
+#header nav > .P2 li:nth-child(4) a{
+  width: 20px;
+  visibility: hidden;
 }
 
-#header nav li:nth-child(2) a{
-  margin-top: 3%;
+#header img{
+  width: 25%;
+  height: auto;
+  margin-top: 40px;
 }
-
-#header nav li:nth-child(4) a{
-  margin-top: 3%;
-}
-
 /******************************
  *           Active Tab           *
  ******************************/
