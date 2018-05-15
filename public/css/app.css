@@ -27,61 +27,71 @@ body {
    left: 0;
  }
 
+ #header > div{
+  background-color: #002182;
+  height: 150px;
+  margin: 0;
+ }
+
  #header > nav {
   background-color: #f7a400;
   height: 100px;
-  margin-top: 130px;
   margin-bottom: 70px;
  }
 
 #header > nav li a {
   text-decoration: none;
   display: inline-block;
-  margin-top: 60px;
+  margin-top: 40px;
+  color: white;
 }
 
 #header > nav > .P1 li {
   float: left;
   display: block;
   width: 17%;
-  font-size: 25px;
+  font-size: 26px;
+  padding-bottom: 3%;
 }
 
 #header > nav > .P2 li {
   float: right;
   display: block;
   width: 13%;
-  font-size: 25px;
+  font-size: 26px;
 }
 
 #header > nav ul{
-  color: white;
   list-style-type: none;
   text-align: center;
   margin: 0;
 }
 
 #header nav > .P1 li:nth-child(1) a{
-  margin-top: 20%;
+  margin-top: 9%;
 }
 
 #header nav > .P2 li:nth-child(1) a{
-  margin-top: 100px;
+  margin-top: 27%;
 }
 
 #header img{
   width: 300px;
   height: auto;
-  margin-top: -100px;
+  margin-top: 50px;
   position: absolute;
   margin-left: 40%;
 }
 /******************************
  *           Active Tab           *
  ******************************/
- 
+
  #header > nav li a:hover {
-  background-color: #0064b4;
+  color: #002182;
+}
+
+#header img:hover{
+  transform: scale(1.03)
 }
 
 /******************************

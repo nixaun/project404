@@ -19,21 +19,25 @@
   <body>
     <div id = 'header'>
 
-        <img src="{{ asset('images/BORD2.png')}}" alt="BORD2">
+        <a href="{{route('home')}}"><img src="{{ asset('images/BORD3.png')}}" alt="BORD2"></a>
+        
+    <div>
+      
+    </div>
 
     <nav>
       <div class="P1">
       <ul>
-            <li><a href="{{route('WatIsSeksueleIntimidatie')}}"></a>Seksuele Intimidatie</li>
-            <li><a href="{{route('Verhalen')}}"></a>Verhalen</li>
+            <li><a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Seksuele Intimidatie</a></li>
+            <li><a href="{{route('Verhalen')}}"><i class="fas fa-book-open "></i> Verhalen</a></li>
       </ul>
       </div>
 
       <div class="P2">
         <ul>
-              <li><a href="#"></a><i class="fas fa-user fa-2x"></i></li>
-              <li><a href="#"></a>Media</li>
-              <li><a href="{{route('WatKanUZelfDoen')}}"></a>SOS</li>
+              <li><a href="#"><i class="fas fa-user fa-2x"></i></a></li>
+              <li><a href="#"><i class="fas fa-play-circle"></i> Media</a></li>
+              <li><a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh "></i> SOS</a></li>
         </ul>
       </div>
     </nav>
