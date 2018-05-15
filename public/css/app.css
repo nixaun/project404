@@ -30,7 +30,8 @@ body {
  #header > nav {
   background-color: #f7a400;
   height: 100px;
-  margin-top: 40px;
+  margin-top: 130px;
+  margin-bottom: 70px;
  }
 
 #header > nav li a {
@@ -42,14 +43,14 @@ body {
 #header > nav > .P1 li {
   float: left;
   display: block;
-  width: 16%;
+  width: 17%;
   font-size: 25px;
 }
 
 #header > nav > .P2 li {
   float: right;
   display: block;
-  width: 10%;
+  width: 13%;
   font-size: 25px;
 }
 
@@ -68,43 +69,20 @@ body {
   margin-top: 100px;
 }
 
-#header nav > .P2 li:nth-child(4) a{
-  width: 20px;
-  visibility: hidden;
-}
-
 #header img{
-  width: 25%;
+  width: 300px;
   height: auto;
-  margin-top: 40px;
+  margin-top: -100px;
+  position: absolute;
+  margin-left: 40%;
 }
 /******************************
  *           Active Tab           *
  ******************************/
-
-
-.CRNT_TAB{
-  width: 798px;
-  height: 110px;
-  overflow: hidden;
-  margin-left: 500px;
+ 
+ #header > nav li a:hover {
+  background-color: #0064b4;
 }
-
-.CRNT_TAB img{
-  width: 100px;
-  height: auto;
-  margin-left: 20px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.CRNT_TAB img:hover{
-  transform: translate3d(0px, -100px, 0px);
-}
-
-.cfx li img:hover{
-  display: inline;
-}
-
 
 /******************************
  *             HOME           *
