@@ -2,36 +2,27 @@
 
 @section('content')
   <div class="wrapper">
-    <div class="content-split content-home">
+    <div class="content-split content-home cfx">
       <form class = 'form-horizontal' action = "{{$verhaal->id}}" method = 'POST'>
         {{ csrf_field() }}
 
-        <div class = 'form-group'>
+        <div class = 'register'>
           <label class = 'col-sm-3 control-label' for = 'verhaalTitle'>Titel (max. 255 tekens)</label>
-
-          <div class = 'col-sm-6'>
-            <input class = 'form-control' type = 'textarea' name = 'verhaalTitle' id = 'verhaalTitle'   value = "{{$verhaal->title}}">
-          </div>
+          <input class = 'form-control' type = 'textarea' name = 'verhaalTitle' id = 'verhaalTitle'   value = "{{$verhaal->title}}">
         </div>
 
-        <div class = 'form-group'>
+        <div class = 'register-text'>
           <label class = 'col-sm-3 control-label' for = 'verhaalBody'>Vertel hier je verhaal:</label>
-
-          <div class = 'col-sm-6'>
-            <input class = 'form-control' type = 'textarea' name = 'verhaalBody' id = 'verhaalBody' value = "{{$verhaal->body}}">
-          </div>
+          <textarea class = 'form-control' type = 'textarea' name = 'verhaalBody' id = 'verhaalBody' value = "{{$verhaal->body}}"></textarea>
         </div>
 
-        <div class = 'form-group'>
-          <div class="checkbox">
-              <label>
-                  <input type="checkbox" name="verhalenIsAnonymous" id = 'verhalenIsAnonymous' @if($verhaal->isAnonymous == 'on') checked @endif > Plaats anoniem
-              </label>
-          </div>
+        <div class = 'register'>
+          <label> Plaats anoniem</label>
+          <input  class="checkbox" type="checkbox" name="verhalenIsAnonymous" id = 'verhalenIsAnonymous' @if($verhaal->isAnonymous == 'on') checked @endif >
         </div>
 
-        <div class = 'form-group'>
-          <button class = 'btn btn-default' type = 'submit'>
+        <div class = 'register'>
+          <button class = 'button-form' type = 'submit'>
             Pas verhaal aan
           </button>
         </div>

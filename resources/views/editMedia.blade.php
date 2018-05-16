@@ -2,36 +2,27 @@
 
 @section('content')
   <div class="wrapper">
-    <div class="content-split content-home">
+    <div class="content-split content-home cfx">
       <form class = 'form-horizontal' action = "{{$media->id}}" method = 'POST'>
         {{ csrf_field() }}
 
-        <div class = 'form-group'>
+        <div class = 'register'>
           <label class = 'col-sm-3 control-label' for = 'mediaTitle'>Titel (max. 255 tekens)</label>
-
-          <div class = 'col-sm-6'>
-            <input class = 'form-control' type = 'textarea' name = 'mediaTitle' id = 'mediaTitle'   value = "{{$media->title}}">
-          </div>
+          <input class = 'form-control' type = 'textarea' name = 'mediaTitle' id = 'mediaTitle'   value = "{{$media->title}}">
         </div>
 
-        <div class = 'form-group'>
+        <div class = 'register'>
           <label class = 'col-sm-3 control-label' for = 'mediaUrl'>Vertel hier je media:</label>
-
-          <div class = 'col-sm-6'>
-            <input class = 'form-control' type = 'textarea' name = 'mediaUrl' id = 'mediaUrl' value = "{{$media->url}}">
-          </div>
+          <input class = 'form-control' type = 'textarea' name = 'mediaUrl' id = 'mediaUrl' value = "{{$media->url}}">
         </div>
 
-        <div class = 'form-group'>
-          <div class="checkbox">
-              <label>
-                  <input type="checkbox" name="mediaIsAnonymous" id = 'mediaIsAnonymous' @if($media->isAnonymous == 'on') checked @endif > Plaats anoniem
-              </label>
-          </div>
+        <div class = 'register'>
+          <label>Plaats anoniem</label>
+          <input class="checkbox" type="checkbox" name="mediaIsAnonymous" id = 'mediaIsAnonymous' @if($media->isAnonymous == 'on') checked @endif >
         </div>
 
-        <div class = 'form-group'>
-          <button class = 'btn btn-default' type = 'submit'>
+        <div class = 'register'>
+          <button class = 'button-form' type = 'submit'>
             Pas media aan
           </button>
         </div>
