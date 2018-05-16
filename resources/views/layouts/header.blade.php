@@ -18,15 +18,22 @@
 
   <body>
     <div id = 'header'>
-
         <a href="{{route('home')}}"><img src="{{ asset('images/BORD3.png')}}" alt="BORD2"></a>
         
     <div>
-      
     </div>
 
-    <nav>
+    <nav> 
       <div class="P1">
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle"/>
+      <div class="hamburger">
+        <a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Seksuele Intimidatie</a>
+        <a href="{{route('Verhalen')}}"><i class="fas fa-book-open "></i> Verhalen</a>
+        <a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh "></i> SOS</a>
+        <a href="#"><i class="fas fa-play-circle"></i> Media</a>
+        <a href="#"><i class="fas fa-user fa-2x"></i></a>
+      </div>
       <ul>
             <li><a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Seksuele Intimidatie</a></li>
             <li><a href="{{route('Verhalen')}}"><i class="fas fa-book-open "></i> Verhalen</a></li>

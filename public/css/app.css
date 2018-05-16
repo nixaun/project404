@@ -17,6 +17,35 @@ body {
 }
 
 /******************************
+ *          hamburger         *
+ ******************************/
+
+.hamburger{
+  display: none;
+  background-color: #f7a400;
+}
+
+.hamburger a{
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger a:hover{
+  background-color: #f18a00;
+}
+
+ label{
+  margin-left: 20px;
+  font-size: 2em;
+  color: white;
+  display: none; 
+}
+
+#toggle{
+  display: none;
+}
+
+/******************************
  *          header            *
  ******************************/
 
@@ -50,15 +79,14 @@ body {
   float: left;
   display: block;
   width: 17%;
-  font-size: 26px;
-  padding-bottom: 3%;
+  font-size: 1.7em;
 }
 
 #header > nav > .P2 li {
   float: right;
   display: block;
   width: 13%;
-  font-size: 26px;
+  font-size: 1.7em;
 }
 
 #header > nav ul{
@@ -68,19 +96,87 @@ body {
 }
 
 #header nav > .P1 li:nth-child(1) a{
-  margin-top: 9%;
+  margin-top: 7%;
 }
 
 #header nav > .P2 li:nth-child(1) a{
-  margin-top: 27%;
+  margin-top: 22%;
 }
 
 #header img{
-  width: 300px;
+  width: 18%;
   height: auto;
-  margin-top: 50px;
+  margin-top: 3%;
   position: absolute;
   margin-left: 40%;
+}
+
+@media screen and (max-width: 1366px) {
+  #header nav > .P1 li:nth-child(1) a{
+    margin-top: 9%;
+  }
+  
+  #header nav > .P2 li:nth-child(1) a{
+    margin-top: 27%;
+  }
+
+  #header img{
+    margin-top: 6%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #header nav ul li a {
+    font-size: .8em;
+  }
+
+  #header nav > .P1 li:nth-child(1) a{
+    margin-top: 17%;
+  }
+
+  #header img{
+    margin-top: 10.5%;
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  #header nav > .P1 li:nth-child(1) a{
+    margin-top: 100%;
+  }
+
+  label{
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger{
+    display: hidden;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hamburger a {
+    display: block;
+    
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  #toggle:checked + .hamburger{
+    display: block;
+  }
+
+  #header > nav li a {
+    display: none;
+  }
+
+  #header img{
+    margin-top: 5%;
+    width: 30%;
+    margin-left: 35%;
+  }
 }
 /******************************
  *           Active Tab           *
