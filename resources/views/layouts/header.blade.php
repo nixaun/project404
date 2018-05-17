@@ -37,7 +37,7 @@
         <a href="#"><i class="fas fa-user"></i> Profiel</a>
       </div>
       <ul>
-            <div><li><a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Seksuele I</a></li></div>
+            <li><a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Intimidatie</a></li>
             <li><a href="{{route('Verhalen')}}"><i class="fas fa-book-open "></i> Verhalen</a></li>
       </ul>
       </div>
