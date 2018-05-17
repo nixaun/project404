@@ -463,6 +463,9 @@ textarea:focus{
   width: 200px;
   margin: 3% 40%;
   border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  text-align: center; 
 }
 
 .button-form:hover{
