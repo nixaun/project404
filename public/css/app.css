@@ -251,7 +251,7 @@ body {
   #header > nav li a {
     display: none;
   }
-}
+  }
 /**
   #header img{
     margin-top: 5%;
@@ -464,9 +464,6 @@ textarea:focus{
   width: 200px;
   margin: 3% 40%;
   border: 1px solid black;
-  text-decoration: none;
-  color: black;
-  text-align: center; 
 }
 
 .button-form:hover{

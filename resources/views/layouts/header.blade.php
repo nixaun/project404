@@ -32,7 +32,7 @@
         <a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh "></i> SOS</a>
         <a href="{{route('Media')}}"><i class="fas fa-play-circle"></i> Media</a>
 
-        @if ((Auth::guard('web')->check() || Auth::guard('admin')->check())))
+        @if ((Auth::guard('web')->check() || Auth::guard('admin')->check()))
           <a href="/register"><i class="fas fa-user"></i> Profiel</a>
         @endif
       </div>
@@ -44,7 +44,7 @@
 
       <div class="P2">
         <ul>
-              @if (!(Auth::guard('web')->check() || Auth::guard('admin')->check())))
+              @if (!(Auth::guard('web')->check() || Auth::guard('admin')->check()))
                 <li><a href="/register"><i class="fas fa-user"></i> Profiel</a></li>
               @else
                 <li><a href="{{route('Profiel')}}"><i class="fas fa-user"></i></a></li>
