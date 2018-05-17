@@ -19,8 +19,8 @@
   <body>
     <div id = 'header'>
 
-        <div class="logo"><img src="{{ asset('images/logo.jpg')}}" alt="LOGO"></div>
-        <a href="{{route('home')}}"><img src="{{ asset('images/BORD3.png')}}" alt="BORD2"></a>
+        <div class="logo"><img src="{{ asset('images/witlogo.png')}}" alt="LOGO"></div>
+        <a href="{{route('home')}}"><img src="{{ asset('images/BORD4.png')}}" alt="BORD2"></a>
 
     <nav>
       <div class="P1">
