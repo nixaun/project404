@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-  <div class="wrapper">
+  <div class="wrapper content-body">
     <div class="content-split content-home">
       <h1>Profiel</h1>
       <form class = 'form-horizontal' action = "{{$user->id}}" method = 'POST'>

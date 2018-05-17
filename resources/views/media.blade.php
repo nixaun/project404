@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-  <div class="wrapper">
+  <div class="wrapper content-body">
     <div class = 'content-media content-home'>
         @if (Auth::guard('admin')->check())
           @foreach ($media as $video)

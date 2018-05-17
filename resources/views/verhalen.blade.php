@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-  <div class="wrapper cfx">
+  <div class="wrapper content-body cfx">
     <div class = 'content-verhalen content-home'>
         @if (Auth::guard('admin')->check())
           @foreach ($verhalen as $verhaal)

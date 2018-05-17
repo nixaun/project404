@@ -280,7 +280,7 @@ body {
  ******************************/
 .content-home{
   width: 70%;
-  margin: 200px auto;
+  margin: 2% auto;
 }
 
 .content-home iframe, .content-home img, .content-home p, .content-home h3{
@@ -290,6 +290,10 @@ body {
 .content-home iframe, .content-home img{
   width: 70%;
   margin-bottom: 2%;
+}
+
+.content-body{
+  margin-top: 200px;
 }
 
 

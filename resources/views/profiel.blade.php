@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-  <div class="wrapper">
+  <div class="wrapper content-body">
     <div class="content-split content-home">
       <h1>Profiel</h1>
       @foreach($user as $profile)
