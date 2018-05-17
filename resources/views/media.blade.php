@@ -88,7 +88,7 @@
               </div>
             @endif
           @endforeach
-          <a href = "login">Log in om je eigen video toe te voegen</a>
+          <a href = "login" class="button-form cfx">Log in om je eigen video toe te voegen</a>
         @endguest
     </div>
   </div>

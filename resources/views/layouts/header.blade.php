@@ -25,7 +25,7 @@
 
     <nav>
       <div class="P1">
-      <label class="label-ham"for="toggle">☰</label>
+      <label class="label-ham" for="toggle">☰</label>
       <input type="checkbox" id="toggle"/>
       <div class="hamburger">
         <a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Seksuele Intimidatie</a>
