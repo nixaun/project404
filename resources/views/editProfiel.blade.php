@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="wrapper">
-    <div class="content-split">
+    <div class="content-split content-home">
       <h1>Profiel</h1>
       <form class = 'form-horizontal' action = "{{$user->id}}" method = 'POST'>
         {{ csrf_field() }}
