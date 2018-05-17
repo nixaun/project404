@@ -208,6 +208,12 @@ body {
   position: absolute;
   margin-left: 40%;
 }
+
+#header .logo img{
+  width: 5%;
+  position: absolute;
+  margin: 0;
+}
 /**
 @media screen and (max-width: 1366px) {
 
@@ -215,18 +221,20 @@ body {
     margin-top: 6%;
   }
 }
+**/
 
 @media screen and (max-width: 1150px) {
   #header nav ul li a {
     font-size: .8em;
   }
-
+/**
   #header img{
     margin-top: 10.5%;
     margin-left: 40%;
   }
+  **/
 }
-**/
+
 @media screen and (max-width: 900px) {
 
   #header nav > .P1 li:nth-child(1) a{
@@ -471,12 +479,9 @@ textarea:focus{
   width: 200px;
   margin: 3% 40%;
   border: 1px solid black;
-<<<<<<< HEAD
-=======
   text-decoration: none;
   color: black;
   text-align: center;
->>>>>>> 8e1fd6d12f1d6d3538f11a34e5acc4e4bb219250
 }
 
 .button-form:hover{
