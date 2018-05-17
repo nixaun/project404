@@ -181,7 +181,7 @@ body {
 #header > nav > .P1 li {
   float: left;
   display: block;
-  width: 17%;
+  width: 18%;
   font-size: 1.7em;
 }
 
@@ -234,12 +234,11 @@ body {
   #header nav ul li a {
     font-size: .8em;
   }
-/**
+
   #header img{
-    margin-top: 10.5%;
-    margin-left: 40%;
+    width: 20%;
   }
-  **/
+  
 }
 
 @media screen and (max-width: 900px) {
@@ -271,6 +270,14 @@ body {
   }
 
   #header > nav li a {
+    display: none;
+  }
+
+  #header > nav {
+    height: 50px;
+   }
+
+   #header > a > img{
     display: none;
   }
   }
