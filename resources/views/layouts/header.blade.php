@@ -47,12 +47,12 @@
 
       <div class="P2">
         <ul>
-              @if (!(Auth::guard('web')->check() || Auth::guard('admin')->check())))
+              @if (!(Auth::guard('web')->check() || Auth::guard('admin')->check()))
                 <li><a href="/register"><i class="fas fa-user"></i> Profiel</a></li>
               @else
                 <li><a href="{{route('Profiel')}}"><i class="fas fa-user"></i></a></li>
               @endif
-              <li><a href={{route('Media')}}><i class="fas fa-play-circle"></i> Media</a></li>
+              <li><a href={{route('Media')}}><i class="fas fa-play-circle"></i>Media</a></li>
               <li><a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh"></i> SOS</a></li>
         </ul>
       </div>
