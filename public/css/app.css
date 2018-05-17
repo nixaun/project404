@@ -284,10 +284,6 @@ body {
  ******************************/
 
  #header > nav li a:hover {
-  color: #002182;
-}
-
-#header > nav li a:hover + i {
   color: #cf0039;
 }
 
