@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-  <div class="wrapper">
+  <div class="wrapper content-body">
     <div class="content-split content-home cfx">
       <a href = "/verhalen" class="button-back"> ← Terug naar media</a>
       <form class = 'form-horizontal' action = "{{route('insertMedia')}}" method = 'POST'>

@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-  <div class="wrapper">
+  <div class="wrapper content-body">
     <div class="content-split content-home cfx">
       <form action = "{{$verhaal->id}}" method = 'POST'>
         {{ csrf_field() }}

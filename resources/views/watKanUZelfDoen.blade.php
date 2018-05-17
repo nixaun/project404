@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<div class='wrapper content-home'>
+<div class='wrapper content-body'>
   <div class="sidenav cfx">
     <a href="#page1">Als slachtoffer</a>
     <a href="#page2">Als getuige</a>
