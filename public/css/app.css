@@ -44,6 +44,7 @@ body {
   font-size: 1em;
   width: 150px;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 .button-del:hover{
@@ -274,6 +275,7 @@ body {
 
 .content-home iframe, .content-home img{
   width: 70%;
+  margin-bottom: 2%;
 }
 
 /******************************
