@@ -87,6 +87,7 @@
               </div>
             @endif
           @endforeach
+          <a href = "login" class="button-form cfx">Log in om je eigen verhaal te vertellen</a>
         @endguest
     </div>
   </div>
