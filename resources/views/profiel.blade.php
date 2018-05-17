@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="wrapper">
-    <div class="content-split">
+    <div class="content-split content-home">
       <h1>Profiel</h1>
       @foreach($user as $profile)
         @if(Auth::user()->name == $profile->name)

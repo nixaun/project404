@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<div class='wrapper'>
+<div class='wrapper content-home'>
   <div class="sidenav cfx">
     <a href="#page1">Wat is seksuele intimidatie?</a>
     <a href="#page2">Welk gedrag is strafbaar?</a>

@@ -33,7 +33,7 @@
         <a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Seksuele Intimidatie</a>
         <a href="{{route('Verhalen')}}"><i class="fas fa-book-open "></i> Verhalen</a>
         <a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh "></i> SOS</a>
-        <a href="#"><i class="fas fa-play-circle"></i> Media</a>
+        <a href="{{route('Media')}}"><i class="fas fa-play-circle"></i> Media</a>
         <a href="#"><i class="fas fa-user"></i> Profiel</a>
       </div>
       <ul>
