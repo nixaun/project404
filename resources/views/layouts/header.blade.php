@@ -20,9 +20,6 @@
     <div id = 'header'>
         <a href="{{route('home')}}"><img src="{{ asset('images/BORD3.png')}}" alt="BORD2"></a>
 
-    <div>
-    </div>
-
     <nav>
       <div class="P1">
       <div class="label-ham">
