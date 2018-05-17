@@ -34,7 +34,10 @@
         <a href="{{route('Verhalen')}}"><i class="fas fa-book-open "></i> Verhalen</a>
         <a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh "></i> SOS</a>
         <a href="{{route('Media')}}"><i class="fas fa-play-circle"></i> Media</a>
-        <a href="#"><i class="fas fa-user"></i> Profiel</a>
+
+        @if ((Auth::guard('web')->check() || Auth::guard('admin')->check())))
+          <a href="/register"><i class="fas fa-user"></i> Profiel</a>
+        @endif
       </div>
       <ul>
             <li><a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Intimidatie</a></li>
@@ -44,8 +47,12 @@
 
       <div class="P2">
         <ul>
-              <li><a href="#"><i class="fas fa-user fa-lg"></i></a></li>
-              <li><a href="#"><i class="fas fa-play-circle"></i> Media</a></li>
+              @if (!(Auth::guard('web')->check() || Auth::guard('admin')->check())))
+                <li><a href="/register"><i class="fas fa-user"></i> Profiel</a></li>
+              @else
+                <li><a href="{{route('Profiel')}}"><i class="fas fa-user"></i></a></li>
+              @endif
+              <li><a href={{route('Media')}}><i class="fas fa-play-circle"></i> Media</a></li>
               <li><a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh"></i> SOS</a></li>
         </ul>
       </div>
