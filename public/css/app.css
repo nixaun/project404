@@ -37,7 +37,7 @@ body {
 .button-del{
   float: left;
   background-color: white;
-  padding: 10px;
+  padding: 10px 0;
   margin: 2%;
   font-size: 1em;
   width: 150px;
@@ -53,7 +53,7 @@ body {
 .button-edit{
   float: left;
   background-color: white;
-  padding: 10px;
+  padding: 10px 0;
   margin: 2%;
   font-size: 1em;
   width: 150px;
