@@ -57,16 +57,15 @@
         @if(Auth::guard('web')->check() || Auth::guard('admin')->check())
           <a href="{{ route('logout') }}"
              onclick="event.preventDefault();
-                           document.getElementById('logout-form').submit();">
-              Logout
+                           document.getElementById('logout-form').submit();" class="button-logout">
+              Afmelden
           </a>
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf
           </form>
 
         @else
-          <a href = "{{route ('login')}}">Login</a>
-          <a href = "{{route ('register')}}">Registreer</a>
+            <a href = "{{route ('login')}}" class="button-login">Aanmelden</a>
         @endif
       </nav>
 
