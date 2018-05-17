@@ -9,12 +9,14 @@
 }
 body {
   margin: 0;
+  background-image: url("../../images/paper.jpg");
 }
 
 .wrapper {
   width: 70%;
   margin: 0 auto;
 }
+
 
 /******************************
  *          buttons           *
@@ -210,14 +212,18 @@ body {
 }
 
 #header .logo{
-  height: O;
+  height: 96px;
 }
 
+<<<<<<< HEAD
 #header .banner img{
   margin: 0%;
   margin-top: -15.6%;
   width: 100%;
 }
+=======
+
+>>>>>>> 168c140d178c21394c0df0f84f582b0c2756d7f5
 /**
 @media screen and (max-width: 1366px) {
 

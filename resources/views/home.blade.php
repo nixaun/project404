@@ -34,7 +34,7 @@
     <div class="content-split content-home">
       <h1>Onze Awesome Game</h1>
       <h3>[Game Naam]</h3>
-      <img src="{{asset('images/logo_game_on.png')}}" />
+        <a href="{{route('Game')}}"><img src="{{asset('images/logo_game_on.png')}}" /></a>
     </div>
   </div>
 @endsection
