@@ -16,8 +16,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 /******************************
  *          buttons           *
  ******************************/
@@ -128,7 +126,7 @@ body {
  }
 
  #header > div{
-  background-color: #002182;
+  background-color: #0064b4;
   height: 150px;
   margin: 0;
  }
@@ -166,14 +164,6 @@ body {
   margin: 0;
 }
 
-#header nav > .P1 li:nth-child(1) a{
-  margin-top: 7%;
-}
-
-#header nav > .P2 li:nth-child(1) a{
-  margin-top: 22%;
-}
-
 #header img{
   width: 18%;
   height: auto;
@@ -183,14 +173,7 @@ body {
 }
 
 @media screen and (max-width: 1366px) {
-  #header nav > .P1 li:nth-child(1) a{
-    margin-top: 9%;
-  }
-
-  #header nav > .P2 li:nth-child(1) a{
-    margin-top: 27%;
-  }
-
+ 
   #header img{
     margin-top: 6%;
   }
@@ -199,10 +182,6 @@ body {
 @media screen and (max-width: 1050px) {
   #header nav ul li a {
     font-size: .8em;
-  }
-
-  #header nav > .P1 li:nth-child(1) a{
-    margin-top: 17%;
   }
 
   #header img{
@@ -255,6 +234,10 @@ body {
 
  #header > nav li a:hover {
   color: #002182;
+}
+
+#header > nav li a:hover + i {
+  color: #cf0039;
 }
 
 #header img:hover{
@@ -330,11 +313,9 @@ textarea:focus{
   border: 1px solid black;
 }
 
-
 .content-verhalen h3, p{
   margin: 2%;
 }
-
 
 /******************************
  *        subnavigatie        *

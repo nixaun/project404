@@ -25,26 +25,28 @@
 
     <nav>
       <div class="P1">
-      <label class="label-ham" for="toggle">☰</label>
+      <div class="label-ham">
+        <label for="toggle">☰</label>
+      </div>
       <input type="checkbox" id="toggle"/>
       <div class="hamburger">
         <a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Seksuele Intimidatie</a>
         <a href="{{route('Verhalen')}}"><i class="fas fa-book-open "></i> Verhalen</a>
         <a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh "></i> SOS</a>
         <a href="#"><i class="fas fa-play-circle"></i> Media</a>
-        <a href="#"><i class="fas fa-user fa-2x"></i></a>
+        <a href="#"><i class="fas fa-user"></i> Profiel</a>
       </div>
       <ul>
-            <li><a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Seksuele Intimidatie</a></li>
+            <div><li><a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Seksuele I</a></li></div>
             <li><a href="{{route('Verhalen')}}"><i class="fas fa-book-open "></i> Verhalen</a></li>
       </ul>
       </div>
 
       <div class="P2">
         <ul>
-              <li><a href="#"><i class="fas fa-user fa-2x"></i></a></li>
+              <li><a href="#"><i class="fas fa-user fa-lg"></i></a></li>
               <li><a href="#"><i class="fas fa-play-circle"></i> Media</a></li>
-              <li><a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh "></i> SOS</a></li>
+              <li><a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh"></i> SOS</a></li>
         </ul>
       </div>
     </nav>
