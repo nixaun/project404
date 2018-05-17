@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-  <form method="POST" action="{{ route('login') }}">
+  <form method="POST" action="{{ route('login') }}" class="content-body">
     @csrf
     <div class = "login">
       <label for = "username">Gebruikersnaam</label>
