@@ -216,7 +216,7 @@ body {
     margin-top: 100%;
   }
 
-  label{
+  .label-ham label{
     display: block;
     cursor: pointer;
   }
@@ -329,8 +329,8 @@ textarea:focus{
 }
 
 
-.content-verhalen h3{
-  margin: 2% 2% 2% 10%;
+.content-verhalen h3, p{
+  margin: 2%;
 }
 
 
@@ -444,9 +444,6 @@ textarea:focus{
   width: 200px;
   margin: 3% 40%;
   border: 1px solid black;
-  text-decoration: none;
-  color: black;
-  text-align: center;
 }
 
 .button-form:hover{
