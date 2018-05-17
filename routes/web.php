@@ -40,3 +40,5 @@ Route::post('/profiel/wijzigen/{id}', 'ProfielController@updateProfiel')->middle
 
 Route::get('/admin/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+
+Route::get('/game', 'GameController@index')->name('Game');
