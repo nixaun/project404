@@ -3,6 +3,22 @@
 @section('content')
   <div class="wrapper content-body cfx">
     <div class = 'content-verhalen content-home'>
+        @if(session('danger'))
+          @foreach ($verhalen as $verhaal)
+            <div>
+              {{ session('danger') }}
+
+              <form action = "verhalen/bevestigen/{{$verhaal->id}}" method = "POST">
+                {{ csrf_field() }}
+
+                <button type = "submit" name = "delete">Verwijderen</button>
+
+                <button type = "submit" name = "cancel">Cancel</button>
+              </form>
+            </div>
+          @endforeach
+        @endif
+
         @if (Auth::guard('admin')->check())
           @foreach ($verhalen as $verhaal)
             <div class="content-split cfx">
@@ -22,7 +38,7 @@
                   </button>
                 </form>
 
-                <form action="verhalen/verwijderen/{{$verhaal->id}}" method="POST">
+                <form action="verhalen/verwijderen/{{$verhaal->id}}" method="GET">
                     {{ csrf_field() }}
                   <button type="submit" name = "delete" class="button-all">
                     Niet goedkeuren
@@ -35,7 +51,7 @@
                   Goedkeuren
                 </button>
 
-                <form action="verhalen/verwijderen/{{$verhaal->id}}" method="POST">
+                <form action="verhalen/verwijderen/{{$verhaal->id}}" method="GET">
                     {{ csrf_field() }}
                   <button type="submit" name = "delete" class="button-all">
                     Niet goedkeuren

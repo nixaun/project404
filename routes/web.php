@@ -25,8 +25,9 @@ Route::get('/verhalen/toevoegen', 'VerhaalsController@addVerhaal')->middleware('
 Route::post('/verhalen/invoegen', 'VerhaalsController@insertVerhaal')->middleware('auth')->name('insertVerhaal');
 Route::get('verhalen/wijzigen/{id}', 'VerhaalsController@editVerhaal')->middleware('auth');
 Route::post('verhalen/wijzigen/{id}', 'VerhaalsController@updateVerhaal')->middleware('auth');
-Route::post('verhalen/verwijderen/{id}', 'VerhaalsController@delete');
 Route::post('verhalen/goedkeuren/{id}', 'VerhaalsController@goedkeuren');
+Route::post('verhalen/verwijderen/bevestigen/{id}', 'VerhaalsController@delete');
+Route::get('verhalen/verwijderen/{id}', 'VerhaalsController@showConfirm');
 
 Route::get('/media/toevoegen', 'MediaController@addMedia')->middleware('auth')->name('addMedia');
 Route::post('/media/invoegen', 'MediaController@insertMedia')->middleware('auth')->name('insertMedia');
