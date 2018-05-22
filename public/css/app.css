@@ -165,12 +165,6 @@ body {
    left: 0;
  }
 
- #header > div{
-  background-color: #0064b4;
-  height: 150px;
-  margin: 0;
- }
-
  #header > nav {
   background-color: #f7a400;
   height: 100px;
@@ -207,7 +201,7 @@ body {
 
 #header img{
   width: 18%;
-  margin-top: -1%;
+  margin-top: -6%;
   position: absolute;
   margin-left: 40%;
 }
@@ -222,6 +216,11 @@ body {
   height: 96px;
 }
 
+#header .banner img{
+  margin: 0%;
+  margin-top: -15.6%;
+  width: 100%;
+}
 
 /**
 @media screen and (max-width: 1366px) {
@@ -292,7 +291,7 @@ body {
   color: #cf0039;
 }
 
-#header img:hover{
+#header .bord img:hover{
   transform: scale(1.03)
 }
 
