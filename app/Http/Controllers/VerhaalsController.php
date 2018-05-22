@@ -70,12 +70,24 @@ class VerhaalsController extends Controller
       return redirect('/verhalen');
     }
 
+    public function showConfirm()
+    {
+      return back()->with('danger', 'Ben je zeker dat je dit verhaal wil verwijderen?');
+    }
+
     public function delete($id)
     {
       $verhaal = Verhaal::find($id);
 
-      $verhaal->delete();
-      return redirect('/verhalen')->with('success', 'Jouw verhaal is met succes verwijdert');
+      if (isset($_POST['delete']))
+      {
+        $verhaal->delete();
+        return redirect('/verhalen')->with('success', 'Jouw verhaal is met succes verwijdert');
+      }
+      elseif(isset($_POST['cancel']))
+      {
+        return back();
+      }
     }
 
     public function goedkeuren(Request $request, $id)
