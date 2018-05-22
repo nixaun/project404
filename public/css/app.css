@@ -314,6 +314,10 @@ body {
   margin-left: 10%;
 }
 
+.content-home h2{
+  margin-left: 5%;
+}
+
 .content-home iframe, .content-home img{
   width: 70%;
   margin-bottom: 2%;
@@ -423,6 +427,11 @@ textarea:focus{
 
  .aside h1{
    color: #a70636;
+   margin-bottom: 6%;
+ }
+
+ .aside h2{
+   margin-bottom: 7%;
  }
 
  .content-split{
@@ -452,6 +461,11 @@ textarea:focus{
  }
 
  /******************************
+  *         pages              *
+  ******************************/
+
+
+ /******************************
   *         register           *
   ******************************/
 
@@ -478,6 +492,7 @@ textarea:focus{
   font-size: 1em;
   text-align: center;
   border: none;
+  background: transparent;
   border-bottom: 1px solid black;
 }
 
@@ -501,6 +516,11 @@ textarea:focus{
 
 .button-form:hover{
   opacity: 0.7;
+}
+
+.form-header{
+  margin: 3% 0 10% 37%;
+  font-size: 3em;
 }
 
 /******************************
