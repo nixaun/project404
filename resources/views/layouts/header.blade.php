@@ -19,8 +19,11 @@
   <body>
     <div id = 'header'>
 
-        <div class="logo"><img src="{{ asset('images/witlogo.png')}}" alt="LOGO"></div>
+        
+        <div class="banner"><img src="{{ asset('images/testerbanner.png')}}" alt=""></div>
         <a href="{{route('home')}}"><img src="{{ asset('images/BORD4.png')}}" alt="BORD2"></a>
+        <!--<div class="logo"><img src="{{ asset('images/witlogo.png')}}" alt="LOGO"></div>-->
+       
 
     <nav>
       <div class="P1">
