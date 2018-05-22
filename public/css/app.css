@@ -432,6 +432,8 @@ textarea:focus{
    padding-bottom: 2%;
    background-image: url("../../images/postit.png");
    background-size: 100%;
+   background-color: #fff0ac;
+   background-repeat: no-repeat;
    margin-bottom: 2%;
    box-shadow: 10px 10px 5px rgba(0, 0, 0, .3);
 
