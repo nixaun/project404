@@ -3,6 +3,24 @@
 @section('content')
   <div class="wrapper content-body">
     <div class = 'content-media content-home'>
+        @if(session('danger'))
+          @foreach ($media as $video)
+            @if(Auth::user()->id == $video->user_id)
+              <div>
+                {{ session('danger') }}
+
+                <form action = "media/verwijderen/bevestigen/{{$video->id}}" method = "POST">
+                  {{ csrf_field() }}
+
+                  <button type = "submit" name = "delete">Verwijderen</button>
+
+                  <button type = "submit" name = "cancel">Cancel</button>
+                </form>
+              </div>
+            @endif
+          @endforeach
+        @endif
+
         @if (Auth::guard('admin')->check())
           @foreach ($media as $video)
             <div class="content-split cfx">
@@ -36,7 +54,7 @@
                   Goedkeuren
                 </button>
 
-                <form action="media/verwijderen/{{$video->id}}" method="POST">
+                <form action="media/verwijderen/{{$video->id}}" method="GET">
                     {{ csrf_field() }}
                   <button type="submit" name = "delete" class="button-all">
                     Niet goedkeuren
@@ -61,7 +79,7 @@
 
                 @if(Auth::user()->id == $video->user_id)
                   <a href = "media/wijzigen/{{$video->id}}" class="button-edit">Wijzigen</a>
-                  <form action="media/verwijderen/{{$video->id}}" method="POST">
+                  <form action="media/verwijderen/{{$video->id}}" method="GET">
                       {{ csrf_field() }}
                     <button type="submit" name = "delete" class="button-del">
                       Verwijderen
