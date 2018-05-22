@@ -5,17 +5,19 @@
     <div class = 'content-verhalen content-home'>
         @if(session('danger'))
           @foreach ($verhalen as $verhaal)
-            <div>
-              {{ session('danger') }}
+            @if(Auth::user()->id == $verhaal->user_id)
+              <div>
+                {{ session('danger') }}
 
-              <form action = "verhalen/bevestigen/{{$verhaal->id}}" method = "POST">
-                {{ csrf_field() }}
+                <form action = "verhalen/verwijderen/bevestigen/{{$verhaal->id}}" method = "POST">
+                  {{ csrf_field() }}
 
-                <button type = "submit" name = "delete">Verwijderen</button>
+                  <button type = "submit" name = "delete">Verwijderen</button>
 
-                <button type = "submit" name = "cancel">Cancel</button>
-              </form>
-            </div>
+                  <button type = "submit" name = "cancel">Cancel</button>
+                </form>
+              </div>
+            @endif
           @endforeach
         @endif
 
@@ -76,7 +78,7 @@
 
                 @if(Auth::user()->id == $verhaal->user_id)
                   <a href = "verhalen/wijzigen/{{$verhaal->id}}" class="button-edit">Wijzigen</a>
-                  <form action="verhalen/verwijderen/{{$verhaal->id}}" method="POST">
+                  <form action="verhalen/verwijderen/{{$verhaal->id}}" method="GET">
                       {{ csrf_field() }}
                     <button type="submit" name = "delete" class="button-del">
                       Verwijderen
