@@ -70,12 +70,29 @@ class MediaController extends Controller
       return redirect('/media');
     }
 
+    public function showConfirm()
+    {
+      return back()->with('danger', 'Ben je zeker dat je deze video wil verwijderen?');
+    }
+
     public function delete($id)
     {
       $media = Media::find($id);
-      $media->delete();
 
-      return redirect('/media')->with('success', 'Jouw media is met succes verwijder');
+      if (isset($_POST['delete']))
+      {
+        $media->delete();
+        return redirect('/media')->with('success', 'Jouw media is met succes verwijder');
+      }
+
+      elseif(isset($_POST['cancel']))
+      {
+        return back();
+      }
+
+
+
+
     }
 
     public function goedkeuren(Request $request, $id)

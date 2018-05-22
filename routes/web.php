@@ -33,8 +33,9 @@ Route::get('/media/toevoegen', 'MediaController@addMedia')->middleware('auth')->
 Route::post('/media/invoegen', 'MediaController@insertMedia')->middleware('auth')->name('insertMedia');
 Route::get('media/wijzigen/{id}', 'MediaController@editMedia')->middleware('auth');
 Route::post('media/wijzigen/{id}', 'MediaController@updateMedia')->middleware('auth');
-Route::post('media/verwijderen/{id}', 'MediaController@delete');
 Route::post('media/goedkeuren/{id}', 'MediaController@goedkeuren');
+Route::post('media/verwijderen/bevestigen/{id}', 'MediaController@delete');
+Route::get('media/verwijderen/{id}', 'MediaController@showConfirm');
 
 Route::get('/profiel/wijzigen/{id}', 'ProfielController@editProfiel')->middleware('auth');
 Route::post('/profiel/wijzigen/{id}', 'ProfielController@updateProfiel')->middleware('auth');
