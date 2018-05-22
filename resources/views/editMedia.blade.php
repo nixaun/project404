@@ -3,17 +3,17 @@
 @section('content')
   <div class="wrapper content-body">
     <div class="content-split content-home cfx">
-      <form class = 'form-horizontal' action = "{{$media->id}}" method = 'POST'>
+      <form action = "{{$media->id}}" method = 'POST'>
         {{ csrf_field() }}
 
         <div class = 'register'>
-          <label class = 'col-sm-3 control-label' for = 'mediaTitle'>Titel (max. 255 tekens)</label>
-          <input class = 'form-control' type = 'textarea' name = 'mediaTitle' id = 'mediaTitle'   value = "{{$media->title}}">
+          <label for = 'mediaTitle'>Titel (max. 255 tekens)</label>
+          <input type = 'textarea' name = 'mediaTitle' id = 'mediaTitle'   value = "{{$media->title}}">
         </div>
 
         <div class = 'register'>
-          <label class = 'col-sm-3 control-label' for = 'mediaUrl'>Vertel hier je media:</label>
-          <input class = 'form-control' type = 'textarea' name = 'mediaUrl' id = 'mediaUrl' value = "{{$media->url}}">
+          <label for = 'mediaUrl'>Vertel hier je media:</label>
+          <input type = 'textarea' name = 'mediaUrl' id = 'mediaUrl' value = "{{$media->url}}">
         </div>
 
         <div class = 'register'>

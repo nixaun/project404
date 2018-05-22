@@ -4,17 +4,17 @@
   <div class="wrapper content-body">
     <div class="content-split content-home cfx">
       <a href = "/verhalen" class="button-back"> ← Terug naar verhalen</a>
-      <form class = 'form-horizontal' action = "{{route('insertVerhaal')}}" method = 'POST'>
+      <form action = "{{route('insertVerhaal')}}" method = 'POST'>
         {{ csrf_field() }}
 
         <div class = 'register'>
-          <label class = 'col-sm-3 control-label' for = 'verhaalTitle'>Titel (max. 255 tekens)</label>
-          <input class = 'form-control' type = 'textarea' name = 'verhaalTitle' id = 'verhaalTitleT'>
+          <label for = 'verhaalTitle'>Titel (max. 255 tekens)</label>
+          <input type = 'textarea' name = 'verhaalTitle' id = 'verhaalTitleT'>
         </div>
 
         <div class = 'register-text'>
-          <label class = 'col-sm-3 control-label' for = 'verhaalBody'>Vertel hier je verhaal: </label>
-          <textarea class = 'form-control' type = 'textarea' name = 'verhaalBody' id = 'verhaalBody'></textarea>
+          <label for = 'verhaalBody'>Vertel hier je verhaal: </label>
+          <textarea type = 'textarea' name = 'verhaalBody' id = 'verhaalBody'></textarea>
         </div>
 
         <div class = 'register'>
