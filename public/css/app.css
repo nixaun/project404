@@ -9,7 +9,6 @@
 }
 body {
   margin: 0;
-  background-image: url("../../images/paper7.jpg");
 }
 
 .wrapper {
@@ -170,6 +169,7 @@ body {
   height: 100px;
   border-top: solid 110px #0064b4;
   border-bottom: solid black 4px;
+  margin-top: 10%;
  }
 
 #header > nav li a {
@@ -239,7 +239,7 @@ body {
   #header img{
     width: 20%;
   }
-  
+
 }
 
 @media screen and (max-width: 900px) {
@@ -307,7 +307,7 @@ body {
  ******************************/
 .content-home{
   width: 70%;
-  margin: 2% auto;
+  margin: 0 auto;
 }
 
 .content-home iframe, .content-home img, .content-home p, .content-home h3{
@@ -320,7 +320,7 @@ body {
 }
 
 .content-body{
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 
@@ -426,13 +426,15 @@ textarea:focus{
  }
 
  .content-split{
-   border-bottom: solid #292929 2px;
    padding-left: 5%;
    padding-right: 5%;
- }
+   padding-top: 2%;
+   padding-bottom: 2%;
+   background-image: url("../../images/postit.png");
+   background-size: 100%;
+   margin-bottom: 2%;
+   box-shadow: 10px 10px 5px rgba(0, 0, 0, .3);
 
- .content-split:first-child{
-   border-top: solid #292929 2px;
  }
 
  .iframe-content{
