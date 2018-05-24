@@ -297,7 +297,7 @@ body {
   color: #cf0039;
 }
 
-#header .bord img:hover{
+#header a img:hover{
   transform: scale(1.03)
 }
 
