@@ -3,7 +3,7 @@
 @section('content')
   <div class="wrapper content-body">
     <div class="content-split content-home cfx">
-      <h1>Media</h1>
+      <h1 class="header-home">Media</h1>
       @foreach ($media as $video)
         @if ($video->id == $randomArray1[$random1])
           @if($video->isAnonymous == 'on')
@@ -18,7 +18,7 @@
     </div>
 
     <div class="content-split content-home">
-      <h1>Verhaal</h1>
+      <h1 class="header-home">Verhaal</h1>
       @foreach ($verhalen as $verhaal)
         @if ($verhaal->id == $randomArray[$random])
           @if($verhaal->isAnonymous == 'on')
@@ -32,7 +32,7 @@
       @endforeach
     </div>
     <div class="content-split content-home">
-      <h1>Onze Awesome Game</h1>
+      <h1 class="header-home">Onze Awesome Game</h1>
       <h3>[Game Naam]</h3>
         <a href="{{route('Game')}}"><img src="{{asset('images/logo_game_on.png')}}" /></a>
     </div>

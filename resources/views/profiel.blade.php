@@ -2,16 +2,16 @@
 
 @section('content')
   <div class="wrapper content-body">
-    <div class="content-split content-home">
-      <h1>Profiel</h1>
+    <div class="content-split content-home form-container cfx">
+      <h1 class="form-header">Profiel</h1>
       @foreach($user as $profile)
         @if(Auth::user()->name == $profile->name)
-          <p>Naam: {{$profile->name}}</p>
-          <p>Voornaam: {{$profile->firstname}}</p>
-          <p>Geboortedatum: </p>
-          <p>Gebruikersnaam: {{$profile->username}}</p>
-          <p>E-mail: {{$profile->email}}</p>
-          <a href = '/profiel/wijzigen/{{$profile->id}}'>Profiel wijzigen</p>
+          <h3>Naam: {{$profile->name}}</h3>
+          <h3>Voornaam: {{$profile->firstname}}</h3>
+          <h3>Geboortedatum: </h3>
+          <h3>Gebruikersnaam: {{$profile->username}}</h3>
+          <h3>E-mail: {{$profile->email}}</h3>
+          <a class="button-profile" href='/profiel/wijzigen/{{$profile->id}}'>Profiel wijzigen</a>
         @endif
       @endforeach
     </div>
