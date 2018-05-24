@@ -496,6 +496,33 @@ textarea:focus{
   border-bottom: 1px solid black;
 }
 
+
+.register-login{
+  margin: 2% 30% 2% ;
+  font-size: 1.4em;
+  float: right;
+}
+
+.register-login label{
+  padding-right: 10px;
+  width: 200px;
+  color: black;
+  display: inline-block;
+}
+
+.register-login input{
+  width: 300px;
+  font-size: 1em;
+  text-align: center;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+.register-login input:focus{
+  outline: none;
+}
+
 .register input:focus{
   outline: none;
 }
@@ -521,6 +548,11 @@ textarea:focus{
 .form-header{
   margin: 3% 0 10% 37%;
   font-size: 3em;
+}
+
+.lost-pass{
+  margin: 2% 10%;
+  color: #0064b4;
 }
 
 /******************************
