@@ -19,7 +19,7 @@
 
         <div class="register">
           <button type = 'submit' class="button-form">
-            Pas user aan
+            Pas aan
           </button>
         </div>
       </form>

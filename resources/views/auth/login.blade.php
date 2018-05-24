@@ -6,8 +6,10 @@
     @csrf
     <div class="form-container">
       <div class = "register-login">
-        <label for = "username">Gebruikersnaam</label>
-        <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
+        <label>
+          <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
+          <div class = "label-text">Gebruikersnaam</div>
+        </label>
 
         @if ($errors->has('username'))
             <span class="invalid-feedback">
@@ -17,8 +19,10 @@
       </div>
 
       <div class = "register-login">
-        <label for = "password">Paswoord</label>
-        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+        <label>
+          <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+          <div class = "label-text">Wachtwoord</div>
+        </label>
 
         @if ($errors->has('password'))
             <span class="invalid-feedback">
@@ -27,7 +31,7 @@
         @endif
       </div>
 
-      <div class = "register-login">
+      <div class = "register-checkbox">
         <label>Onthoud mij</label>
         <input class="checkbox" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
       </div>
