@@ -168,8 +168,10 @@ body {
  #header > nav {
   background-color: #f7a400;
   height: 100px;
-  /**border-bottom: solid black 4px;**/
   margin-top: 10%;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
  }
 
 #header > nav li a {
