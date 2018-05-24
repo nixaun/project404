@@ -50,7 +50,7 @@
       <div class="P2">
         <ul>
               @if (!(Auth::guard('web')->check() || Auth::guard('admin')->check()))
-                <li><a href="/register"><i class="fas fa-user"></i></a></li>
+                <li><a href="/register"><i class="fas fa-user"></i></a>
               @else
                 <li><a href="{{route('Profiel')}}"><i class="fas fa-user"></i></a></li>
               @endif

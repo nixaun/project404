@@ -2,29 +2,23 @@
 
 @section('content')
   <div class="wrapper content-body">
-    <div class="content-split content-home">
-      <h1>Profiel</h1>
+    <div class="content-split content-home cfx">
+      <h1 class="form-header">Profiel</h1>
       <form action = "{{$user->id}}" method = 'POST'>
         {{ csrf_field() }}
 
-        <div>
+        <div class="register">
           <label for = 'userUsername'>Gebruikersnaam</label>
-
-          <div>
-            <input type = 'textarea' name = 'userUsername' id = 'userUsername'   value = "{{$user->username}}">
-          </div>
+          <input type = 'textarea' name = 'userUsername' id = 'userUsername'   value = "{{$user->username}}">
         </div>
 
-        <div>
+        <div class="register">
           <label for = 'userEmal'>E-mail:</label>
-
-          <div>
-            <input type = 'textarea' name = 'userEmail' id = 'userUrl' value = "{{$user->email}}">
-          </div>
+          <input type = 'textarea' name = 'userEmail' id = 'userUrl' value = "{{$user->email}}">
         </div>
 
-        <div>
-          <button type = 'submit'>
+        <div class="register">
+          <button type = 'submit' class="button-form">
             Pas user aan
           </button>
         </div>

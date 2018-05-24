@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-  <form method="POST" action="{{ route('login') }}" class="wrapper content-body content-split content-home cfx">
+  <form method="POST" action="{{ route('login') }}" class="wrapper content-small content-body content-split content-home cfx">
     <h1 class="form-header">Meld je aan</h1>
     @csrf
     <div class="form-container">
