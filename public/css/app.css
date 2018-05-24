@@ -169,9 +169,9 @@ body {
   background-color: #f7a400;
   height: 100px;
   margin-top: 10%;
-  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0, 0.3);
  }
 
 #header > nav li a {
