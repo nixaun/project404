@@ -17,10 +17,18 @@
     <div>
 
       <h2>Vind ons op</h2>
-      <a href="https://www.facebook.com/stad.antwerpen" target="_blank"  class="fa fa-facebook"></a>
-      <a href="https://twitter.com/Stad_Antwerpen" target="_blank"  class="fa fa-twitter"></a>
-      <a href="https://www.instagram.com/stad_antwerpen/" target="_blank"  class="fa fa-instagram"></a>
-      <a href="https://www.linkedin.com/company/stad-antwerpen" target="_blank"  class="fa fa-linkedin"></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
 </footer>
+
+<!--
+<a href="https://www.facebook.com/stad.antwerpen" target="_blank"  class="fa fa-facebook"></a>
+      <a href="https://twitter.com/Stad_Antwerpen" target="_blank"  class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/stad_antwerpen/" target="_blank"  class="fa fa-instagram"></a>
+      <a href="https://www.linkedin.com/company/stad-antwerpen" target="_blank"  class="fa fa-linkedin"></a>
+       <li><a href="/register"><i class="fas fa-user"></i></a>
+-->
