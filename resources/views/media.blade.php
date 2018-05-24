@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="wrapper content-body">
-    <div class = 'content-media content-home'>
+    <div class = 'content-media content-home cfx'>
         @if(session('danger'))
           @foreach ($media as $video)
             @if(Auth::user()->id == $video->user_id)
@@ -89,7 +89,7 @@
               </div>
             @endif
           @endforeach
-          <a href = "media/toevoegen" class="button-add cfx">Upload hier je eigen video</a>
+          <a href = "media/toevoegen" class="button-add">Upload hier je eigen video</a>
         @endif
 
         @if(!(Auth::guard('web')->check()) && !(Auth::guard('admin')->check()))
