@@ -3,6 +3,7 @@
 @section('content')
   <div class="wrapper content-body">
     <div class="content-split content-home cfx">
+      <a href = "/media" class="button-back"> ← Terug naar media</a>
       <form action = "{{$media->id}}" method = 'POST'>
         {{ csrf_field() }}
 

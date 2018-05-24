@@ -37,6 +37,7 @@ Route::post('media/wijzigen/{id}', 'MediaController@updateMedia')->middleware('a
 Route::post('media/goedkeuren/{id}', 'MediaController@goedkeuren');
 Route::post('media/verwijderen/bevestigen/{id}', 'MediaController@delete');
 Route::get('media/verwijderen/{id}', 'MediaController@showConfirm');
+Route::post('media', 'MediaController@index');
 
 Route::get('/profiel/wijzigen/{id}', 'ProfielController@editProfiel')->middleware('auth');
 Route::post('/profiel/wijzigen/{id}', 'ProfielController@updateProfiel')->middleware('auth');

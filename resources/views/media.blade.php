@@ -22,6 +22,20 @@
         @endif
 
         @if (Auth::guard('admin')->check())
+          <form action = "media" method = "POST">
+            {{ csrf_field() }}
+
+            <select name = "filters">
+              <option value = "name">Naam</option>
+              <option value = "date">Datum (nieuwste eerst)</option>
+              <option value = "dateOld">Datum (oudste eerst)</option>
+            </select>
+
+            <button type = "submit" name = "filter">
+              Sorteren
+            </button>
+          </form>
+
           @foreach ($media as $video)
             <div class="content-split cfx">
               @if($video->isAnonymous == 'on')
@@ -66,6 +80,20 @@
         @endif
 
         @if (Auth::user())
+          <form action = "media" method = "POST">
+            {{ csrf_field() }}
+
+            <select name = "filters">
+              <option value = "name">Naam</option>
+              <option value = "date">Datum (nieuwste eerst)</option>
+              <option value = "dateOld">Datum (oudste eerst)</option>
+            </select>
+
+            <button type = "submit" name = "filter">
+              Sorteren
+            </button>
+          </form>
+
           @foreach ($media as $video)
             @if (($video->isChecked))
               <div class="content-split cfx">
@@ -93,6 +121,20 @@
         @endif
 
         @if(!(Auth::guard('web')->check()) && !(Auth::guard('admin')->check()))
+          <form action = "media" method = "POST">
+            {{ csrf_field() }}
+
+            <select name = "filters">
+              <option value = "name">Naam</option>
+              <option value = "date">Datum (nieuwste eerst)</option>
+              <option value = "dateOld">Datum (oudste eerst)</option>
+            </select>
+
+            <button type = "submit" name = "filter">
+              Sorteren
+            </button>
+          </form>
+          
           @foreach ($media as $video)
             @if (($video->isChecked))
               <div class="content-split cfx">

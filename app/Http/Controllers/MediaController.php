@@ -14,6 +14,34 @@ class MediaController extends Controller
     {
         $media = Media::all();
         return view('Media', compact('media'));
+
+        if(isset($_POST['filter']))
+        {
+          $selectedVal = $_POST['filters'];
+
+          if($selectedVal == 'name')
+          {
+            $media = Media::orderBy('title', 'asc')->get();
+            return view('Media', compact('media'));
+          }
+
+          if ($selectedVal == 'date')
+          {
+            $media = Media::orderBy('updated_at', 'asc')->get();
+            return view('Media', compact('media'));
+          }
+
+          if ($selectedVal == 'dateOld')
+          {
+            $media = Media::orderBy('updated_at', 'desc')->get();
+            return view('Media', compact('media'));
+          }
+        }
+        else
+        {
+          $media = Media::all();
+          return view('Media', compact('media'));
+        }
     }
 
     public function addMedia()
