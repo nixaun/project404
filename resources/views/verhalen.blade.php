@@ -22,6 +22,20 @@
         @endif
 
         @if (Auth::guard('admin')->check())
+          <form action = "verhalen" method = "POST">
+            {{ csrf_field() }}
+
+            <select name = "filters">
+              <option value = "name">Naam</option>
+              <option value = "date">Datum (nieuwste eerst)</option>
+              <option value = "dateOld">Datum (oudste eerst)</option>
+            </select>
+
+            <button type = "submit" name = "filter">
+              Sorteren
+            </button>
+          </form>
+          
           @foreach ($verhalen as $verhaal)
             <div class="content-split cfx">
               @if($verhaal->isAnonymous == 'on')
@@ -78,6 +92,7 @@
               Sorteren
             </button>
           </form>
+
           @foreach ($verhalen as $verhaal)
             @if (($verhaal->isChecked))
               <div class="content-split cfx">
@@ -105,6 +120,20 @@
         @endif
 
         @if(!(Auth::guard('web')->check()) && !(Auth::guard('admin')->check()))
+          <form action = "verhalen" method = "POST">
+            {{ csrf_field() }}
+
+            <select name = "filters">
+              <option value = "name">Naam</option>
+              <option value = "date">Datum (nieuwste eerst)</option>
+              <option value = "dateOld">Datum (oudste eerst)</option>
+            </select>
+
+            <button type = "submit" name = "filter">
+              Sorteren
+            </button>
+          </form>
+
           @foreach ($verhalen as $verhaal)
             @if (($verhaal->isChecked))
               <div class="content-split">
