@@ -1,9 +1,10 @@
 @extends('layouts.default')
 
 @section('content')
-  <form method="POST" action="{{ route('login') }}" class="content-body">
+  <form method="POST" action="{{ route('login') }}" class="wrapper content-body content-split content-home cfx">
+    <h1 class="form-header">Meld je aan</h1>
     @csrf
-    <div class = "login">
+    <div class = "register-login">
       <label for = "username">Gebruikersnaam</label>
       <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
 
@@ -14,7 +15,7 @@
       @endif
     </div>
 
-    <div class = "login">
+    <div class = "register-login">
       <label for = "password">Paswoord</label>
       <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
@@ -25,20 +26,17 @@
       @endif
     </div>
 
-    <div class = "login">
-      <div class="checkbox">
-          <label>
-              <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Onthoud mij
-          </label>
-      </div>
+    <div class = "register-login">
+      <label>Onthoud mij</label>
+      <input class="checkbox" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
     </div>
 
-    <div class = "login">
-      <button type="submit">
+    <div class = "register-login">
+      <button type="submit" class="button-form">
           Login
       </button>
 
-      <a class="btn btn-link" href="{{ route('password.request') }}">
+      <a class="btn btn-link lost-pass" href="{{ route('password.request') }}">
           Paswoord vergeten?
       </a>
     </div>

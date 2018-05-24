@@ -167,7 +167,6 @@ body {
  #header > nav {
   background-color: #f7a400;
   height: 100px;
-  border-top: solid 110px #0064b4;
   border-bottom: solid black 4px;
   margin-top: 10%;
  }
@@ -298,7 +297,7 @@ body {
   color: #cf0039;
 }
 
-#header .bord img:hover{
+#header a img:hover{
   transform: scale(1.03)
 }
 
@@ -324,7 +323,7 @@ body {
 }
 
 .content-body{
-  margin-top: 100px;
+  margin-top: 160px;
 }
 
 
@@ -496,6 +495,33 @@ textarea:focus{
   border-bottom: 1px solid black;
 }
 
+
+.register-login{
+  margin: 2% 30% 2% ;
+  font-size: 1.4em;
+  float: right;
+}
+
+.register-login label{
+  padding-right: 10px;
+  width: 200px;
+  color: black;
+  display: inline-block;
+}
+
+.register-login input{
+  width: 300px;
+  font-size: 1em;
+  text-align: center;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+.register-login input:focus{
+  outline: none;
+}
+
 .register input:focus{
   outline: none;
 }
@@ -521,6 +547,11 @@ textarea:focus{
 .form-header{
   margin: 3% 0 10% 37%;
   font-size: 3em;
+}
+
+.lost-pass{
+  margin: 2% 10%;
+  color: #0064b4;
 }
 
 /******************************
