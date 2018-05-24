@@ -3,6 +3,7 @@
 @section('content')
   <div class="wrapper content-body">
     <div class="content-split content-home cfx">
+      <a href = "/verhalen" class="button-back"> ← Terug naar verhalen</a>
       <form action = "{{$verhaal->id}}" method = 'POST'>
         {{ csrf_field() }}
 

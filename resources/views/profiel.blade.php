@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-  <div class="wrapper content-body">
+  <div class="wrapper content-small content-body">
     <div class="content-split content-home form-container cfx">
       <h1 class="form-header">Profiel</h1>
       @foreach($user as $profile)
