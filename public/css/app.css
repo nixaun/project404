@@ -495,7 +495,7 @@ textarea:focus{
   padding: 10px;
   font-size: 1em;
   width: 200px;
-  margin: 3% auto;
+  margin: 8% auto 3%;
   border: 1px solid black;
   text-decoration: none;
   color: black;
