@@ -532,7 +532,7 @@ textarea:focus{
   border-bottom: 1px solid black;
 }
 
-.register-login{
+/* .register-login{
   margin: 2% 30% 2%  0;
   font-size: 1.4em;
   float: right;
@@ -544,18 +544,58 @@ textarea:focus{
   color: black;
   display: inline-block;
 }
+*/
 
-.register-login input{
-  width: 300px;
-  font-size: 1em;
+.register-login label {
+  display: block;
+  letter-spacing: 4px;
+  padding-top: 20px;
   text-align: center;
-  border: none;
-  background: transparent;
-  border-bottom: 1px solid black;
+}
+
+.register-checkbox {
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  width: 20%;
+  text-align: center;
+}
+
+.register-login label .label-text {
+  cursor: text;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  -moz-transform: translateY(-34px);
+  -ms-transform: translateY(-34px);
+  -webkit-transform: translateY(-34px);
+  transform: translateY(-34px);
+  transition: all 0.3s;
+}
+.register-login label input:focus + .label-text {
+  font-size: 13px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+
+.register-login label input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #4A4A4A;
+  font-size: 36px;
+  letter-spacing: -1px;
+  outline: 0;
+  padding: 5px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  width: 200px;
 }
 
 .register-login input:focus{
   outline: none;
+  width: 400px;
 }
 
 .register input:focus{
