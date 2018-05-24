@@ -12,8 +12,34 @@ class VerhaalsController extends Controller
 {
     public function index()
     {
-        $verhalen = Verhaal::all();
-        return view('Verhalen', compact('verhalen'));
+        if(isset($_POST['filter']))
+        {
+          $selectedVal = $_POST['filters'];
+
+          if($selectedVal == 'name')
+          {
+            $verhalen = Verhaal::orderBy('title', 'asc')->get();
+            return view('Verhalen', compact('verhalen'));
+          }
+
+          if ($selectedVal == 'date')
+          {
+            $verhalen = Verhaal::orderBy('updated_at', 'asc')->get();
+            return view('Verhalen', compact('verhalen'));
+          }
+
+          if ($selectedVal == 'dateOld')
+          {
+            $verhalen = Verhaal::orderBy('updated_at', 'desc')->get();
+            return view('Verhalen', compact('verhalen'));
+          }
+        }
+        else
+        {
+          $verhalen = Verhaal::all();
+          return view('Verhalen', compact('verhalen'));
+        }
+
     }
 
     public function addVerhaal()
