@@ -1,47 +1,49 @@
 @extends('layouts.default')
 
 @section('content')
-<h1>Admin login</h1>
-  <form method="POST" action="{{ route('admin.login.submit') }}">
+  <form method="POST" action="{{ route('admin.login.submit') }}" class="wrapper content-small content-body content-split content-home cfx">
+    <h1 class="form-header">Meld je aan als admin</h1>
     @csrf
-    <div class = "login">
-      <label for = "username">Gebruikersnaam</label>
-      <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
+    <div class="form-container">
+      <div class = "register-login">
+        <label>
+          <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
+          <div class = "label-text">Gebruikersnaam</div>
+        </label>
 
-      @if ($errors->has('username'))
-          <span class="invalid-feedback">
-              <strong>{{ $errors->first('username') }}</strong>
-          </span>
-      @endif
-    </div>
-
-    <div class = "login">
-      <label for = "password">Paswoord</label>
-      <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-      @if ($errors->has('password'))
-          <span class="invalid-feedback">
-              <strong>{{ $errors->first('password') }}</strong>
-          </span>
-      @endif
-    </div>
-
-    <div class = "login">
-      <div class="checkbox">
-          <label>
-              <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Onthoud mij
-          </label>
+        @if ($errors->has('username'))
+            <span class="invalid-feedback">
+                <strong>{{ $errors->first('username') }}</strong>
+            </span>
+        @endif
       </div>
-    </div>
 
-    <div class = "login">
-      <button type="submit">
-          Login
-      </button>
+      <div class = "register-login">
+        <label>
+          <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+          <div class = "label-text">Wachtwoord</div>
+        </label>
 
-      <a class="btn btn-link" href="{{ route('password.request') }}">
-          Paswoord vergeten?
-      </a>
-    </div>
+        @if ($errors->has('password'))
+            <span class="invalid-feedback">
+                <strong>{{ $errors->first('password') }}</strong>
+            </span>
+        @endif
+      </div>
+
+      <div class = "register-checkbox">
+        <label>Onthoud mij</label>
+        <input class="checkbox" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
+      </div>
+
+      <div class = "register-login">
+        <button type="submit" class="button-form">
+            Login
+        </button>
+
+        <a class="btn btn-link lost-pass" href="{{ route('password.request') }}">
+            Paswoord vergeten?
+        </a>
+      </div>
   </form>
 @endsection

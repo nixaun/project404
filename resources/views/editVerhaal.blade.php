@@ -7,19 +7,23 @@
       <form action = "{{$verhaal->id}}" method = 'POST'>
         {{ csrf_field() }}
 
-        <div class = 'register'>
-          <label for = 'verhaalTitle'>Titel (max. 255 tekens)</label>
-          <input type = 'textarea' name = 'verhaalTitle' id = 'verhaalTitle'   value = "{{$verhaal->title}}">
+        <div class = 'register-login'>
+          <label>
+            <input type = 'textarea' name = 'verhaalTitle' id = 'verhaalTitle' required autofocus  value = "{{$verhaal->title}}">
+            <div class = "label-text">Titel (max. 255 tekens)</div>
+          </label>
         </div>
 
-        <div class = 'register-text'>
-          <label for = 'verhaalBody'>Vertel hier je verhaal:</label>
-          <textarea type = 'textarea' name = 'verhaalBody' id = 'verhaalBody' value = "{{$verhaal->body}}"></textarea>
+        <div class = 'register-login'>
+          <label>
+            <textarea type = 'textarea' name = 'verhaalBody' id = 'verhaalBody' required autofocus value = "{{$verhaal->body}}"></textarea>
+            <div class = "label-text">Vertel hier je verhaal: </div>
+          </label>
         </div>
 
-        <div class = 'register'>
+        <div class = 'register-checkbox'>
           <label> Plaats anoniem</label>
-          <input  class="checkbox" type="checkbox" name="verhalenIsAnonymous" id = 'verhalenIsAnonymous' @if($verhaal->isAnonymous == 'on') checked @endif >
+          <input class="checkbox" type="checkbox" name="mediaIsAnonymous" id = 'mediaIsAnonymous' @if($verhaal->isAnonymous == 'on') checked @endif >
         </div>
 
         <div class = 'register'>

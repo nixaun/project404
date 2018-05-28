@@ -7,18 +7,22 @@
       <form action = "{{$media->id}}" method = 'POST'>
         {{ csrf_field() }}
 
-        <div class = 'register'>
-          <label for = 'mediaTitle'>Titel (max. 255 tekens)</label>
-          <input type = 'textarea' name = 'mediaTitle' id = 'mediaTitle'   value = "{{$media->title}}">
+        <div class = 'register-login'>
+          <label>
+            <input type = 'textarea' name = 'mediaTitle' id = 'mediaTitle' required autofocus value = "{{$media->title}}">
+            <div class = "label-text">Titel (max. 255 tekens)</div>
+          </label>
         </div>
 
-        <div class = 'register'>
-          <label for = 'mediaUrl'>Vertel hier je media:</label>
-          <input type = 'textarea' name = 'mediaUrl' id = 'mediaUrl' value = "{{$media->url}}">
+        <div class = 'register-login'>
+          <label>
+            <input type = 'textarea' name = 'mediaUrl' id = 'mediaUrl' required autofocus value = "{{$media->url}}">
+            <div class = "label-text">Url</div>
+          </label>
         </div>
 
-        <div class = 'register'>
-          <label>Plaats anoniem</label>
+        <div class = 'register-checkbox'>
+          <label> Plaats anoniem</label>
           <input class="checkbox" type="checkbox" name="mediaIsAnonymous" id = 'mediaIsAnonymous' @if($media->isAnonymous == 'on') checked @endif >
         </div>
 

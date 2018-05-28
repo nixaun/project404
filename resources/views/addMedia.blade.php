@@ -7,17 +7,21 @@
       <form action = "{{route('insertMedia')}}" method = 'POST'>
         {{ csrf_field() }}
 
-        <div class = 'register'>
-          <label for = 'mediaTitle'>Titel (max. 255 tekens)</label>
-          <input type = 'textarea' name = 'mediaTitle' id = 'mediaTitle'>
+        <div class = 'register-login'>
+          <label>
+            <input type = 'textarea' name = 'mediaTitle' id = 'mediaTitle' required autofocus>
+            <div class = "label-text">Titel (max. 255 tekens)</div>
+          </label>
+        </div>
+        
+        <div class = 'register-login'>
+          <label>
+            <input type = 'textarea' name = 'mediaUrl' id = 'mediaUrl' required autofocus>
+            <div class = "label-text">Url</div>
+          </label>
         </div>
 
-        <div class = 'register'>
-          <label for = 'mediaUrl'>Url </label>
-          <input type = 'textarea' name = 'mediaUrl' id = 'mediaUrl'>
-        </div>
-
-        <div class = 'register'>
+        <div class = 'register-checkbox'>
           <label> Plaats anoniem</label>
           <input class="checkbox" type="checkbox" name="mediaIsAnonymous" id = 'mediaIsAnonymous'>
         </div>

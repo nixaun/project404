@@ -1,13 +1,15 @@
 @extends('layouts.default')
 
 @section('content')
-<form method = "POST" action="{{ route('register') }}" class="wrapper content-small content-body content-split content-home cfx">
+<form method = "POST" action="{{ route('register') }}" class="content-body content-split content-home cfx">
   <h1 class="form-header">Registreer hier</h1>
   @csrf
-  <div class="form-container">
-    <div class = "register">
-      <label for="name" class="col-md-4 col-form-label text-md-right">Naam</label>
-      <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+
+    <div class = "register-login">
+      <label>
+        <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+        <div class = "label-text">Naam</div>
+      </label>
 
       @if ($errors->has('name'))
           <span class="invalid-feedback">
@@ -16,9 +18,11 @@
       @endif
     </div>
 
-    <div class = "register">
-      <label for="firstname" class="col-md-4 col-form-label text-md-right">Voornaam</label>
-      <input id="firstname" type="text" class="form-control{{ $errors->has('firstname') ? ' is-invalid' : '' }}" name="firstname" value="{{ old('firstname') }}" required autofocus>
+    <div class = "register-login">
+      <label>
+        <input id="firstname" type="text" class="form-control{{ $errors->has('firstname') ? ' is-invalid' : '' }}" name="firstname" value="{{ old('firstname') }}" required autofocus>
+        <div class = "label-text">Voornaam</div>
+      </label>
 
       @if ($errors->has('firstname'))
           <span class="invalid-feedback">
@@ -27,21 +31,11 @@
       @endif
     </div>
 
-    <div class = "register">
-      <label for="birthdate" class="col-md-4 col-form-label text-md-right">Geboortedatum</label>
-      <input type="date" name="birthdate">
-
-      @if ($errors->has('birthdate'))
-          <span class="invalid-feedback">
-              <strong>{{ $errors->first('birthdate') }}</strong>
-          </span>
-      @endif
-    </div>
-
-    <div class = "register">
-      <label for="username" class="col-md-4 col-form-label text-md-right">Gebruikersnaam</label>
-
-      <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required>
+    <div class = "register-login">
+      <label>
+        <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
+        <div class = "label-text">Gebruikersnaam</div>
+      </label>
 
       @if ($errors->has('username'))
           <span class="invalid-feedback">
@@ -50,9 +44,11 @@
       @endif
     </div>
 
-    <div class = "register">
-      <label for="email" class="col-md-4 col-form-label text-md-right">E-mail adres</label>
-      <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+    <div class = "register-login">
+      <label>
+        <input id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+        <div class = "label-text">E-mail adres</div>
+      </label>
 
       @if ($errors->has('email'))
           <span class="invalid-feedback">
@@ -61,9 +57,24 @@
       @endif
     </div>
 
-    <div class = "register">
-      <label for="password" class="col-md-4 col-form-label text-md-right">Wachtwoord</label>
-      <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+    <div class = "register-login">
+      <label>
+        <input id="birthdate" type="date" class="form-control{{ $errors->has('birthdate') ? ' is-invalid' : '' }}" name="birthdate" value="{{ old('birthdate') }}" required autofocus>
+        <div class = "label-text">Geboortedatum</div>
+      </label>
+
+      @if ($errors->has('birthdate'))
+          <span class="invalid-feedback">
+              <strong>{{ $errors->first('birthdate') }}</strong>
+          </span>
+      @endif
+    </div>
+
+    <div class = "register-login">
+      <label>
+        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+        <div class = "label-text">Wachtwoord</div>
+      </label>
 
       @if ($errors->has('password'))
           <span class="invalid-feedback">
@@ -72,9 +83,11 @@
       @endif
     </div>
 
-    <div class = "register">
-      <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Bevestig wachtwoord</label>
-      <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+    <div class = "register-login">
+      <label>
+        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+        <div class = "label-text">Bevestig wachtwoord</div>
+      </label>
     </div>
 
     <div>

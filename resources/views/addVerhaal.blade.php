@@ -6,20 +6,23 @@
       <a href = "/verhalen" class="button-back"> ← Terug naar verhalen</a>
       <form action = "{{route('insertVerhaal')}}" method = 'POST'>
         {{ csrf_field() }}
-
-        <div class = 'register'>
-          <label for = 'verhaalTitle'>Titel (max. 255 tekens)</label>
-          <input type = 'textarea' name = 'verhaalTitle' id = 'verhaalTitleT'>
+        <div class = 'register-login'>
+          <label>
+            <input type = 'textarea' name = 'verhaalTitle' id = 'verhaalTitle' required autofocus>
+            <div class = "label-text">Titel (max. 255 tekens)</div>
+          </label>
         </div>
 
-        <div class = 'register-text'>
-          <label for = 'verhaalBody'>Vertel hier je verhaal: </label>
-          <textarea type = 'textarea' name = 'verhaalBody' id = 'verhaalBody'></textarea>
+        <div class = 'register-login'>
+          <label>
+            <textarea type = 'textarea' name = 'verhaalBody' id = 'verhaalBody' required autofocus></textarea>
+            <div class = "label-text">Vertel hier je verhaal: </div>
+          </label>
         </div>
 
-        <div class = 'register'>
-          <label>Plaats anoniem</label>
-          <input class="checkbox" type="checkbox" name="verhaalIsAnonymous" id = 'verhaalIsAnonymous'>
+        <div class = 'register-checkbox'>
+          <label> Plaats anoniem</label>
+          <input class="checkbox" type="checkbox" name="mediaIsAnonymous" id = 'mediaIsAnonymous'>
         </div>
 
         <div class = 'register'>
