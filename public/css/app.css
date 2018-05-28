@@ -87,6 +87,7 @@ body {
   opacity: 0.7;
 }
 
+
 /******************************
  *          hamburger         *
  ******************************/
@@ -115,6 +116,7 @@ body {
 #toggle{
   display: none;
 }
+
 
 /******************************
  *          header            *
@@ -209,13 +211,10 @@ body {
 }
 
 #header .logo img{
-  width: 5%;
   position: absolute;
   margin: 0;
-}
-
-#header .logo{
-  height: 96px;
+  margin-top: -200px;
+  width: 5%;
 }
 
 #header .banner img{
@@ -224,24 +223,14 @@ body {
   width: 100%;
 }
 
-/**
-@media screen and (max-width: 1366px) {
-
-  #header img{
-    margin-top: 6%;
-  }
-}
-**/
 
 @media screen and (max-width: 1150px) {
   #header nav ul li a {
     font-size: .8em;
   }
-
   #header img{
     width: 20%;
   }
-
 }
 
 @media screen and (max-width: 900px) {
@@ -283,25 +272,20 @@ body {
    #header > a > img{
     display: none;
   }
-  }
-/**
-  #header img{
-    margin-top: 5%;
-    width: 30%;
-    margin-left: 35%;
-  }
-  **/
+}
+
 
 /******************************
- *          DROPDOWN           *
+ *          DROPDOWN          *
  ******************************/
 
 .DDWN{
   color: #0064b4;
 }
 
+
 /******************************
- *           Active Tab           *
+ *           Active Tab       *
  ******************************/
 
  #header > nav li a:hover {
@@ -312,9 +296,11 @@ body {
   transform: scale(1.03)
 }
 
+
 /******************************
  *             HOME           *
  ******************************/
+
 .content-home{
   width: 70%;
   margin: 0 auto;
@@ -406,6 +392,7 @@ textarea:focus{
   margin: 2% 2% 2% 10%;
 }
 
+
 /******************************
  *        subnavigatie        *
  ******************************/
@@ -436,9 +423,11 @@ textarea:focus{
 .current{
   color: blue;
 }
-/******************************
-*           aside            *
-******************************/
+
+
+/*****************************
+ *           aside           *
+ *****************************/
 
  .aside {
    margin-top: 100px;
@@ -468,24 +457,21 @@ textarea:focus{
    background-repeat: repeat;
    margin-bottom: 2%;
    box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
-
  }
 
  .iframe-content{
    width: 100%;
    height: 350px;
-
  }
-
-
 
  .aside .content-split ul li {
    margin-bottom: 2%;
  }
 
- /******************************
-  *         profile            *
-  ******************************/
+
+/*****************************
+ *         profile           *
+ *****************************/
 
 .button-profile{
   float: none;
@@ -508,11 +494,9 @@ textarea:focus{
 }
 
 
-
-
- /******************************
-  *         register           *
-  ******************************/
+/*****************************
+ *         register          *
+ *****************************/
 
 .form-container{
     margin: 4% auto;
@@ -629,7 +613,6 @@ textarea:focus{
   outline: none;
 }
 
-
 .button-form{
   float: none;
   display: block;
@@ -663,6 +646,7 @@ textarea:focus{
   margin: 2% 10%;
   color: #0064b4;
 }
+
 
 /******************************
  *           media            *
@@ -749,9 +733,10 @@ footer a:hover{
   background: #0077B5;
 }
 
- /******************************
-  *          clearfix          *
-  ******************************/
+
+/******************************
+ *          clearfix          *
+ ******************************/
 
 .cfx::before, .cfx::after {
     display: block;
