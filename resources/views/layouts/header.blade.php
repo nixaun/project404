@@ -31,6 +31,7 @@
       </div>
       <input type="checkbox" id="toggle"/>
       <div class="hamburger">
+        <a href="{{route('home')}}"><i class="fas fa-home"></i> Home</a>
         <a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Seksuele Intimidatie</a>
         <a href="{{route('Verhalen')}}"><i class="fas fa-book-open "></i> Verhalen</a>
         <a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh "></i> SOS</a>

@@ -773,6 +773,7 @@ footer a:hover{
  footer{
    min-height: 420px;
    font-size: .9em;
+   margin-top: 20%;
  }
 
  footer div div ul h2, footer div div h2{
@@ -801,5 +802,9 @@ footer div div:nth-child(2){
   margin-left: 10%;
 }
 */
+
+.content-home, .content-split, .content-verhalen{
+  width: 80%;
+}
 }
 
