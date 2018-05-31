@@ -2,3 +2,9 @@
     width: device-width;
     zoom: 1.0;
 }
+
+@media screen and (max-width:200px){
+    .wrapper {
+        width: 20%;
+      }
+}

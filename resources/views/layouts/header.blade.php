@@ -11,6 +11,7 @@
     <title>STOP_SEKSUELE_INTIMIDATIE</title>
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/mobile.css') }}" rel="stylesheet">
 
   </head>
 

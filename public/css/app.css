@@ -754,3 +754,52 @@ footer a:hover{
 .cfx::after {
     clear: both;
 }
+
+/******************************************************************************************************************************************
+ *                                                            MOBILE                                                                      *
+ ******************************************************************************************************************************************/
+
+ @viewport{
+  width: device-width;
+  zoom: 1.0;
+}
+
+ @media screen and (max-width:414px){
+ 
+  .wrapper {
+    width: 100%;
+  }
+
+ footer{
+   min-height: 420px;
+   font-size: .9em;
+ }
+
+ footer div div ul h2, footer div div h2{
+   display: none;
+ }
+
+footer div div{
+  width: 100%;
+}
+
+footer div div ul{
+  vertical-align: center;
+}
+
+footer div div:nth-child(2){
+  border-top: solid white 1px;
+  border-bottom: solid white 1px;
+ }
+
+ footer ul li{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+/*footer div div:nth-child(3){
+  margin-left: 10%;
+}
+*/
+}
+
