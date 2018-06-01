@@ -803,7 +803,23 @@ footer div div:nth-child(2){
 }
 */
 
-.content-home, .content-body, .content-verhalen, .cfx{
+.content-home, .content-body, .content-verhalen{
+  width: 95%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 10%;
+}
+
+.content-verhalen{
+  width: 104%;
+}
+
+.content-media{
+  width: 100%;
+  margin: 40% 0%;
+}
+
+.cfx{
   width: 95%;
   margin-left: 0%;
   margin-right: 0%;

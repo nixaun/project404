@@ -1,8 +1,8 @@
 @extends('layouts.default')
 
 @section('content') 
-  <div class="wrapper content-body">
-    <div class = 'content-media content-home cfx'>
+  <div class="wrapper content-body content-media">
+    <div class = 'content-home cfx'>
         @if(session('danger'))
           @foreach ($media as $video)
             @if(Auth::user()->id == $video->user_id)
