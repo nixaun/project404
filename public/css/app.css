@@ -764,6 +764,7 @@ footer a:hover{
   zoom: 1.0;
 }
 
+/*VERTICAL*/
  @media screen and (max-width:414px){
  
   .wrapper {
@@ -837,7 +838,11 @@ footer div div:nth-child(2){
   margin-bottom: 10%;
 }
 
-.sidenav, cfx{
+cfx{
+  width: 105%;
+}
+
+.sidenav{
   width: 105%;
 }
 
@@ -845,5 +850,62 @@ footer div div:nth-child(2){
   margin-top: 0%;
   width: 100%;
 }
+}
+
+/*HORIZONTAL*/
+@media screen and (max-width:812px){
+
+  .wrapper {
+    width: 100%;
+  }
+
+
+.content-home, .content-body, .content-verhalen{
+  width: 95%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 10%;
+}
+
+.content-verhalen{
+  width: 104%;
+}
+
+.content-media{
+  width: 100%;
+  margin: 40% 0%;
+}
+
+.cfx{
+  width: 95%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 10%;
+}
+
+.aside{
+  width: 105%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.content-split{
+  width: 100;
+  margin-bottom: 10%;
+}
+
+cfx{
+  width: 105%;
+}
+
+.sidenav{
+  width: 105%;
+}
+
+#page1{
+  margin-top: 0%;
+  width: 100%;
+}
+
 }
 
