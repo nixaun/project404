@@ -1,5 +1,5 @@
 <footer>
-  <div class="wrapper">
+  <div class="wrapper footer">
 
     <div>
       <ul>

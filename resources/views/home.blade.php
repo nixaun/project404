@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="wrapper content-body">
-    <div class="content-split content-home cfx">
+    <div class="content-split content-home cfx"> 
       <h1 class="header-home">Media</h1>
       @foreach ($media as $video)
         @if ($video->id == $randomArray1[$random1])

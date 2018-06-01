@@ -1,12 +1,25 @@
 @font-face {
   font-family: 'Antwerpen-Regular';
   src: url('Antwerpen webfonts/Antwerpen Regular webfonts/Antwerpen-Regular.ttf');
-  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Antwerpen-Sun';
+  src: url('SunAntwerpen-Web/SunAntwerpenCd_500/SunAntwerpenCd_500.woff');
 }
 
 *{
+  font-family:'Antwerpen-Sun';
+}
+
+#header a, .footer h2, .wrapper h1{
   font-family:'Antwerpen-Regular';
 }
+
+p, h2, H3, h1, a{
+  font-family: 'Antwerpen-Sun';
+}
+
 body {
   margin: 0;
   background-image:url("../images/bg.png");
