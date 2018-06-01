@@ -16,9 +16,10 @@
   font-family:'Antwerpen-Regular';
 }
 
-p, h2, H3, h1, a{
-  font-family: 'Antwerpen-Sun';
+p, h3, li{
+  font-size: 1.3em;
 }
+
 
 body {
   margin: 0;
@@ -396,6 +397,7 @@ textarea:focus{
 }
 
 .content-verhalen h3{
+
   margin: 2% 2% 4% 10%;
 }
 
