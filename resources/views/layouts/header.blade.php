@@ -38,7 +38,7 @@
         <a href="{{route('Media')}}"><i class="fas fa-play-circle"></i> Media</a>
 
         @if ((Auth::guard('web')->check() || Auth::guard('admin')->check()))
-          <a href="/register"><i class="fas fa-user"></i> Profiel</a>
+          <a href="/profiel"><i class="fas fa-user"></i> Profiel</a>
         @endif
       </div>
       <ul>

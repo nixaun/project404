@@ -865,6 +865,12 @@ cfx{
   margin-top: 0%;
   width: 100%;
 }
+
+.content-split, #header > nav{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 }
 
 /*HORIZONTAL*/
@@ -922,5 +928,10 @@ cfx{
   width: 100%;
 }
 
+.content-split, #header > nav{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 }
 
