@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('content')
+@section('content') 
   <div class="wrapper content-body">
     <div class = 'content-media content-home cfx'>
         @if(session('danger'))

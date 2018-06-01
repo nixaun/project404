@@ -39,7 +39,7 @@
     </div>
 
     <div id="page2">
-      <div class="content-split">
+      <div class="content-split"> 
         <h1>Welk gedrag is strafbaar?</h1>
         <h3>Ook al voelt niet iedereen zich even snel seksueel geïntimideerd, toch is ongewenst gedrag in bepaalde gevallen strafbaar.</h3>
         <p>U kan persoonlijk aangifte doen, maar de politie kan ook zelf een vaststelling doen en een proces verbaal opmaken zonder dat er een klacht is ingediend. Het gaat hier om ongewenst, storend, intimiderend of choquerend gedrag dat seksueel getint of geladen kan zijn en waarbij het slachtoffer zich in zijn rust gestoord voelt.</p>

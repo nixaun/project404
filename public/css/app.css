@@ -803,8 +803,31 @@ footer div div:nth-child(2){
 }
 */
 
-.content-home, .content-split, .content-verhalen{
-  width: 80%;
+.content-home, .content-body, .content-verhalen, .cfx{
+  width: 95%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 10%;
+}
+
+.aside{
+  width: 105%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.content-split{
+  width: 100;
+  margin-bottom: 10%;
+}
+
+.sidenav, cfx{
+  width: 105%;
+}
+
+#page1{
+  margin-top: 0%;
+  width: 100%;
 }
 }
 

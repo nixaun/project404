@@ -65,7 +65,7 @@
               @if($verhaal->isChecked)
                 <button type="submit" name = "goedkeuren" disabled class="button-all">
                   Goedkeuren
-                </button>
+                </button> 
 
                 <form action="verhalen/verwijderen/{{$verhaal->id}}" method="GET">
                     {{ csrf_field() }}
