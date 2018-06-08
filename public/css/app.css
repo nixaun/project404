@@ -411,7 +411,7 @@ textarea:focus{
  ******************************/
 
  .sidenav {
-     width: 400px;
+     width: 30%;
      float: left;
  }
 
@@ -781,7 +781,7 @@ footer a:hover{
 
 /*VERTICAL*/
  @media screen and (max-width:414px){
- 
+
   .wrapper {
     width: 100%;
   }
@@ -934,4 +934,3 @@ cfx{
   box-shadow: none;
 }
 }
-
