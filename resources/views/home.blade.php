@@ -1,8 +1,18 @@
 @extends('layouts.default')
 
 @section('content')
-  <div class="wrapper content-body">
-    <div class="content-split content-home cfx"> 
+<div class="wrapper content-body">
+  <div class="content-split content-home cfx">
+    <h1 class="header-home">Welkom op onze site</h1>
+        <p>Wil je meer te weten komen over de problemen rond seksuele intimidatie op school, je steun uiten voor anderen met dit probleem of jezelf informeren?
+        Dan ben je op het juiste adres.</p>
+        <p class="cfx">Wil je meer informatie over seksuele intimidatie op school? </br><a href="{{route('WatIsSeksueleIntimidatie')}}" class="link-welkom">Klik dan hier</a></p>
+        <p class="cfx">Heb je zelf hulp nodig of ken je iemand die hulp kan gebruiken? </br><a href="{{route('WatKanUZelfDoen')}}" class="link-welkom">Klik dan hier</a></p>
+        <p class="cfx">Wil je je hart luchten en je verhaal online zetten of lezen welke ervaringen anderen hebben gehad? </br><a href="{{route('Verhalen')}}" class="link-welkom">Klik dan hier</a></p>
+        <p class="cfx">Heb je een interessant filmpje dat kan helpen of wil je zelf zoeken naar filmpjes? </br><a href="{{route('Media')}}" class="link-welkom">Klik dan hier</a></p>
+  </div>
+  
+    <div class="content-split content-home cfx">
       <h1 class="header-home">Media</h1>
       @foreach ($media as $video)
         @if ($video->id == $randomArray1[$random1])

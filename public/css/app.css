@@ -343,6 +343,13 @@ body {
   width: 50%;
 }
 
+.link-welkom{
+  float: left;
+  margin-left: 5%;
+  padding: 1% 2%;
+  text-decoration: none;
+}
+
 
 /******************************
  *           Verhalen         *
