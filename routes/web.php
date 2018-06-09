@@ -17,7 +17,7 @@ Route::group(['middleware' => ['web']], function() {
   Route::get('/', 'HomeController@index')->name('home');
   Route::get('/home', 'HomeController@index')->name('home');
   Route::get('/wat-is-seksuele-intimidatie', 'WatIsSeksueleIntimidatieController@index')->name('WatIsSeksueleIntimidatie');
-  Route::get('/verhalen', 'VerhaalsController@index')->name('Verhalen');
+  Route::get('verhalen', 'VerhaalsController@index')->name('Verhalen');
   Route::get('/media', 'MediaController@index')->name('Media');
   Route::get('/wat-kan-u-zelf-doen', 'WatKanUZelfDoenController@index')->name('WatKanUZelfDoen');
   Route::get('/profiel', 'ProfielController@index')->name('Profiel');
@@ -47,4 +47,4 @@ Route::group(['middleware' => ['web']], function() {
   Route::post('/admin/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 
   Route::get('/game', 'GameController@index')->name('Game');
-}); 
+});
