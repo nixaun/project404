@@ -811,6 +811,15 @@ footer div div{
   width: 100%;
 }
 
+footer div div img{
+  width: 80%;
+}
+
+footer div .socials{
+  margin-left: 10%;
+  width: 70%;
+}
+
 footer div div ul{
   vertical-align: center;
 }

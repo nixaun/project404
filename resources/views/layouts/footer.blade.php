@@ -17,7 +17,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="socials">
       <h2>Vind ons op</h2>
       <a href="#"><i class="fab fa-facebook"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
