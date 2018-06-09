@@ -4,7 +4,7 @@
     <div>
       <ul>
         <h2>Speel onze game</h2>
-        <a href = "{{route('Game')}}"<img src="{{asset('images/logo_game_on.png')}}" class="img-footer"/></a>
+        <a href = "{{route('Game')}}"><img src="{{asset('images/logo_game_on.png')}}" /></a>
       </ul>
     </div>
 
