@@ -8,6 +8,6 @@ class WatIsSeksueleIntimidatieController extends Controller
 {
     public function index()
     {
-        return view('WatIsSeksueleIntimidatie');
+        return view('watIsSeksueleIntimidatie');
     }
 }

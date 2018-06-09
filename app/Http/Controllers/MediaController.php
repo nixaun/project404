@@ -13,7 +13,7 @@ class MediaController extends Controller
     public function index()
     {
         $media = Media::all();
-        return view('Media', compact('media'));
+        return view('media', compact('media'));
 
         if(isset($_POST['filter']))
         {
@@ -22,25 +22,25 @@ class MediaController extends Controller
           if($selectedVal == 'name')
           {
             $media = Media::orderBy('title', 'asc')->get();
-            return view('Media', compact('media'));
+            return view('media', compact('media'));
           }
 
           if ($selectedVal == 'date')
           {
             $media = Media::orderBy('updated_at', 'asc')->get();
-            return view('Media', compact('media'));
+            return view('media', compact('media'));
           }
 
           if ($selectedVal == 'dateOld')
           {
             $media = Media::orderBy('updated_at', 'desc')->get();
-            return view('Media', compact('media'));
+            return view('media', compact('media'));
           }
         }
         else
         {
           $media = Media::all();
-          return view('Media', compact('media'));
+          return view('media', compact('media'));
         }
     }
 

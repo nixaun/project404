@@ -8,6 +8,6 @@ class WatKanUZelfDoenController extends Controller
 {
     public function index()
     {
-        return view('WatKanUZelfDoen');
+        return view('watKanUZelfDoen');
     }
 }
