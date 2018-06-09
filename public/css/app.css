@@ -861,10 +861,6 @@ footer div div:nth-child(2){
 }
 
 /*footer div div:nth-child(3){
-  margin-left: 10%;
-}
-*/
-
 .content-home, .content-body, .content-verhalen{
   width: 95%;
   margin-left: 0%;
@@ -917,7 +913,125 @@ cfx{
   -moz-box-shadow: none;
   box-shadow: none;
 }
+
+/*****************************
+ *         register          *
+ *****************************/
+
+.register-checkbox {
+margin: auto;
+display: block;
+font-size: 1em;
+width: 20%;
+text-align: center;
 }
+
+.register-login label .label-text {
+cursor: text;
+font-size: 1em;
+line-height: 20px;
+text-transform: none;
+-moz-transform: none;
+-ms-transform: none;
+-webkit-transform: none;
+transform: none;
+transition: none;
+}
+.register-login label input:focus + .label-text {
+font-size: 13px;
+-moz-transform: none;
+-ms-transform: none;
+-webkit-transform: none;
+transform: none;
+}
+
+.register-login label input {
+background-color: transparent;
+border: 0;
+border-bottom: 2px solid #4A4A4A;
+font-size: 1em;
+letter-spacing: -1px;
+outline: 0;
+padding: 10px 20px;
+text-align: center;
+transition: none;
+width: 200px;
+}
+
+.register-login label textarea {
+font-size: 1em;
+letter-spacing: -1px;
+outline: 0;
+padding: 5px 20px;
+text-align: center;
+transition: none;
+}
+
+.register-login label textarea + .label-text {
+padding: 20px 0;
+font-size: 1em;
+-moz-transform: none;
+-ms-transform: none;
+-webkit-transform: none;
+transform: none;
+}
+
+.register-login input:focus{
+outline: none;
+width: 50%;
+}
+
+.register-login label input:valid + .label-text {
+font-size: 1em;
+-moz-transform: none;
+-ms-transform: none;
+-webkit-transform: none;
+transform: none;
+}
+
+.register-date label .label-text{
+font-size: 1em;
+-moz-transform: none;
+-ms-transform: none;
+-webkit-transform: none;
+transform: none;
+}
+
+.register input:focus{
+outline: none;
+}
+
+.button-form{
+float: none;
+display: block;
+position: static;
+background-color: white;
+padding: 10px;
+font-size: 1em;
+width: 200px;
+margin: 8% auto 1%;
+border: 1px solid black;
+text-decoration: none;
+color: black;
+text-align: center;
+}
+
+.button-form:hover{
+opacity: 1;
+}
+
+.form-header{
+margin: 3% auto 7% ;
+text-align: center;
+width: 50%;
+font-size: 3em;
+display: block;
+position: static;
+float: none;
+}
+
+}
+
 
 /*HORIZONTAL*/
 @media screen and (min-width:415px) and (max-width:812px) {
@@ -997,4 +1111,11 @@ cfx{
   -moz-box-shadow: none;
   box-shadow: none;
 }
+}
+
+/*LITTLE CHEATING*/
+@media screen and (min-width:812px) and (max-width:2320px) {
+  footer .gamer img{
+    width: 110%;
+  }
 }

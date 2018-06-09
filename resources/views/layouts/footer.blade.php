@@ -1,7 +1,7 @@
 <footer>
   <div class="wrapper footer">
 
-    <div>
+    <div class="gamer">
       <ul>
         <h2>Speel onze game</h2>
         <a href = "{{route('Game')}}"><img src="{{asset('images/logo_game_on.png')}}" /></a>
