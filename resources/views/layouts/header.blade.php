@@ -19,7 +19,7 @@
     <div id = 'header'>
 
         
-        <div class="banner"><img src="{{ asset('images/testerbanner.png')}}" alt=""></div>
+        <div class="banner"><img src="{{ asset('images/bnr.png')}}" alt=""></div>
         <a href="{{route('home')}}"><img src="{{ asset('images/BORD4.png')}}" alt="BORD2"></a>
         <div class="logo"><a href="https://www.antwerpen.be/nl/home"><img src="{{ asset('images/witlogo.png')}}" alt="LOGO"></a></div>
       
