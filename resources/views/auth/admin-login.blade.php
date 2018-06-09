@@ -7,13 +7,13 @@
     <div class="form-container">
       <div class = "register-login">
         <label>
-          <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
-          <div class = "label-text">Gebruikersnaam</div>
+          <input id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+          <div class = "label-text">E-mail adres</div>
         </label>
 
-        @if ($errors->has('username'))
+        @if ($errors->has('email'))
             <span class="invalid-feedback">
-                <strong>{{ $errors->first('username') }}</strong>
+                <strong>{{ $errors->first('email') }}</strong>
             </span>
         @endif
       </div>
