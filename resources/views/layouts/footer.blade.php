@@ -8,7 +8,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="boxes">
       <ul>
         <h2>Nog vragen?</h2>
         <li><a href="https://www.antwerpen.be/nl/info/5360f244b1a8a76a088b45c4/contacteer-stad-antwerpen-voor-meer-info" target="_blank" class="button-footer">Contacteer ons</a></li>

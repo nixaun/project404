@@ -817,7 +817,7 @@ footer div div img{
 
 footer div .socials{
   margin-left: 10%;
-  width: 70%;
+  width: 80%;
 }
 
 footer div div ul{
@@ -894,12 +894,30 @@ cfx{
 }
 
 /*HORIZONTAL*/
-@media screen and (max-width:812px){
+@media screen and (min-width:415px) and (max-width:812px) {
+/*@media screen and (max-width:812px){*/
 
-  .wrapper {
-    width: 100%;
-  }
+.wrapper {
+  width: 100%;
+}
 
+footer div div img{
+  width: 140%;
+}
+
+
+footer div div ul h2, footer div div h2{
+  font-size: 1.2em;
+}
+
+footer .boxes li{
+  margin-bottom: 20%;
+}
+
+footer .socials{
+  width: 20%;
+  margin-left: 5%;
+}
 
 .content-home, .content-body, .content-verhalen{
   width: 95%;
