@@ -623,10 +623,28 @@ textarea:focus{
   font-size: 30px;
   letter-spacing: -1px;
   outline: 0;
-  padding: 5px 20px;
+  padding: 10px 20px;
   text-align: center;
   transition: all 0.3s;
   width: 200px;
+}
+
+.register-login label textarea {
+  font-size: 30px;
+  letter-spacing: -1px;
+  outline: 0;
+  padding: 5px 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.register-login label textarea + .label-text {
+  padding: 20px 0;
+  font-size: 13px;
+  -moz-transform: translateY(-310px);
+  -ms-transform: translateY(-310px);
+  -webkit-transform: translateY(-310px);
+  transform: translateY(-310px);
 }
 
 .register-login input:focus{
@@ -635,6 +653,14 @@ textarea:focus{
 }
 
 .register-login label input:valid + .label-text {
+  font-size: 13px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+
+.register-date label .label-text{
   font-size: 13px;
   -moz-transform: translateY(-74px);
   -ms-transform: translateY(-74px);

@@ -57,7 +57,7 @@
       @endif
     </div>
 
-    <div class = "register-login">
+    <div class = "register-login register-date">
       <label>
         <input id="birthdate" type="date" class="form-control{{ $errors->has('birthdate') ? ' is-invalid' : '' }}" name="birthdate" value="{{ old('birthdate') }}" required autofocus>
         <div class = "label-text">Geboortedatum</div>
