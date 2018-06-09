@@ -31,13 +31,13 @@ class VerhaalsController extends Controller
           if ($selectedVal == 'dateOld')
           {
             $verhalen = Verhaal::orderBy('updated_at', 'desc')->get();
-            return view('Verhalen', compact('verhalen'));
+            return view('verhalen', compact('verhalen'));
           }
         }
         else
         {
           $verhalen = Verhaal::all();
-          return view('Verhalen', compact('verhalen'));
+          return view('verhalen', compact('verhalen'));
         }
 
     }
