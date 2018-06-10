@@ -3,6 +3,19 @@
 @section('content')
   <div class="wrapper content-body content-media">
     <div class = 'content-home cfx'>
+      <div>
+        {{ session('danger') }}
+
+        <form action = "bevestigen/{{$video->id}}" method = "POST">
+          {{ csrf_field() }}
+
+          <p>Ben je zeker dat je deze video wilt verwijderen?</p>
+          <button type = "submit" name = "delete">Verwijderen</button>
+
+          <button type = "submit" name = "cancel">Cancel</button>
+        </form>
+        </div>
+
         @if (Auth::guard('admin')->check())
           <form action = "media" method = "POST">
             {{ csrf_field() }}
@@ -36,7 +49,8 @@
                   </button>
                 </form>
 
-                <form action="media/verwijderen/{{$video->id}}" method="GET">
+
+                <form action="media/verwijderen/{{$video->id}}" method="POST">
                     {{ csrf_field() }}
                   <button type="submit" name = "delete" class="button-all">
                     Niet goedkeuren

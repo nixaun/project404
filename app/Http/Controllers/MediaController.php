@@ -98,9 +98,11 @@ class MediaController extends Controller
       return redirect('/media');
     }
 
-    public function showConfirm()
+    public function showConfirm($id)
     {
-      return back()->with('danger', 'Ben je zeker dat je deze video wil verwijderen?');
+      $media = Media::all();
+      $video = Media::find($id);
+      return view('deleteMedia', compact('video', 'media'))->with('danger', 'Ben je zeker dat je dit verhaal wil verwijderen?');
     }
 
     public function delete($id)
@@ -115,7 +117,7 @@ class MediaController extends Controller
 
       elseif(isset($_POST['cancel']))
       {
-        return back();
+        return redirect('/media');
       }
 
 
