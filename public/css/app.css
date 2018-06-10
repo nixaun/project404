@@ -105,7 +105,6 @@ body {
 /******************************
  *          hamburger         *
  ******************************/
-
 .hamburger{
   display: none;
   background-color: #f7a400;
@@ -128,12 +127,43 @@ body {
 }
 
 .hamburger{
-  max-height: 30px;
   overflow: hidden;
 }
 
 #toggle{
   display: none;
+}
+
+@media only screen and (max-width: 798px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
 }
 
 /******************************

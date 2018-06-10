@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    
     <div id = 'header'>
 
 
@@ -24,7 +25,7 @@
         <div class="logo"><a href="https://www.antwerpen.be/nl/home"><img src="{{ asset('images/witlogo.png')}}" alt="LOGO"></a></div>
 
 
-    <nav>
+    <nav class='hamburger-nav'>
       <div class="P1">
       <div class="label-ham">
         <label for="toggle">☰</label>
