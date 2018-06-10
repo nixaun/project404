@@ -3,24 +3,6 @@
 @section('content')
   <div class="wrapper content-body cfx">
     <div class = 'content-verhalen content-home'>
-        @if(session('danger'))
-          @foreach ($verhalen as $verhaal)
-            @if(Auth::user()->id == $verhaal->user_id)
-              <div>
-                {{ session('danger') }}
-
-                <form action = "verhalen/verwijderen/bevestigen/{{$verhaal->id}}" method = "POST">
-                  {{ csrf_field() }}
-
-                  <button type = "submit" name = "delete">Verwijderen</button>
-
-                  <button type = "submit" name = "cancel">Cancel</button>
-                </form>
-              </div>
-            @endif
-          @endforeach
-        @endif
-
         @if (Auth::guard('admin')->check())
           <form action = "verhalen" method = "POST">
             {{ csrf_field() }}
@@ -35,13 +17,13 @@
               Sorteren
             </button>
           </form>
-          
+
           @foreach ($verhalen as $verhaal)
             <div class="content-split cfx">
               @if($verhaal->isAnonymous == 'on')
-                <h2>Anoniem</h2>
+                <h2>Anoniem (<?php $newDate = date("Y", strtotime($verhaal->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
               @else
-                <h2>{{ $verhaal->user->firstname}}</h2>
+                <h2>{{ $verhaal->user->firstname}} (<?php $newDate = date("Y", strtotime($verhaal->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
               @endif
               <h3>{{ $verhaal->title}}</h3>
               <p> {{$verhaal->body}} </p>
@@ -65,7 +47,7 @@
               @if($verhaal->isChecked)
                 <button type="submit" name = "goedkeuren" disabled class="button-all">
                   Goedkeuren
-                </button> 
+                </button>
 
                 <form action="verhalen/verwijderen/{{$verhaal->id}}" method="GET">
                     {{ csrf_field() }}
@@ -97,9 +79,9 @@
             @if (($verhaal->isChecked))
               <div class="content-split cfx">
                 @if($verhaal->isAnonymous == 'on')
-                  <h2>Anoniem</h2>
+                  <h2>Anoniem (<?php $newDate = date("Y", strtotime($verhaal->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
                 @else
-                  <h2>{{ $verhaal->user->firstname}}</h2>
+                  <h2>{{ $verhaal->user->firstname}} (<?php $newDate = date("Y", strtotime($verhaal->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
                 @endif
                 <h3>{{ $verhaal->title}}</h3>
                 <p> {{$verhaal->body}} </p>
@@ -138,9 +120,9 @@
             @if (($verhaal->isChecked))
               <div class="content-split">
                 @if($verhaal->isAnonymous == 'on')
-                  <h2>Anoniem</h2>
+                  <h2>Anoniem (<?php $newDate = date("Y", strtotime($verhaal->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
                 @else
-                  <h2>{{ $verhaal->user->firstname}}</h2>
+                  <h2>{{ $verhaal->user->firstname}} (<?php $newDate = date("Y", strtotime($verhaal->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
                 @endif
                 <h3>{{ $verhaal->title}}</h3>
                 <p> {{$verhaal->body}} </p>

@@ -1,26 +1,8 @@
 @extends('layouts.default')
 
-@section('content') 
+@section('content')
   <div class="wrapper content-body content-media">
     <div class = 'content-home cfx'>
-        @if(session('danger'))
-          @foreach ($media as $video)
-            @if(Auth::user()->id == $video->user_id)
-              <div>
-                {{ session('danger') }}
-
-                <form action = "media/verwijderen/bevestigen/{{$video->id}}" method = "POST">
-                  {{ csrf_field() }}
-
-                  <button type = "submit" name = "delete">Verwijderen</button>
-
-                  <button type = "submit" name = "cancel">Cancel</button>
-                </form>
-              </div>
-            @endif
-          @endforeach
-        @endif
-
         @if (Auth::guard('admin')->check())
           <form action = "media" method = "POST">
             {{ csrf_field() }}
@@ -54,8 +36,7 @@
                   </button>
                 </form>
 
-
-                <form action="media/verwijderen/{{$video->id}}" method="POST">
+                <form action="media/verwijderen/{{$video->id}}" method="GET">
                     {{ csrf_field() }}
                   <button type="submit" name = "delete" class="button-all">
                     Niet goedkeuren
@@ -134,7 +115,7 @@
               Sorteren
             </button>
           </form>
-          
+
           @foreach ($media as $video)
             @if (($video->isChecked))
               <div class="content-split cfx">
