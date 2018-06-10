@@ -119,10 +119,6 @@ class MediaController extends Controller
       {
         return redirect('/media');
       }
-
-
-
-
     }
 
     public function goedkeuren(Request $request, $id)

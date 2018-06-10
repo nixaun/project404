@@ -74,4 +74,6 @@ class RegisterController extends Controller
             'birthdate' =>$data['birthdate'],
         ]);
     }
+
+
 }

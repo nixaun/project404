@@ -51,7 +51,7 @@ class VerhaalsController extends Controller
     {
       $this->validate($request, [
         'verhaalTitle' => 'required|max:255',
-        'verhaalBody' => 'required',
+        'verhaalBody' => 'required|min:6',
         'verhaalIsAnonymous'
       ]);
 
