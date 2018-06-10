@@ -7,6 +7,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
+use App\Mail\RegisterMail;
+use Illuminate\Support\Facades\Mail;
+
 class RegisterController extends Controller
 {
     /*
@@ -65,7 +68,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'firstname' => $data['firstname'],
             'username' => $data['username'],
@@ -73,6 +76,16 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
             'birthdate' =>$data['birthdate'],
         ]);
+
+        Mail::send('emails.register', $data, function($message) use ($data)
+            {
+                $message->from('no-reply@site.com', "Site name");
+                $message->subject("Welcome to site name");
+                $message->to($data['email']);
+            });
+
+
+        return $user;
     }
 
 
