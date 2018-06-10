@@ -109,7 +109,7 @@ body {
   display: none;
   background-color: #f7a400;
   position: relative;
-  background: blur; 
+  background: blur;
 }
 
 .hamburger a{
@@ -313,16 +313,6 @@ body {
     display: none;
   }
 }
-
-
-/******************************
- *          DROPDOWN          *
- ******************************/
-
-.DDWN{
-  color: #0064b4;
-}
-
 
 /******************************
  *           Active Tab       *
@@ -730,7 +720,6 @@ textarea:focus{
   margin: 2% 10%;
   color: #0064b4;
 }
-
 
 /******************************
  *           media            *

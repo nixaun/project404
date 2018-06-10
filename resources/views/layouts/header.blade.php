@@ -41,6 +41,8 @@
 
         @if ((Auth::guard('web')->check() || Auth::guard('admin')->check()))
           <a href="/profiel"><i class="fas fa-user"></i> Profiel</a>
+        @else
+          <a href="/registreer"><i class="fas fa-user"></i> Profiel</a>
         @endif
       </div>
       <ul>
@@ -52,7 +54,7 @@
       <div class="P2">
         <ul>
               @if (!(Auth::guard('web')->check() || Auth::guard('admin')->check()))
-                <li><a href="/register"><i class="fas fa-user"></i></a>
+                <li><a href="/registreer"><i class="fas fa-user"></i></a></li>
               @else
                 <li><a href="{{route('Profiel')}}"><i class="fas fa-user"></i></a></li>
               @endif

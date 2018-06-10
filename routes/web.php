@@ -14,6 +14,11 @@
 Route::group(['middleware' => ['web']], function() {
   Auth::routes();
 
+  // Registration Routes...
+  Route::get('registreer', 'Auth\RegisterController@showRegistrationForm')->name('register');
+  Route::post('registreer', 'Auth\RegisterController@register');
+
+
   Route::get('/', 'HomeController@index')->name('home');
   Route::get('/home', 'HomeController@index')->name('home');
   Route::get('/wat-is-seksuele-intimidatie', 'WatIsSeksueleIntimidatieController@index')->name('WatIsSeksueleIntimidatie');
