@@ -51,7 +51,7 @@ class VerhaalsController extends Controller
     {
       $this->validate($request, [
         'verhaalTitle' => 'required|max:255',
-        'verhaalBody' => 'required',
+        'verhaalBody' => 'required|min:6',
         'verhaalIsAnonymous'
       ]);
 
@@ -96,9 +96,11 @@ class VerhaalsController extends Controller
       return redirect('/verhalen');
     }
 
-    public function showConfirm()
+    public function showConfirm($id)
     {
-      return back()->with('danger', 'Ben je zeker dat je dit verhaal wil verwijderen?');
+      $verhalen = Verhaal::all();
+      $verhaal = Verhaal::find($id);
+      return view('deleteVerhaal', compact('verhaal', 'verhalen'))->with('danger', 'Ben je zeker dat je dit verhaal wil verwijderen?');
     }
 
     public function delete($id)
@@ -112,7 +114,7 @@ class VerhaalsController extends Controller
       }
       elseif(isset($_POST['cancel']))
       {
-        return back();
+        return redirect('/verhalen');
       }
     }
 

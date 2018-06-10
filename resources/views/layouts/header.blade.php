@@ -63,6 +63,7 @@
       </div>
 
       <nav>
+        <div class="melden">
         @if(Auth::guard('web')->check() || Auth::guard('admin')->check())
           <a href="{{ route('logout') }}"
              onclick="event.preventDefault();
@@ -76,6 +77,7 @@
         @else
             <a href = "{{route ('login')}}" class="button-login">Aanmelden</a>
         @endif
+        </div>
       </nav>
 
     </div>

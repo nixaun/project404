@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Auth;
@@ -12,7 +13,8 @@ class ProfielController extends Controller
     public function index()
     {
         $user = User::all();
-        return view('profiel', compact('user'));
+        $admins = Admin::all();
+        return view('profiel', compact('user', 'admins'));
     }
 
     public function editProfiel($id)
