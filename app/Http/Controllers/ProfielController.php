@@ -12,7 +12,7 @@ class ProfielController extends Controller
     public function index()
     {
         $user = User::all();
-        return view('Profiel', compact('user'));
+        return view('profiel', compact('user'));
     }
 
     public function editProfiel($id)

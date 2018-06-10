@@ -1,14 +1,14 @@
 <footer>
   <div class="wrapper footer">
 
-    <div>
+    <div class="gamer">
       <ul>
         <h2>Speel onze game</h2>
-        <img src="{{asset('images/logo_game_on.png')}}" class="img-footer"/>
+        <a href = "{{route('Game')}}"><img src="{{asset('images/logo_game_on.png')}}" /></a>
       </ul>
     </div>
 
-    <div>
+    <div class="boxes">
       <ul>
         <h2>Nog vragen?</h2>
         <li><a href="https://www.antwerpen.be/nl/info/5360f244b1a8a76a088b45c4/contacteer-stad-antwerpen-voor-meer-info" target="_blank" class="button-footer">Contacteer ons</a></li>
@@ -17,7 +17,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="socials">
       <h2>Vind ons op</h2>
       <a href="#"><i class="fab fa-facebook"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>

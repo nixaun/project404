@@ -22,7 +22,7 @@
 
         <div class = 'register-checkbox'>
           <label> Plaats anoniem</label>
-          <input class="checkbox" type="checkbox" name="mediaIsAnonymous" id = 'mediaIsAnonymous'>
+          <input class="checkbox" type="checkbox" name="verhaalIsAnonymous" id = 'verhaalIsAnonymous'>
         </div>
 
         <div class = 'register'>

@@ -19,25 +19,25 @@ class VerhaalsController extends Controller
           if($selectedVal == 'name')
           {
             $verhalen = Verhaal::orderBy('title', 'asc')->get();
-            return view('Verhalen', compact('verhalen'));
+            return view('verhalen', compact('verhalen'));
           }
 
           if ($selectedVal == 'date')
           {
             $verhalen = Verhaal::orderBy('updated_at', 'asc')->get();
-            return view('Verhalen', compact('verhalen'));
+            return view('verhalen', compact('verhalen'));
           }
 
           if ($selectedVal == 'dateOld')
           {
             $verhalen = Verhaal::orderBy('updated_at', 'desc')->get();
-            return view('Verhalen', compact('verhalen'));
+            return view('verhalen', compact('verhalen'));
           }
         }
         else
         {
           $verhalen = Verhaal::all();
-          return view('Verhalen', compact('verhalen'));
+          return view('verhalen', compact('verhalen'));
         }
 
     }
