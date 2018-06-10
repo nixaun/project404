@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +17,7 @@
   </head>
 
   <body>
-    
+
     <div id = 'header'>
 
 
@@ -51,12 +52,7 @@
       <div class="P2">
         <ul>
               @if (!(Auth::guard('web')->check() || Auth::guard('admin')->check()))
-                <li><a href="/register"><i class="fas fa-user"></i>
-                  <!--<ul>
-                    <li>Aanmelden</li>
-                    <li>Regisreren</li>
-                  </ul>-->
-              </a></li>
+                <li><a href="/register"><i class="fas fa-user"></i></a>
               @else
                 <li><a href="{{route('Profiel')}}"><i class="fas fa-user"></i></a></li>
               @endif
