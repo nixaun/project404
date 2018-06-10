@@ -12,6 +12,7 @@
           <h3>Geboortedatum: </h3>
           <h3>Gebruikersnaam: {{$profile->username}}</h3>
           <h3>E-mail: {{$profile->email}}</h3>
+          <h3>Geboortedatum: <?php $newDate = date("d-m-Y", strtotime($profile->birthdate))?>{{$newDate}}</h3>
           <a class="button-profile" href='/profiel/wijzigen/{{$profile->id}}'>Profiel wijzigen</a>
         </div>
         @endif
