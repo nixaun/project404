@@ -172,40 +172,38 @@ body {
 
 .button-login{
   float: right;
-  background-color: white;
   padding: 10px;
   margin-right: 1.5%;
-  margin-top: 1%;
+  margin-top: -7%;
   font-size: 1em;
-  width: 150px;
-  border: 1px solid black;
+  width: 10%;
+  border-bottom: 1px solid white;
   text-decoration: none;
   text-align: center;
-  color: black;
+  color: white;
+  position: relative;
 }
 
 .button-login:hover{
-  color: #0064b4;
-  border: 1px solid #0064b4;
+ font-size: 1.01em;
 }
 
 .button-logout{
   float: right;
-  background-color: white;
   padding: 10px;
   margin-right: 1.5%;
-  margin-top: 1%;
+  margin-top: -7%;
   font-size: 1em;
   width: 150px;
-  border: 1px solid black;
+  border-bottom: 1px solid white;
   text-decoration: none;
   text-align: center;
-  color: black;
+  color: white;
+  position: relative;
 }
 
 .button-logout:hover{
-  color: #cf0039;
-  border: 1px solid #cf0039;
+ 
 }
 
  header {
@@ -244,6 +242,23 @@ body {
   width: 13%;
   font-size: 1.7em;
 }
+
+/*#header > nav > .P2 > ul > li:hover > a > ul > li {
+  font-size: 1em;
+  color: white;
+  background-color: #f7a400;
+  padding: 10px;
+  visibility: hidden;
+}
+
+#header > nav > .P2 > ul > li > a > ul > li:hover {
+  color: #b61f49;
+  visibility: visible;
+}
+
+#header > nav li a:hover {
+  color: #cf0039;
+}*/
 
 #header > nav ul{
   list-style-type: none;
@@ -344,6 +359,7 @@ body {
 
  #header > nav li a:hover {
   color: #cf0039;
+  overflow: visible;
 }
 
 #header a img:hover{
