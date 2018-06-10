@@ -127,10 +127,14 @@ body {
   display: none;
 }
 
+.hamburger{
+  max-height: 30px;
+  overflow: hidden;
+}
+
 #toggle{
   display: none;
 }
-
 
 /******************************
  *          header            *
@@ -275,6 +279,10 @@ body {
 
   #toggle:checked + .hamburger{
     display: block;
+  }
+
+  #main{
+    margin-top: 60%;
   }
 
   #header > nav li a {
@@ -937,7 +945,7 @@ transform: none;
 transition: none;
 }
 .register-login label input:focus + .label-text {
-font-size: 13px;
+font-size: 1em;
 -moz-transform: none;
 -ms-transform: none;
 -webkit-transform: none;
@@ -954,7 +962,7 @@ outline: 0;
 padding: 10px 20px;
 text-align: center;
 transition: none;
-width: 200px;
+width: 100px;
 }
 
 .register-login label textarea {
@@ -1008,7 +1016,7 @@ background-color: white;
 padding: 10px;
 font-size: 1em;
 width: 200px;
-margin: 8% auto 1%;
+margin: 0% auto 1%;
 border: 1px solid black;
 text-decoration: none;
 color: black;
@@ -1022,12 +1030,14 @@ opacity: 1;
 .form-header{
 margin: 3% auto 7% ;
 text-align: center;
-width: 50%;
+width: 30%;
 font-size: 3em;
 display: block;
 position: static;
 float: none;
 }
+
+
 
 }
 
