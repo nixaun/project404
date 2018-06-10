@@ -4,25 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>STOP_SEKSUELE_INTIMIDATIE</title>
 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/mobile.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
   </head>
 
   <body>
     <div id = 'header'>
 
-        
+
         <div class="banner"><img src="{{ asset('images/bnr.png')}}" alt=""></div>
         <a href="{{route('home')}}"><img src="{{ asset('images/BORD4.png')}}" alt="BORD2"></a>
         <div class="logo"><a href="https://www.antwerpen.be/nl/home"><img src="{{ asset('images/witlogo.png')}}" alt="LOGO"></a></div>
-      
+
 
     <nav>
       <div class="P1">
