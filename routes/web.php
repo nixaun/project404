@@ -10,9 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::group(['middleware' => ['web']], function() {
   Auth::routes();
+
+  // Registration Routes...
+  Route::get('registreer', 'Auth\RegisterController@showRegistrationForm')->name('register');
+  Route::post('registreer', 'Auth\RegisterController@register');
+
 
   Route::get('/', 'HomeController@index')->name('home');
   Route::get('/home', 'HomeController@index')->name('home');
@@ -20,7 +24,7 @@ Route::group(['middleware' => ['web']], function() {
   Route::get('verhalen', 'VerhaalsController@index')->name('Verhalen');
   Route::get('/media', 'MediaController@index')->name('Media');
   Route::get('/wat-kan-u-zelf-doen', 'WatKanUZelfDoenController@index')->name('WatKanUZelfDoen');
-  Route::get('/profiel', 'ProfielController@index')->name('Profiel');
+  Route::get('/profiel', 'ProfielController@index')->middleware('auth')->name('Profiel');
 
   Route::get('/verhalen/toevoegen', 'VerhaalsController@addVerhaal')->middleware('auth')->name('addVerhaal');
   Route::post('/verhalen/invoegen', 'VerhaalsController@insertVerhaal')->middleware('auth')->name('insertVerhaal');
