@@ -8,7 +8,7 @@ return array(
 
     'port' => 587,
 
-    'from' => array('address' => 'authapp@awesomeauthapp. com', 'name' => 'Awesome Laravel 4 Auth App'),
+    'from' => array('address' => 'StopSeksueleIntimidatie@gmail.com', 'name' => 'Awesome Laravel 4 Auth App'),
 
     'encryption' => 'tls',
 
