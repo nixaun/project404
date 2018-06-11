@@ -70,7 +70,6 @@
         <ul>
               @if (!(Auth::guard('web')->check() || Auth::guard('admin')->check()))
                 <li><a href="/registreer"><i class="fas fa-user"></i></a></li>
-                <li><a href="/register"><i class="fas fa-user"></i>
               </a></li>
               @else
                 <li><a href="{{route('Profiel')}}"><i class="fas fa-user"></i></a></li>
