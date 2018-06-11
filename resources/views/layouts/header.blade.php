@@ -37,6 +37,10 @@
         <a href="{{route('Verhalen')}}"><i class="fas fa-book-open "></i> Verhalen</a>
         <a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh "></i> SOS</a>
         <a href="{{route('Media')}}"><i class="fas fa-play-circle"></i> Media</a>
+        <div class="melden">
+        <a href="/register">Registreren</a>
+        <a href="{{route ('login')}}">Aanmelden</a>
+        </div>
 
         @if ((Auth::guard('web')->check() || Auth::guard('admin')->check()))
           <a href="/profiel"><i class="fas fa-user"></i> Profiel</a>
@@ -52,10 +56,6 @@
         <ul>
               @if (!(Auth::guard('web')->check() || Auth::guard('admin')->check()))
                 <li><a href="/register"><i class="fas fa-user"></i>
-                  <!--<ul>
-                    <li>Aanmelden</li>
-                    <li>Regisreren</li>
-                  </ul>-->
               </a></li>
               @else
                 <li><a href="{{route('Profiel')}}"><i class="fas fa-user"></i></a></li>
@@ -69,7 +69,7 @@
       </div>
 
       <nav>
-        <div class="melden">
+        <div>
         @if(Auth::guard('web')->check() || Auth::guard('admin')->check())
           <a href="{{ route('logout') }}"
              onclick="event.preventDefault();

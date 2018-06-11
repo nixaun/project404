@@ -1096,7 +1096,9 @@ position: static;
 float: none;
 }
 
-
+.button-login, .button-logout{
+  display: none;
+}
 
 }
 
@@ -1181,6 +1183,10 @@ cfx{
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+
+.button-login, .button-logout{
+  display: none;
 }
 }
 
