@@ -12,9 +12,6 @@ class MediaController extends Controller
 {
     public function index()
     {
-        $media = Media::all();
-        return view('media', compact('media'));
-
         if(isset($_POST['filter']))
         {
           $selectedVal = $_POST['filters'];
