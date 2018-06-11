@@ -31,7 +31,7 @@
 
                         <div class="register-login">
                                 <button type="submit" class="button-form">
-                                    Send Password Reset Link
+                                    Stuur wachtwoordlink
                                 </button>
                         </div>
                     </form>
