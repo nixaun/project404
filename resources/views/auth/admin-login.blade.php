@@ -40,10 +40,6 @@
         <button type="submit" class="button-form">
             Login
         </button>
-
-        <a class="btn btn-link lost-pass" href="{{ route('password.request') }}">
-            Paswoord vergeten?
-        </a>
       </div>
   </form>
 @endsection
