@@ -308,6 +308,7 @@ body {
   #header img{
     width: 20%;
   }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -352,6 +353,10 @@ body {
    }
 
    #header > a > img{
+    display: none;
+  }
+
+  .button-login, .button-logout{
     display: none;
   }
 }
