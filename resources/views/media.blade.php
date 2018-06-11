@@ -4,7 +4,7 @@
   <div class="wrapper content-body content-media">
     <div class = 'content-home cfx'>
         @if (Auth::guard('admin')->check())
-          <form action = "media" method = "POST">
+          <form action = "media" method = "POST" class="form-filter">
             {{ csrf_field() }}
 
             <select name = "filters">
@@ -13,7 +13,7 @@
               <option value = "dateOld">Datum (oudste eerst)</option>
             </select>
 
-            <button type = "submit" name = "filter">
+            <button type = "submit" name = "filter" class="button-all">
               Sorteren
             </button>
           </form>

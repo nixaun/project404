@@ -2,8 +2,8 @@
 
 @section('content')
 
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="{{ asset('TemplateData/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ asset('TemplateData/style.css') }}">
     <script src="{{ asset('TemplateData/UnityProgress.js') }}"></script>
     <script src="{{ asset('Build/UnityLoader.js') }}"></script>
     <script>
@@ -11,7 +11,7 @@
     </script>
 
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 1280px; height: 720px"></div>
+      <div id="gameContainer"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
