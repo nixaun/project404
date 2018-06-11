@@ -4,19 +4,21 @@
   <div class="wrapper content-body cfx">
     <div class = 'content-verhalen content-home'>
         @if (Auth::guard('admin')->check())
-          <form action = "verhalen" method = "POST">
+        <div class="form-filter cfx">
+          <form action = "media" method = "POST">
             {{ csrf_field() }}
 
-            <select name = "filters">
-              <option value = "name">Naam</option>
+            <select name = "filters" class="form-list">
+              <option value = "name">Titel</option>
               <option value = "date">Datum (nieuwste eerst)</option>
               <option value = "dateOld">Datum (oudste eerst)</option>
             </select>
 
-            <button type = "submit" name = "filter">
+            <button type = "submit" name = "filter" class="button-filter">
               Sorteren
             </button>
           </form>
+        </div>
 
           @foreach ($verhalen as $verhaal)
             <div class="content-split cfx">
@@ -61,19 +63,21 @@
         @endif
 
         @if (Auth::user())
-          <form action = "verhalen" method = "POST">
+        <div class="form-filter cfx">
+          <form action = "media" method = "POST">
             {{ csrf_field() }}
 
-            <select name = "filters">
-              <option value = "name">Naam</option>
+            <select name = "filters" class="form-list">
+              <option value = "name">Titel</option>
               <option value = "date">Datum (nieuwste eerst)</option>
               <option value = "dateOld">Datum (oudste eerst)</option>
             </select>
 
-            <button type = "submit" name = "filter">
+            <button type = "submit" name = "filter" class="button-filter">
               Sorteren
             </button>
           </form>
+        </div>
 
           @foreach ($verhalen as $verhaal)
             @if (($verhaal->isChecked))
@@ -102,19 +106,21 @@
         @endif
 
         @if(!(Auth::guard('web')->check()) && !(Auth::guard('admin')->check()))
-          <form action = "verhalen" method = "POST">
+        <div class="form-filter cfx">
+          <form action = "media" method = "POST">
             {{ csrf_field() }}
 
-            <select name = "filters">
-              <option value = "name">Naam</option>
+            <select name = "filters" class="form-list">
+              <option value = "name">Titel</option>
               <option value = "date">Datum (nieuwste eerst)</option>
               <option value = "dateOld">Datum (oudste eerst)</option>
             </select>
 
-            <button type = "submit" name = "filter">
+            <button type = "submit" name = "filter" class="button-filter">
               Sorteren
             </button>
           </form>
+        </div>
 
           @foreach ($verhalen as $verhaal)
             @if (($verhaal->isChecked))

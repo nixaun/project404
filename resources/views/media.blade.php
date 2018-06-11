@@ -4,19 +4,21 @@
   <div class="wrapper content-body content-media">
     <div class = 'content-home cfx'>
         @if (Auth::guard('admin')->check())
-          <form action = "media" method = "POST" class="form-filter">
+        <div class="form-filter cfx">
+          <form action = "media" method = "POST">
             {{ csrf_field() }}
 
-            <select name = "filters">
+            <select name = "filters" class="form-list">
               <option value = "name">Titel</option>
               <option value = "date">Datum (nieuwste eerst)</option>
               <option value = "dateOld">Datum (oudste eerst)</option>
             </select>
 
-            <button type = "submit" name = "filter" class="button-all">
+            <button type = "submit" name = "filter" class="button-filter">
               Sorteren
             </button>
           </form>
+        </div>
 
           @foreach ($media as $video)
             <div class="content-split cfx">
@@ -61,19 +63,21 @@
         @endif
 
         @if (Auth::user())
-          <form action = "media" method = "POST" class="form-filter">
+        <div class="form-filter cfx">
+          <form action = "media" method = "POST">
             {{ csrf_field() }}
 
-            <select name = "filters">
+            <select name = "filters" class="form-list">
               <option value = "name">Titel</option>
               <option value = "date">Datum (nieuwste eerst)</option>
               <option value = "dateOld">Datum (oudste eerst)</option>
             </select>
 
-            <button type = "submit" name = "filter" class="button-all">
+            <button type = "submit" name = "filter" class="button-filter">
               Sorteren
             </button>
           </form>
+        </div>
 
           @foreach ($media as $video)
             @if (($video->isChecked))
