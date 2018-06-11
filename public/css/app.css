@@ -765,8 +765,13 @@ textarea:focus{
 }
 
 .lost-pass{
-  margin: 2% 10%;
+  margin: 2% 0% 2% 3%;
   color: #0064b4;
+}
+
+.login-links {
+  margin-left:  31%;
+  margin-top: 5%; 
 }
 
 /******************************
