@@ -6,15 +6,17 @@
       <div>
         {{ session('danger') }}
 
+      <div class="content-split cfx">
         <form action = "bevestigen/{{$video->id}}" method = "POST">
           {{ csrf_field() }}
 
           <p>Ben je zeker dat je deze video wilt verwijderen?</p>
-          <button type = "submit" name = "delete">Verwijderen</button>
+          <button type = "submit" name = "delete" class="button-all">Verwijderen</button>
 
-          <button type = "submit" name = "cancel">Cancel</button>
+          <button type = "submit" name = "cancel" class="button-all">Cancel</button>
         </form>
         </div>
+      </div>
 
         @if (Auth::guard('admin')->check())
           <form action = "media" method = "POST">

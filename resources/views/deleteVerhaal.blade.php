@@ -5,14 +5,16 @@
     <div class = 'content-verhalen content-home' onload = "myFunction">
             <div>
               {{ session('danger') }}
+            <div class="content-split cfx">
               <form action = "bevestigen/{{$verhaal->id}}" method = "POST">
                 {{ csrf_field() }}
 
-                <p>Ben je zeker dat je dit verhaal wilt verwijderen?</p>
-                <button type = "submit" name = "delete" id = "delete">Verwijderen</button>
+                <h2>Ben je zeker dat je dit verhaal wilt verwijderen?</h2>
+                <button type = "submit" name = "delete" id = "delete" class="button-all">Verwijderen</button>
 
-                <button type = "submit" name = "cancel" id = "cancel">Annuleren</button>
+                <button type = "submit" name = "cancel" id = "cancel" class="button-all">Annuleren</button>
               </form>
+
             </div>
               @if (Auth::guard('admin')->check())
                 <form action = "verhalen" method = "POST">
