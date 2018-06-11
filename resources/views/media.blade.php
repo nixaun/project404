@@ -8,7 +8,7 @@
             {{ csrf_field() }}
 
             <select name = "filters">
-              <option value = "name">Naam</option>
+              <option value = "name">Titel</option>
               <option value = "date">Datum (nieuwste eerst)</option>
               <option value = "dateOld">Datum (oudste eerst)</option>
             </select>
@@ -61,16 +61,16 @@
         @endif
 
         @if (Auth::user())
-          <form action = "media" method = "POST">
+          <form action = "media" method = "POST" class="form-filter">
             {{ csrf_field() }}
 
             <select name = "filters">
-              <option value = "name">Naam</option>
+              <option value = "name">Titel</option>
               <option value = "date">Datum (nieuwste eerst)</option>
               <option value = "dateOld">Datum (oudste eerst)</option>
             </select>
 
-            <button type = "submit" name = "filter">
+            <button type = "submit" name = "filter" class="button-all">
               Sorteren
             </button>
           </form>
@@ -102,19 +102,21 @@
         @endif
 
         @if(!(Auth::guard('web')->check()) && !(Auth::guard('admin')->check()))
+        <div class="form-filter cfx">
           <form action = "media" method = "POST">
             {{ csrf_field() }}
 
             <select name = "filters">
-              <option value = "name">Naam</option>
+              <option value = "name">Titel</option>
               <option value = "date">Datum (nieuwste eerst)</option>
               <option value = "dateOld">Datum (oudste eerst)</option>
             </select>
 
-            <button type = "submit" name = "filter">
+            <button type = "submit" name = "filter" class="button-all">
               Sorteren
             </button>
           </form>
+        </div>
 
           @foreach ($media as $video)
             @if (($video->isChecked))

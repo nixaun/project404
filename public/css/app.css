@@ -37,9 +37,11 @@ body {
  ******************************/
 
  .form-filter{
-   margin-left: 5%;
+   position: relative;
    float: left;
-   margin-bottom: 50px;
+   display: inline-block;
+   margin-left: 5%;
+   margin-bottom: 5%;
  }
 
 /******************************
