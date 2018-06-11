@@ -37,18 +37,32 @@
         <a href="{{route('Verhalen')}}"><i class="fas fa-book-open "></i> Verhalen</a>
         <a href="{{route('WatKanUZelfDoen')}}"><i class="fas fa-meh "></i> SOS</a>
         <a href="{{route('Media')}}"><i class="fas fa-play-circle"></i> Media</a>
-        <div class="melden">
-        <a href="/register">Registreren</a>
-        <a href="{{route ('login')}}">Aanmelden</a>
-        </div>
 
         @if ((Auth::guard('web')->check() || Auth::guard('admin')->check()))
           <a href="/profiel"><i class="fas fa-user"></i> Profiel</a>
+
+        @else 
+          <a href="/register"><i class="fas fa-user"></i> Registreer</a>
+
         @endif
+
+        @if(Auth::guard('web')->check() || Auth::guard('admin')->check())
+          <a href="{{ route('logout') }}"
+             onclick="event.preventDefault();
+                           document.getElementById('logout-form').submit();" class="last-button">
+              Afmelden
+          </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+          </form>
+        @else
+            <a href = "{{route ('login')}}" class="last-button">Aanmelden</a>
+        @endif
+
       </div>
       <ul>
             <li><a href="{{route('WatIsSeksueleIntimidatie')}}"><i class="fas fa-venus-mars"></i> Intimidatie</a></li>
-            <li><a href="{{route('Verhalen')}}"><i class="fas fa-book-open "></i> Verhalen</a></li>
+            <li><a href="{{route('Verhalen')}}"><i class="fas fa-book-open"></i> Verhalen</a></li>
       </ul>
       </div>
 

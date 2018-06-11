@@ -130,6 +130,10 @@ body {
   overflow: hidden;
 }
 
+.last-button{
+  background-color: #f18a00;
+}
+
 #toggle{
   display: none;
 }
