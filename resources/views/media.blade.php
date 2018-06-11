@@ -21,9 +21,9 @@
           @foreach ($media as $video)
             <div class="content-split cfx">
               @if($video->isAnonymous == 'on')
-                <h2>Anoniem (<?php $newDate = date("Y", strtotime($verhaal->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
+                <h2>Anoniem (<?php $newDate = date("Y", strtotime($video->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
               @else
-                <h2>{{ $video->user->firstname}} (<?php $newDate = date("Y", strtotime($verhaal->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
+                <h2>{{ $video->user->firstname}} (<?php $newDate = date("Y", strtotime($video->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
               @endif
               <h3>{{ $video->title}}</h3>
               <iframe width="720px" height="405px" src='{{$video->url}}' frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="media-iframe"></iframe>
@@ -79,9 +79,9 @@
             @if (($video->isChecked))
               <div class="content-split cfx">
                 @if($video->isAnonymous == 'on')
-                  <h2>Anoniem (<?php $newDate = date("Y", strtotime($verhaal->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
+                  <h2>Anoniem (<?php $newDate = date("Y", strtotime($video->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
                 @else
-                  <h2>{{ $video->user->firstname}} (<?php $newDate = date("Y", strtotime($verhaal->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
+                  <h2>{{ $video->user->firstname}} (<?php $newDate = date("Y", strtotime($video->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
                 @endif
                 <h3>{{ $video->title}}</h3>
                 <iframe width="720px" height="405px" src='{{$video->url}}' frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="media-iframe"></iframe>
@@ -120,9 +120,9 @@
             @if (($video->isChecked))
               <div class="content-split cfx">
                 @if($video->isAnonymous == 'on')
-                  <h2>Anoniem (<?php $newDate = date("Y", strtotime($verhaal->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
+                  <h2>Anoniem (<?php $newDate = date("Y", strtotime($video->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
                 @else
-                  <h2>{{ $video->user->firstname}} (<?php $newDate = date("Y", strtotime($verhaal->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
+                  <h2>{{ $video->user->firstname}} (<?php $newDate = date("Y", strtotime($video->user->birthdate))?><?php $age = date("Y") - $newDate ?>{{$age}})</h2>
                 @endif
                 <h3>{{ $video->title}}</h3>
                 <iframe width="720px" height="405px" src='{{$video->url}}' frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="media-iframe"></iframe>
