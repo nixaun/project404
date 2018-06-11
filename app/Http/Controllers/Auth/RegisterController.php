@@ -79,8 +79,8 @@ class RegisterController extends Controller
 
         Mail::send('emails.register', $data, function($message) use ($data)
             {
-                $message->from('no-reply@site.com', "Site name");
-                $message->subject("Welcome to site name");
+                $message->from('no-reply@site.com', "Stop seksuele intimidatie");
+                $message->subject("Welkom op onze site!");
                 $message->to($data['email']);
             });
 
