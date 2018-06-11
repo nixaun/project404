@@ -18,7 +18,7 @@
 
       @if (Auth::user())
         @foreach($user as $profile)
-          @if(Auth::user()->name == $profile->name)
+          @if(Auth::user()->username == $profile->username)
           <div class="form-container">
             <h3>Naam: {{$profile->name}}</h3>
             <h3>Voornaam: {{$profile->firstname}}</h3>
