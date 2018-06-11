@@ -49,12 +49,4 @@ class AdminResetPasswordController extends Controller
     {
       return Password::broker('admins');
     }
-
-    public function toMail()
-    {
-        return (new MailMessage)
-            ->line('You are receiving this email because we received a password reset request for your account.')
-            ->action('Reset Password', url('password/reset', $this->token)) // <- this url
-            ->line('If you did not request a password reset, no further action is required.');
-    }
 }
