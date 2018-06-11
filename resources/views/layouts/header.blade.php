@@ -41,12 +41,7 @@
 
         @if ((Auth::guard('web')->check() || Auth::guard('admin')->check()))
           <a href="/profiel"><i class="fas fa-user"></i> Profiel</a>
-<<<<<<< HEAD
         @else
-          <a href="/registreer"><i class="fas fa-user"></i> Profiel</a>
-=======
-
-        @else 
           <a href="/register"><i class="fas fa-user"></i> Registreer</a>
 
         @endif
@@ -62,7 +57,6 @@
           </form>
         @else
             <a href = "{{route ('login')}}" class="last-button">Aanmelden</a>
->>>>>>> 2b96070e4a3941ecb241657451bf3286301cf728
         @endif
 
       </div>
@@ -75,12 +69,9 @@
       <div class="P2">
         <ul>
               @if (!(Auth::guard('web')->check() || Auth::guard('admin')->check()))
-<<<<<<< HEAD
                 <li><a href="/registreer"><i class="fas fa-user"></i></a></li>
-=======
                 <li><a href="/register"><i class="fas fa-user"></i>
               </a></li>
->>>>>>> 2b96070e4a3941ecb241657451bf3286301cf728
               @else
                 <li><a href="{{route('Profiel')}}"><i class="fas fa-user"></i></a></li>
               @endif
