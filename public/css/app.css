@@ -771,7 +771,7 @@ textarea:focus{
 
 .login-links {
   margin-left:  31%;
-  margin-top: 5%; 
+  margin-top: 5%;
 }
 
 /******************************
@@ -963,6 +963,16 @@ footer div div:nth-child(2){
 .content-split{
   width: 100;
   margin-bottom: 10%;
+}
+
+.lost-pass{
+  margin: 2% 0% 2% 3%;
+  color: #0064b4;
+}
+
+.login-links {
+  margin-left: -10%;
+  margin-top: 5%;
 }
 
 cfx{

@@ -43,7 +43,7 @@
 
         <div class = "login-links">
           <a class="btn btn-link lost-pass" href="{{ route('password.request') }}">
-              Paswoord vergeten?
+              Wachtwoord vergeten?
           </a>
 
           <a class = "btn btn-link lost-pass" href="{{ route('register') }}">
