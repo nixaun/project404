@@ -36,6 +36,16 @@ body {
  *          buttons           *
  ******************************/
 
+ .form-filter{
+   margin-left: 5%;
+   float: left;
+   margin-bottom: 50px;
+ }
+
+/******************************
+ *          buttons           *
+ ******************************/
+
 .button-all{
   float: left;
   background-color: white;
