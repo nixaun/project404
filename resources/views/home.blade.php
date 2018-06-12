@@ -11,7 +11,7 @@
         <p class="cfx">Wil je je hart luchten en je verhaal online zetten of lezen welke ervaringen anderen hebben gehad? </br><a href="{{route('Verhalen')}}" class="link-welkom">Klik dan hier</a></p>
         <p class="cfx">Heb je een interessant filmpje dat kan helpen of wil je zelf zoeken naar filmpjes? </br><a href="{{route('Media')}}" class="link-welkom">Klik dan hier</a></p>
   </div>
-  
+
     <div class="content-split content-home cfx">
       <h1 class="header-home">Media</h1>
       @foreach ($media as $video)
@@ -42,8 +42,8 @@
       @endforeach
     </div>
     <div class="content-split content-home">
-      <h1 class="header-home">Onze Awesome Game</h1>
-      <h3>[Game Naam]</h3>
+      <h1 class="header-home">Test je kennis</h1>
+      <h3>Speel hier onze quiz!</h3>
         <a href="{{route('Game')}}"><img src="{{asset('images/logo_game_on.png')}}" /></a>
     </div>
   </div>
